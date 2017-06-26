@@ -17,7 +17,7 @@
 }
 
 .block-tag {
-    padding: 5px;
+    padding: 1px;
     background: #e3c94c;
 }
 
@@ -31,4 +31,14 @@
 
 .page-middle {
     border: #ff6600 1px solid;
+}
+
+/*新闻分组TAB切换*/
+.news-nav-tabs {
+    height: 30px;
+}
+.news-nav-tabs>li>a {
+    position: relative;
+    display: block;
+    padding: 4px 15px;
 }
