@@ -9,7 +9,7 @@ a:active {
 
 }
 a:visited {
-
+    color: #647891;
 }
 a:hover {
     text-decoration: none;
@@ -68,6 +68,10 @@ a:hover {
 .recomm-first a{
     font-size: 16px;
     color: #022856;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
 }
 .recomm-first a:hover{
     color: #4990e2;
@@ -85,20 +89,43 @@ a:hover {
 .recomm-list {
 
 }
+
+.recommnews-item.is-hot:before {
+    background: #7ED321;
+}
 .recommnews-item:before{
     position: absolute;
     display: block;
     content: '';
     left: 0;
-    top: 50%;
-    margin-top: -2px;
+    margin-top: 10px;
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background: #7ED321;
+    background: #CFCFCF;
 }
 .recommnews-item{
     height: 26px;
     line-height: 26px;
     justify-content: space-between;
+    position: relative;
+    color: #647891;
+}
+.recommnews-item a{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    color: #647891;
+    padding: 0 0 0 13px;
+    transition: color .2s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 320px;
+}
+.recommnews-item span{
+    color: #AAA;
+    position: relative;
+    float: right;
+    top: -25px;
 }
