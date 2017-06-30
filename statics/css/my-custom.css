@@ -129,3 +129,10 @@ a:hover {
     float: right;
     top: -25px;
 }
+
+
+/* 全局广告类 */
+.kggs{
+    margin-bottom: 5px;
+    display: block;
+}
