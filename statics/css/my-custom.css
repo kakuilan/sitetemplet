@@ -16,9 +16,11 @@ a:hover {
     color: #4990e2;
 }
 
-/*右边浮动*/
-.fr{
-    float: right;
+.box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 /*主容器*/
@@ -172,3 +174,28 @@ a:hover {
 .tweet_list .nav-tabs>li:last-child a{
     color: #9B9B9B;
 }
+.tweet {
+    padding: 5px 0;
+}
+.tweet .tweet-uimg {
+    margin: 0 7px 0 0;
+    width: 24px;
+    max-width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.tweet .tweet-content {
+    margin: 0;
+    font-size: 14px;
+    color: #111;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tweet .tweet-favor {
+    float: right;
+    margin-left: 10px;
+}
+
+
