@@ -129,6 +129,9 @@ a:hover {
     text-overflow: ellipsis;
     max-width: 320px;
 }
+.recommnews-item a:hover{
+    color: #4990e2;
+}
 .recommnews-item span{
     color: #AAA;
     position: relative;
