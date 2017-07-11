@@ -211,6 +211,12 @@ a:hover {
 
 
 /*首页推荐图片列表*/
-.recoimg-list{
+.recoimg-list {
 
+}
+.recoimg-box {
+    width: 100%;
+    overflow: hidden;
+    max-height: 220px;
+    margin-bottom: 5px;
 }
