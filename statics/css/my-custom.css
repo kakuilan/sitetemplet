@@ -214,9 +214,3 @@ a:hover {
 .recoimg-list{
 
 }
-
-.recoimg-list ul li {
-    float: left;
-    position: relative;
-    overflow: hidden;
-}
