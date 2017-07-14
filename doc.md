@@ -53,4 +53,11 @@ http://bootstrap.kinghack.com/getting-started.html
 https://segmentfault.com/q/1010000000735276
 
 
+站内搜索
+http://zn.baidu.com/cse/home/index
+http://zhanzhang.baidu.com/guide/index
+http://www.so.com/help/help_3_6.html
+
+
+
 
