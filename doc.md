@@ -48,7 +48,9 @@ http://bragthemes.com/
 常用样式 http://blog.sina.com.cn/s/blog_537517170102v23b.html
 
 
-
+页脚
+http://bootstrap.kinghack.com/getting-started.html
+https://segmentfault.com/q/1010000000735276
 
 
 
