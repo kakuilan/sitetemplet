@@ -36,6 +36,10 @@ a:hover {
     border-bottom-right-radius: 4px;
 }
 
+.list-title{
+    font-size: 16px;
+    color: #022856;
+}
 
 /*主容器*/
 .main-wrap {
