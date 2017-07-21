@@ -59,5 +59,12 @@ http://zhanzhang.baidu.com/guide/index
 http://www.so.com/help/help_3_6.html
 
 
+问答参考
+http://www.guanggua.com/
+https://www.oschina.net/question
+https://wenda.tipask.com/questions
+
+
+
 
 
