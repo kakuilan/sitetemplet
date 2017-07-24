@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="renderer" content="webkit">
+    <title>Bootstrap Template</title>
+    <meta name="keywords" content="问答">
+    <meta name="description" content="静态页面模板">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="/statics/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/statics/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="/statics/css/my-custom.css" />
+
+    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+    <!--[if lte IE 8]>
+    <script src="/statics/js/html5shiv.min.js"></script>
+    <script src="/statics/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<!--主容器 start-->
+<div class="main-wrap">
+
+    <!--固定导航栏 start-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-md hidden-lg" href="#">项目名称</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/index.html">首页</a></li>
+                    <li><a href="/bbs.html">论坛</a></li>
+                    <li class="active"><a href="/question.html">问答</a></li>
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="#contact">联系</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉多项<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">默认</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#">登录</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!--固定导航栏 end-->
+
+    <!--页面容器 start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="row">
+                    <!--顶部广告-->
+                    <div class="col-md-12 col-sm-12">
+                        <div class="kggs">
+                            <a href="#"><img src="/statics/images/test/test_01.jpg" class="img-responsive"></a>
+                        </div>
+                    </div>
+
+                    <!--页面左侧 start-->
+                    <div class="col-md-9 col-sm-12">
+
+                        <!--问题分类tag-->
+                        <div class="widget-category clearfix mb-5">
+                            <div class="col-sm-12">
+                                <ul class="list">
+                                    <li><a href="#">程序使用</a></li>
+                                    <li><a href="#">bug反馈</a></li>
+                                    <li><a href="#">功能建议</a></li>
+                                    <li><a href="#">二次开发</a></li>
+                                    <li><a href="#">建站交流</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--问题分类切换-->
+                        <ul class="nav nav-tabs mb-10">
+                            <li class="active"><a href="#">最新的</a></li>
+                            <li><a href="#">热门的</a></li>
+                            <li><a href="#">悬赏的</a></li>
+                            <li><a href="#">未回答的</a></li>
+                        </ul>
+
+                        <!--问题列表 start-->
+                        <div class="stream-list question-stream">
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        23<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2722" target="_blank">山药</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">13小时前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <a href="https://wenda.tipask.com/question/4111" target="_blank">首页如何按文章分类调用</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        19<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2922" target="_blank">刘纳</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">20小时前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <a href="https://wenda.tipask.com/question/4110" target="_blank">想问问这个系统能否实现不公开问题</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        44<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2918" target="_blank">长相思兮长相忆，</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">1天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <span class="text-gold"><i class="fa fa-database"></i> 5</span>
+                                        <a href="https://wenda.tipask.com/question/4109" target="_blank">能不能发布视屏？</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        35<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2897" target="_blank">673虚拟交易第一门户</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">1天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <a href="https://wenda.tipask.com/question/4108" target="_blank">淘宝店铺转让给别人有风险吗？</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                        <li class="tagPopup"><a class="tag" target="_blank" href="https://wenda.tipask.com/topic/860">淘宝网店</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        42<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/331" target="_blank">望月的人</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">1天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <span class="text-gold"><i class="fa fa-database"></i> 5</span>
+                                        <a href="https://wenda.tipask.com/question/4107" target="_blank">问题内容页，侧栏已调用相关问题，如果要调用最新问题、热门问题怎么调用？</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        49<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2912" target="_blank">wangye</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">2天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <span class="text-gold"><i class="fa fa-database"></i> 5</span>
+                                        <a href="https://wenda.tipask.com/question/4106" target="_blank">tipask3.2如何加载到cpanel?</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers  answered ">
+                                        1<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        37<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2450" target="_blank"> Viiゝ黑、</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">2天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <span class="text-gold"><i class="fa fa-database"></i> 5</span>
+                                        <a href="https://wenda.tipask.com/question/4105" target="_blank">宜电商城满多少包邮，可以开发票吗？</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        45<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2722" target="_blank">山药</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">2天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <a href="https://wenda.tipask.com/question/4104" target="_blank">请问在首页怎么调用问题回答里的第一张图</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        18<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2906" target="_blank">我不阳光</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">2天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <span class="text-gold"><i class="fa fa-database"></i> 5</span>
+                                        <a href="https://wenda.tipask.com/question/4101" target="_blank">3.2怎么安装？</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        43<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2627" target="_blank">波波</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">3天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <a href="https://wenda.tipask.com/question/4099" target="_blank">本机搭建好后，访问感觉有点慢，是不是缓存问题</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                        <li class="tagPopup"><a class="tag" target="_blank" href="https://wenda.tipask.com/topic/1092">tipask 3.1</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        57<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2577" target="_blank">-A1</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">3天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <a href="https://wenda.tipask.com/question/4098" target="_blank">发现个问题，为什么把提问时间放到底部?</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                        <li class="tagPopup"><a class="tag" target="_blank" href="https://wenda.tipask.com/topic/100">功能建议</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        94<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2767" target="_blank">王飞燕</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">4天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <span class="text-gold"><i class="fa fa-database"></i> 5</span>
+                                        <a href="https://wenda.tipask.com/question/4095" target="_blank">手机端文章图片无法自动缩放</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers  answered ">
+                                        1<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        130<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2895" target="_blank">steelcity</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">5天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <span class="text-gold"><i class="fa fa-database"></i> 5</span>
+                                        <a href="https://wenda.tipask.com/question/4093" target="_blank">3.2没有安装文件install，大家不用install都能装啊，求指点</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                        <li class="tagPopup"><a class="tag" target="_blank" href="https://wenda.tipask.com/topic/1146">安装问题</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        74<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2885" target="_blank">satan</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">6天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <a href="https://wenda.tipask.com/question/4091" target="_blank">有批量导入问题和答案，方便前期运营的工具或者插件吗？</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                        <li class="tagPopup"><a class="tag" target="_blank" href="https://wenda.tipask.com/topic/1268">批量导入</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        118<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2885" target="_blank">satan</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">6天前</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <span class="text-gold"><i class="fa fa-database"></i> 5</span>
+                                        <a href="https://wenda.tipask.com/question/4089" target="_blank">Tipask3.2安装有点难啊，付费安装有技术兄弟吗？</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                        <li class="tagPopup"><a class="tag" target="_blank" href="https://wenda.tipask.com/topic/35">程序安装</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers  answered ">
+                                        4<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        138<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2778" target="_blank">python</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">2017-07-17 11:28</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <span class="text-gold"><i class="fa fa-database"></i> 5</span>
+                                        <a href="https://wenda.tipask.com/question/4088" target="_blank">很期待新版啊，3.2版本确实有很多细节不够完善。</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        84<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2671" target="_blank">8642136</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">2017-07-16 08:27</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <span class="text-gold"><i class="fa fa-database"></i> 5</span>
+                                        <a href="https://wenda.tipask.com/question/4087" target="_blank">文章下能不能添加视频？</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                        <li class="tagPopup"><a class="tag" target="_blank" href="https://wenda.tipask.com/topic/1250">视频</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers  answered ">
+                                        1<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        116<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2885" target="_blank">satan</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">2017-07-16 00:56</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <a href="https://wenda.tipask.com/question/4086" target="_blank">好难安装，没办法要放弃了~谁有安装的教程~</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers  solved ">
+                                        1<small> 解决 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        156<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/2837" target="_blank">李小凡</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">2017-07-14 14:28</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <span class="text-gold"><i class="fa fa-database"></i> 5</span>
+                                        <a href="https://wenda.tipask.com/question/4083" target="_blank">TIPASK的话题能不能在后台跟问答的分类挂钩？标签也可以分类呢？</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                        <li class="tagPopup"><a class="tag" target="_blank" href="https://wenda.tipask.com/topic/58">标签</a></li>
+                                        <li class="tagPopup"><a class="tag" target="_blank" href="https://wenda.tipask.com/topic/1080">话题介绍</a></li>
+                                        <li class="tagPopup"><a class="tag" target="_blank" href="https://wenda.tipask.com/topic/883">话题URL</a></li>
+                                        <li class="tagPopup"><a class="tag" target="_blank" href="https://wenda.tipask.com/topic/26">话题</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="stream-list-item">
+                                <div class="qa-rank">
+                                    <div class="answers ">
+                                        0<small> 回答 </small>
+                                    </div>
+                                    <div class="views hidden-xs">
+                                        101<small>浏览</small>
+                                    </div>
+                                </div>
+                                <div class="summary">
+                                    <ul class="author list-inline">
+                                        <li>
+                                            <a href="https://wenda.tipask.com/people/567" target="_blank">龙城步行街</a>
+                                            <span class="split"></span>
+                                            <span class="askDate">2017-07-14 11:18</span>
+                                        </li>
+                                    </ul>
+                                    <h2 class="title">
+                                        <span class="text-gold"><i class="fa fa-database"></i> 5</span>
+                                        <a href="https://wenda.tipask.com/question/4082" target="_blank">tipask3.2网站搬家可以重新装，然后导入原来必要的数据和数据库吗？</a>
+                                    </h2>
+                                    <ul class="taglist-inline ib">
+                                        <li class="tagPopup"><a class="tag" target="_blank" href="https://wenda.tipask.com/topic/1266">网站搬家</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                        </div>
+                        <!--问题列表 end-->
+
+
+
+                    </div>
+                    <!--页面左侧 end-->
+
+                    <!--页面右侧 start-->
+                    <div class="col-md-3 col-sm-12">
+                        右侧内容
+                    </div>
+                    <!--页面右侧 end-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面容器 end-->
+
+    <!--页脚 end -->
+    <footer class="container hidden-xs" id="footer">
+        <div class="panel panel-default text-muted">
+            <div class="panel-body">
+            </div>
+            <div class="panel-footer clearfix">
+                © 2017 LKK, all rights reserved.
+                &nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn/" rel="nofollow">沪ICP备15005547号</a>
+                &nbsp;&nbsp;powered by Kserver
+            </div>
+        </div>
+    </footer>
+    <!--页脚 start -->
+
+</div>
+<!--主容器 end-->
+
+<!-- basic scripts -->
+
+<!--[if !IE]> -->
+<script src="/statics/js/jquery-2.1.4.min.js"></script>
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script src="/statics/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    if('ontouchstart' in document.documentElement) document.write("<script src='/statics/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+</script>
+
+
+</body>
+</html>

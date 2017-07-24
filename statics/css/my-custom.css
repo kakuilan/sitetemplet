@@ -22,6 +22,7 @@ a:hover {
     float: right;
 }
 
+
 .box {
     display: -webkit-box;
     display: -webkit-flex;
@@ -272,3 +273,136 @@ a:hover {
     color: #9B9B9B;
 }
 
+
+/*----问答页 start---*/
+/*margin-bottom*/
+.mb-5 {margin-bottom: 5px;}
+.mb-10 {margin-bottom: 10px;}
+.mb-20{margin-bottom:20px;}
+.mb-30{margin-bottom:30px;}
+.mb-40{margin-bottom:40px;}
+.mb-50{margin-bottom:50px;}
+
+.mt-10 {margin-top: 10px;}
+.mt-15 {margin-top: 15px;}
+.mt-20 {margin-top: 20px;}
+.mt-30 {margin-top: 30px;}
+.mt-40 {margin-top: 40px;}
+.mt-50 {margin-top: 50px;}
+.mt-60 {margin-top: 60px;}
+
+.ml5,.ml-5{margin-left:5px;}
+.ml10,.ml-10{margin-left:10px;}
+.ml15,.ml-15{margin-left:15px;}
+
+.mr-5{margin-right:5px;}
+.mr-10,.mr10{margin-right:10px;}
+.mr-20,.mr20{margin-right:20px;}
+.mr-30,.mr30{margin-right:30px;}
+.pt-30{padding-top: 30px;}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+.widget-category {
+    padding: 5px 0;
+    border: 1px solid #f0f5f3;
+    border-radius: 4px;
+}
+.widget-category .list>li {
+    float: left;
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 5px 5px 0;
+}
+.widget-category .list a {
+    display: block;
+    padding: 0 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 1px solid #daecf5;
+}
+.stream-list {
+    margin-bottom: 10px;
+}
+.stream-list-item {
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+.qa-rank {
+    float: left;
+    margin-right: 5px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.2;
+    color: #666;
+}
+.stream-list-item .summary {
+    overflow: auto;
+    overflow-x: hidden;
+}
+.qa-rank .answers {
+    background-color: #AD3A37;
+    color: #fff;
+}
+.bookmark-rank .answers, .bookmark-rank .views, .bookmark-rank .votes, .qa-rank .answers, .qa-rank .views, .qa-rank .votes {
+    display: inline-block;
+    padding-top: 3px;
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.qa-rank small {
+    display: block;
+    font-size: 12px;
+}
+.qa-rank .views {
+    width: 50px;
+    color: #999;
+}
+.bookmark-rank .answers, .bookmark-rank .views, .bookmark-rank .votes, .qa-rank .answers, .qa-rank .views, .qa-rank .votes {
+    display: inline-block;
+    padding-top: 3px;
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.stream-list-item .author {
+    margin-bottom: 5px;
+    color: #999;
+    font-size: 13px;
+}
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+.stream-list-item .title {
+    display: inline;
+    margin: 0 5px 0 0;
+    font-size: 16px;
+}
+.stream-list-item .title a:visited {
+    font-weight: 400;
+}
+.stream-list-item .title a {
+    color: #333;
+}
+.ib.taglist--block, .ib.taglist-inline {
+    margin: 0;
+    display: inline-block;
+}
+.taglist--block, .taglist-inline {
+    list-style: none;
+    padding: 0;
+    font-size: 0;
+}
+/*----问答页 end---*/
