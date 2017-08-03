@@ -1,9 +1,30 @@
 /* 自定义样式 */
 
 /*--my bootstrap--*/
+/*a标签不要下划线*/
+a {
+    text-decoration: none;
+    outline: none;
+}
+a:active {
+}
+a:visited {
+    color: #647891;
+}
+a:hover {
+    color: #4990e2;
+    text-decoration: none;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
 
 
-/*bootstrap样式重写*/
+/*bootstrap样式重写 start*/
 .navbar-inverse{background-color:#2a8c70;border-color:#2b7a5c}
 .navbar-inverse .navbar-nav>li>a{color:#fff}
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{background-color:#2b7a5c}
@@ -245,6 +266,7 @@ ul{list-style: none;padding: 0;}
 .wrap{padding-bottom:30px;position:relative}
 
 /*margin-bottom*/
+.mb-5 {margin-bottom: 5px;}
 .mb-10 {margin-bottom: 10px;}
 .mb-20{margin-bottom:20px;}
 .mb-30{margin-bottom:30px;}
@@ -606,34 +628,8 @@ ul{list-style: none;padding: 0;}
 
 #footer .copyright {text-align: center;font-size: 13px;}
 #footer a {color: #888;}
-
+/*bootstrap样式重写 end*/
 /*-----------------------------------------------------------------*/
-
-
-/*a标签不要下划线*/
-a {
-    text-decoration: none;
-    outline: none;
-}
-a:active {
-}
-a:visited {
-    color: #647891;
-}
-a:hover {
-    color: #4990e2;
-    text-decoration: none;
-}
-
-
-
-
-.left{
-    float: left;
-}
-.right{
-    float: right;
-}
 
 
 .box {
@@ -703,17 +699,6 @@ a:hover {
     margin-top: 5px;
     clear: both;
 }
-.recomm-first a{
-    font-size: 16px;
-    color: #022856;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block;
-}
-.recomm-first a:hover{
-    color: #4990e2;
-}
 .recomm-first p{
     font-size: 12px;
     height: 40px;
@@ -725,7 +710,6 @@ a:hover {
 
 /* 推荐新闻列表 */
 .recomm-list {
-
 }
 
 .recommnews-item.is-hot:before {
@@ -885,37 +869,3 @@ a:hover {
     font-size: 14px;
     color: #9B9B9B;
 }
-
-
-/*----问答页 start---*/
-/*margin-bottom*/
-.mb-5 {margin-bottom: 5px;}
-.mb-10 {margin-bottom: 10px;}
-.mb-20{margin-bottom:20px;}
-.mb-30{margin-bottom:30px;}
-.mb-40{margin-bottom:40px;}
-.mb-50{margin-bottom:50px;}
-
-.mt-10 {margin-top: 10px;}
-.mt-15 {margin-top: 15px;}
-.mt-20 {margin-top: 20px;}
-.mt-30 {margin-top: 30px;}
-.mt-40 {margin-top: 40px;}
-.mt-50 {margin-top: 50px;}
-.mt-60 {margin-top: 60px;}
-
-.ml5,.ml-5{margin-left:5px;}
-.ml10,.ml-10{margin-left:10px;}
-.ml15,.ml-15{margin-left:15px;}
-
-.mr-5{margin-right:5px;}
-.mr-10,.mr10{margin-right:10px;}
-.mr-20,.mr20{margin-right:20px;}
-.mr-30,.mr30{margin-right:30px;}
-.pt-30{padding-top: 30px;}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-/*----问答页 end---*/
