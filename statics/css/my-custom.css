@@ -1,5 +1,8 @@
 /* 自定义样式 */
 
+/*--my bootstrap--*/
+
+
 /*bootstrap样式重写*/
 .navbar-inverse{background-color:#2a8c70;border-color:#2b7a5c}
 .navbar-inverse .navbar-nav>li>a{color:#fff}
