@@ -65,6 +65,18 @@ https://www.oschina.net/question
 https://wenda.tipask.com/questions
 
 
+bbs
+http://www.yanshuo.me/  
+https://getyii.com/?tab=yii  
+https://simpleforum.org/  
+https://minapp.com/thread/?page=1  
+https://www.94cb.com/  
+https://www.admintwo.com/public_index  
+
+
+新闻
+
+
 
 
 

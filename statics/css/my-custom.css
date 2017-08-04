@@ -260,7 +260,8 @@ html{font-size:10px;-webkit-tap-highlight-color:transparent}
 body{font-family:-apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;font-size:14px;line-height:1.5;color:#333;background-color:#fff}
 
 button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
-a{color:#009a61;text-decoration:none}
+/*a{color:#009a61;text-decoration:none}*/
+a{color:#333;text-decoration:none}
 a:focus,a:hover{color:#004e31;text-decoration:underline;}
 ul{list-style: none;padding: 0;}
 .wrap{padding-bottom:30px;position:relative}
@@ -399,7 +400,7 @@ ul{list-style: none;padding: 0;}
 .widget-category{padding:15px 0;border: 1px solid #f0f5f3;border-radius: 4px;}
 .widget-category .list>li{float:left;position:relative;height:30px;line-height:30px;font-size:14px;margin:0 10px 10px 0}
 .widget-category .list a{display:block;padding:0 10px;border-radius:30px;text-decoration:none;border:1px solid #daecf5;}
-.widget-category .list a:hover{color:#004e31;}
+.widget-category .list a:hover{color:#004e31;border:1px solid #8aaa1b;}
 .widget-category .active a{background:#017e66;border-color:#017e66;color:#fff}
 .widget-category .active a:hover{color:#e3faf3}
 .widget-category .breadcrumb{padding:0 15px;margin-bottom:10px}
