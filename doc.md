@@ -71,12 +71,15 @@ https://getyii.com/?tab=yii
 https://simpleforum.org/  
 https://minapp.com/thread/?page=1  
 https://www.94cb.com/  
-https://www.admintwo.com/public_index  
+https://www.nowcoder.com/discuss  
 
 
 新闻
 
 
 
-
+.thread-list-item:hover
+{
+	background-color: #f7f7f7
+}
 
