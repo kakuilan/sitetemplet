@@ -915,3 +915,20 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     background: #FFF;
     color: #1abc9c
 }
+.bbs-recomm-box {
+}
+.bbs-recomm-box ul>li {
+    margin-bottom: 8px;
+}
+.bbs-recomm-box ul>li>a {
+    max-width: 225px;
+    margin-top: 5px;
+}
+
+
+/*文本截取*/
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

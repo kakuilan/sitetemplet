@@ -77,13 +77,6 @@ https://www.nowcoder.com/discuss
 https://community.qingcloud.com/category/4/%E5%AE%9E%E8%B7%B5%E5%88%86%E4%BA%AB  
 
 
-
 新闻
 
-
-
-.thread-list-item:hover
-{
-	background-color: #f7f7f7
-}
 

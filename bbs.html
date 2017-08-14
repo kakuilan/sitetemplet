@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta name="renderer" content="webkit">
-    <title>Bootstrap Template</title>
+    <title>轻论坛</title>
     <meta name="keywords" content="基本模板">
     <meta name="description" content="静态页面模板">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -43,10 +43,11 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/index.html">首页</a></li>
+                    <li><a href="/news.html">新闻</a></li>
                     <li class="active"><a href="/bbs.html">论坛</a></li>
                     <li><a href="/question.html">问答</a></li>
-                    <li><a href="#about">关于</a></li>
-                    <li><a href="#contact">联系</a></li>
+                    <li><a href="/about.html">关于</a></li>
+                    <li><a href="/contact.html">联系</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉多项<span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -99,8 +100,8 @@
 
                         <!--BBS排序切换-->
                         <ul class="nav nav-tabs mb-10">
-                            <li class="active"><a href="#">热门</a></li>
-                            <li><a href="#">最新</a></li>
+                            <li class="active"><a href="#">最新</a></li>
+                            <li><a href="#">热门</a></li>
                             <li><a href="#">优质</a></li>
                         </ul>
 
@@ -322,16 +323,80 @@
                         </div>
                         <!--列表分页 end-->
 
-
-
                     </div>
                     <!--页面左侧 end-->
 
                     <!--页面右侧 start-->
                     <div class="col-md-3 hidden-xs side">
+                        <div class="side-alert alert alert-warning">
+                            <p>今天，你有什么分享或吐槽呢？</p>
+                            <a href="https://wenda.tipask.com/question/create" class="btn btn-primary btn-block mt-10">立即发帖</a>
+                        </div>
+
+                        <div class="widget-box mt30 bbs-recomm-box">
+                            <h2 class="widget-box-title">
+                                推荐帖子
+                                <a href="https://wenda.tipask.com/users" title="更多">»</a>
+                            </h2>
+                            <ul class="list-unstyled">
+                                <li class="text-muted">
+                                    <img class="avatar-32" src="https://wenda.tipask.com/image/avatar/1_middle.jpg">
+                                    <a href="https://wenda.tipask.com/people/1" class="ellipsis pull-right">安卓、后台、Web，这三个开发岗，觉得哪个更有前途？</a>
+                                </li>
+                                <li class="text-muted">
+                                    <img class="avatar-32" src="https://wenda.tipask.com/image/avatar/1_middle.jpg">
+                                    <a href="https://wenda.tipask.com/people/1" class="ellipsis pull-right">安卓、后台、Web，这三个开发岗，觉得哪个更有前途？</a>
+                                </li>
+                                <li class="text-muted">
+                                    <img class="avatar-32" src="https://wenda.tipask.com/image/avatar/1_middle.jpg">
+                                    <a href="https://wenda.tipask.com/people/1" class="ellipsis pull-right">安卓、后台、Web，这三个开发岗，觉得哪个更有前途？</a>
+                                </li>
+                                <li class="text-muted">
+                                    <img class="avatar-32" src="https://wenda.tipask.com/image/avatar/1_middle.jpg">
+                                    <a href="https://wenda.tipask.com/people/1" class="ellipsis pull-right">安卓、后台、Web，这三个开发岗，觉得哪个更有前途？</a>
+                                </li>
+                                <li class="text-muted">
+                                    <img class="avatar-32" src="https://wenda.tipask.com/image/avatar/1_middle.jpg">
+                                    <a href="https://wenda.tipask.com/people/1" class="ellipsis pull-right">安卓、后台、Web，这三个开发岗，觉得哪个更有前途？</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="widget-box">
+                            <h2 class="h4 widget-box-title">热议话题 <a href="https://wenda.tipask.com/topics" title="更多">»</a></h2>
+                            <ul class="taglist-inline multi">
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/193">电影</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/35">程序安装</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/108">程序使用</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/39">编辑器</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/95">bug</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/33">tipask3.0</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/44">Tipask2.6</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/38">二次开发</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/638">bug反馈</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/54">tipask 3.0</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/100">功能建议</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/21">建议</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/29">数据库</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/75">程序开发</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/26">话题</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/189">模板</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/37">tipask</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/14">SEO</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/61">伪静态</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/64">安装</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/59">分类</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/200">图片上传</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/162">使用建议</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/76">安装出错</a></li>
+                                <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/1092">tipask 3.1</a></li>
+                            </ul>
+                        </div>
+
 
                     </div>
                     <!--页面右侧 end-->
+
 
                 </div>
             </div>
