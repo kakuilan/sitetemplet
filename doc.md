@@ -78,11 +78,23 @@ https://community.qingcloud.com/category/4/%E5%AE%9E%E8%B7%B5%E5%88%86%E4%BA%AB
 
 
 新闻
+http://www.thinksaas.cn/  
+http://www.chenruixuan.com/  
+http://blogread.cn/news/  
 
 
 博文
 https://www.textarea.com/?language=zh  
 https://www.dutype.com/top  
+
+
+编辑器  
+https://www.tinymce.com/  
+http://summernote.org/  
+http://simditor.tower.im/  
+http://kindeditor.net/demo.php  
+https://github.com/mindmup/bootstrap-wysiwyg/  
+http://www.wangeditor.com/  
 
 
 
