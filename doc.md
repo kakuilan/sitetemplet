@@ -80,3 +80,9 @@ https://community.qingcloud.com/category/4/%E5%AE%9E%E8%B7%B5%E5%88%86%E4%BA%AB
 新闻
 
 
+博文
+https://www.textarea.com/?language=zh  
+https://www.dutype.com/top  
+
+
+

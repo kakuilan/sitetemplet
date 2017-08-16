@@ -924,7 +924,9 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     max-width: 225px;
     margin-top: 5px;
 }
-
+.bbs-list li .small {
+    color: #BBB;
+}
 
 /*文本截取*/
 .ellipsis {
