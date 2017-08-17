@@ -81,6 +81,9 @@ https://community.qingcloud.com/category/4/%E5%AE%9E%E8%B7%B5%E5%88%86%E4%BA%AB
 http://www.thinksaas.cn/  
 http://www.chenruixuan.com/  
 http://blogread.cn/news/  
+https://juejin.im/#/  
+https://www.oschina.net/news  
+
 
 
 博文
