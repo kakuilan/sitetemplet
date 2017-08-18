@@ -934,3 +934,32 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/*新闻列表*/
+.news-list{
+
+}
+.news-list li .news-item {
+    padding: 10px 0px;
+}
+.news-list li .news-item .new-info {
+    margin: 8px 0;
+    max-height:38px;
+    color: #6a6a6a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news-list li .news-item .from {
+    color: #6a6a6a;
+}
+.news-list li .news-item .from .avatar{
+    overflow: hidden;
+    width: 24px;
+    min-width: 24px;
+    max-width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+.news-list li .news-item .new-thumb{
+    max-width: 150px;
+}
