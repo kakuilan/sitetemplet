@@ -963,3 +963,16 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .news-list li .news-item .new-thumb{
     max-width: 150px;
 }
+
+/*新闻列表右侧推荐*/
+.news-recomm-box {
+}
+.news-recomm-box ul>li {
+    margin-bottom: 8px;
+    word-wrap: break-word;
+    word-break: normal;
+}
+.news-recomm-box ul>li>a {
+    max-width: 225px;
+    margin-top: 5px;
+}
