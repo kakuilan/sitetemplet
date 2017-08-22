@@ -976,3 +976,31 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     max-width: 225px;
     margin-top: 5px;
 }
+
+/*动弹列表页*/
+.tweets-list{
+
+}
+.tweets-list li .tweet-content {
+    vertical-align: top;
+    line-height: 24px;
+    padding: 8px 5px;
+}
+.tweets-list li span{
+    color: #BBB;
+    margin-right: 8px;
+}
+.tweets-list li span i{
+    margin-right: 3px;
+}
+.tweets-list li span a{
+    color: #BBB;
+}
+.tweets-list li .tweet-content{
+
+}
+.tweets-list li .tweet-content .tweet-img {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+}

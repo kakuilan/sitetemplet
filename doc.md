@@ -101,3 +101,19 @@ http://www.wangeditor.com/
 
 
 
+.media——指定该元素包裹媒体对象组件；
+
+.media-left——设置媒体对象的多媒体内容居左；
+
+.media-right——设置媒体对象的多媒体内容居右；
+
+.media-middle——设置媒体对象的多媒体内容上下居中；
+
+.media-bottom——设置媒体对象的多媒体内容居底；
+
+.media-body——设置媒体对象的文本内容部分；
+
+.meida-heading——设置h4元素为文本内容的标题；
+
+.media-list——用来设置包裹媒体对象的列表元素；
+
