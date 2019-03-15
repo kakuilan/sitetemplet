@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="renderer" content="webkit">
+    <title>注册</title>
+    <meta name="keywords" content="基本模板">
+    <meta name="description" content="静态页面模板">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="/statics/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/statics/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="/statics/css/my-custom.css" />
+
+    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+    <!--[if lte IE 8]>
+    <script src="/statics/js/html5shiv.min.js"></script>
+    <script src="/statics/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<!--主容器 start-->
+<div class="main-wrap">
+
+    <!--固定导航栏 start-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-md hidden-lg" href="#">站点名称</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/index.html">首页</a></li>
+                    <li><a href="/news.html">新闻</a></li>
+                    <li><a href="/tweet.html">动弹</a></li>
+                    <li><a href="/question.html">问答</a></li>
+                    <li><a href="/bbs.html">论坛</a></li>
+                    <li><a href="/blog.html">博文</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/about.html">关于我们</a></li>
+                            <li><a href="/contact.html">联系我们</a></li>
+
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">使用指南</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="/register.html">注册</a></li>
+                    <li><a href="/login.html">登录</a></li>
+                    <li class="dropdown user-avatar">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="avatar-img">
+                                <img src="/statics/avatars/avatar.png" alt="用户中心">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/user.html"><i class="fa fa-user-circle fa-fw"></i>会员中心</a></li>
+                            <li><a href="#"><i class="fa fa-user-o fa-fw"></i>个人资料</a></li>
+                            <li><a href="#"><i class="fa fa-key fa-fw"></i>修改密码</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>退 出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!--固定导航栏 end-->
+
+    <!--页面容器 start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="user-section login-section">
+                    <div class="logon-tab clearfix"> <a href="/index/user/login.html">登 录</a> <a class="active">注 册</a> </div>
+                    <div class="login-main">
+                        <form name="form1" id="register-form" class="form-vertical nice-validator n-default n-bootstrap" method="POST" action="" novalidate="novalidate">
+                            <input type="hidden" name="invite_user_id" value="0">
+                            <input type="hidden" name="url" value="">
+                            <input type="hidden" name="__token__" value="b6a1d7146d6dc12d534bacdca0017c48">                <div class="form-group has-error">
+                            <label class="control-label required">邮箱<span class="text-success"></span></label>
+                            <div class="controls">
+                                <input type="text" name="email" id="email" class="form-control input-lg" placeholder="邮箱" aria-invalid="true"><span class="msg-box n-right" for="email"><span role="alert" class="msg-wrap n-error"><span class="n-icon"></span><span class="n-msg">邮箱不能为空</span></span></span>
+                                <p class="help-block"></p>
+                            </div>
+                        </div>
+                            <div class="form-group has-error">
+                                <label class="control-label">用户名</label>
+                                <div class="controls">
+                                    <input type="text" id="username" name="username" class="form-control input-lg" placeholder="用户名必须3-30个字符" aria-invalid="true"><span class="msg-box n-right" for="username"><span role="alert" class="msg-wrap n-error"><span class="n-icon"></span><span class="n-msg">用户名不能为空</span></span></span>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="form-group has-error">
+                                <label class="control-label">密码</label>
+                                <div class="controls">
+                                    <input type="password" id="password" name="password" class="form-control input-lg" placeholder="密码必须6-30个字符" aria-invalid="true"><span class="msg-box n-right" for="password"><span role="alert" class="msg-wrap n-error"><span class="n-icon"></span><span class="n-msg">密码不能为空</span></span></span>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="form-group has-error">
+                                <label class="control-label">手机号</label>
+                                <div class="controls">
+                                    <input type="text" id="mobile" name="mobile" class="form-control input-lg" placeholder="手机号" aria-invalid="true"><span class="msg-box n-right" for="mobile"><span role="alert" class="msg-wrap n-error"><span class="n-icon"></span><span class="n-msg">手机号不能为空</span></span></span>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="form-group has-error">
+                                <label class="control-label">验证码</label>
+                                <div class="controls">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" name="captcha" class="form-control" placeholder="验证码" aria-invalid="true">
+                                        <span class="input-group-addon" style="padding:0;border:none;">
+                                            <img src="/statics/images/test/test_24.jpg" width="140" height="42">
+                                        </span>
+                                    </div>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">注 册</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--页面容器 end-->
+
+    <!--页脚 end -->
+    <footer class="container hidden-xs">
+        <div id="footer">
+            <div class="panel panel-default text-muted">
+                <div class="panel-body">
+                    友情链接：
+                    <a href="#">百度</a>
+                    <a href="#">谷歌</a>
+                    <a href="#">搜搜</a>
+                </div>
+                <div class="panel-footer clearfix">
+                    <span>© LKK, all rights reserved.</span>
+                    <span>powered by Kserver</span>
+                    <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15005547号</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--页脚 start -->
+
+</div>
+<!--主容器 end-->
+
+<!-- basic scripts -->
+
+<!--[if !IE]> -->
+<script src="/statics/js/jquery-2.1.4.min.js"></script>
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script src="/statics/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    if('ontouchstart' in document.documentElement) document.write("<script src='/statics/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+</script>
+<script src="/statics/js/bootstrap.min.js"></script>
+
+</body>
+</html>
