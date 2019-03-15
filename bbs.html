@@ -38,35 +38,45 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand hidden-md hidden-lg" href="#">项目名称</a>
+                <a class="navbar-brand hidden-md hidden-lg" href="#">站点名称</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/index.html">首页</a></li>
                     <li><a href="/news.html">新闻</a></li>
-                    <li class="active"><a href="/bbs.html">论坛</a></li>
-                    <li><a href="/question.html">问答</a></li>
                     <li><a href="/tweet.html">动弹</a></li>
+                    <li><a href="/question.html">问答</a></li>
+                    <li class="active"><a href="/bbs.html">论坛</a></li>
                     <li><a href="/blog.html">博文</a></li>
-                    <li><a href="/about.html">关于</a></li>
-                    <li><a href="/contact.html">联系</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉多项<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            <li><a href="/about.html">关于我们</a></li>
+                            <li><a href="/contact.html">联系我们</a></li>
+
                             <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
+                            <li class="dropdown-header">使用指南</li>
                             <li><a href="#">Separated link</a></li>
                             <li><a href="#">One more separated link</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">默认</a></li>
-                    <li><a href="#">注册</a></li>
-                    <li><a href="#">登录</a></li>
+                    <li><a href="/register.html">注册</a></li>
+                    <li><a href="/login.html">登录</a></li>
+                    <li class="dropdown user-avatar">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="avatar-img">
+                                <img src="/statics/avatars/avatar.png" alt="用户中心">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/user.html"><i class="fa fa-user-circle fa-fw"></i>会员中心</a></li>
+                            <li><a href="#"><i class="fa fa-user-o fa-fw"></i>个人资料</a></li>
+                            <li><a href="#"><i class="fa fa-key fa-fw"></i>修改密码</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>退 出</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -111,7 +121,7 @@
                         <ul class="list-group bbs-list">
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="/member/admin">
-                                <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAwADADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAABQYHBAED/8QAMRAAAQMDAwEGBAYDAAAAAAAAAQIDBAAFEQYhMRIHEyJBUWEjgbHBFCQykaHRQlJx/8QAGQEAAgMBAAAAAAAAAAAAAAAABAUBAgYD/8QAIxEAAgIBAgYDAAAAAAAAAAAAAQIAAxEEMRITISJBUQUyYf/aAAwDAQACEQMRAD8AqUh5QbSQElSvPPFYojD02e3CbKVrdUAnOwrtqtt21DPDFsZ+GgeNZOEj2z60/wBm0czYVKky323n+WuobpP9+9FWWhB+xdVU1rZO0Aa1vbWjbO3ZY8Y986E9+42rxLWRsBtxxSxH1XfJLkdKo6lKS2kOLWTsr3PkSOed6A9o13vzmqpEZmStKtiEKwrpG+CM8cfSgtnvE2xJK71PQwwckkbrVn0zWctvZrTmaqulRQoUSoXeJEvkQd4Wo90CT3SwnAcOP0q/uplG76PPfjTgttbKilSDzmttx1bEc08uZEffSpLmG1vAY6h5ZHBx5HFEZMhq5xYV4UwO+fZwtY4XjbP2+VNdBrWB5TjfaJfkdGFXmjeXybMhWOAmLbY7baEjACABStcdRBxP5hShvkZ3+lA9dajRFjKeLhQpX6QTkgefH2qQ3PUM64XDoQXU+LBP+mBnfJ6c48hk1yd8bQhEGI59p1pfvr0W5WSSsXBPwujbpUP25+eKhmprddXNTJhX54ttxHkoU4CSFkAHpGPbfNWXTzjvSxmUtzqHUk4wc0uXTRGoLi9c50+Ktq2SZKnW3ifiZzsR6bbb0CMl8qMmMq2QLixsAQC1paC4swYknvJM5QVJ6HCAgJbylzB2JyQDjnfzFPJ64VqhW1pPwobQbBxur3JrwsMOPb2lJYaUtRAQp1w5UQPevC8sTkTA4JIDON054pvpaAnV94j1+sFx4a/rA141TNu7CZISlpJRlA6SrAzgYHqfWuW65wVpEdCIra0HxLS3n6nmpVf728meI9slrlR0KDgSpJBQcbJ+VYk3i4x0gux1pbTgKIVnHrQKjyYxMu0LUjMN5C5AaeQOF9G4+fntTxG7Q7XdLd+AektuR20hSEpUAf3I5/7/ABUK0nYLjqmJ+LgPnu8gYzjBFN0nsucg6Zfu7smOwiKnrkuyJJbSlH+RGAcn28+OahX4T2yWQMO6O1ruWmXLkhtcgBSz1pS+6EIVvtuAR7H7Vs7Qnrfem4km0ohKJCi4/GILa+MDbnBB3qI6CtT97uCJGlZT8xYz1RnnQ26ydvFnOCnfnY7cVYLhEkWuHHtq21KW2gZV1Ekk7n+SastfN1CXEnK59gdfY8we2lEr4AB1n//Z" alt="admin">
+                                <img class="img-circle" src="/statics/images/test/test_22.jpg" alt="admin">
                                 </a>
                                 <div class="media-body">
                                 <h5 class="media-heading"><a href="/t/632?ip=1">极简论坛Simple Forum v1.2 发布(1/13更新)</a></h5>
@@ -121,7 +131,7 @@
 
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="/member/admin">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAwADADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAABQYHBAED/8QAMRAAAQMDAwEGBAYDAAAAAAAAAQIDBAAFEQYhMRIHEyJBUWEjgbHBFCQykaHRQlJx/8QAGQEAAgMBAAAAAAAAAAAAAAAABAUBAgYD/8QAIxEAAgIBAgYDAAAAAAAAAAAAAQIAAxEEMRITISJBUQUyYf/aAAwDAQACEQMRAD8AqUh5QbSQElSvPPFYojD02e3CbKVrdUAnOwrtqtt21DPDFsZ+GgeNZOEj2z60/wBm0czYVKky323n+WuobpP9+9FWWhB+xdVU1rZO0Aa1vbWjbO3ZY8Y986E9+42rxLWRsBtxxSxH1XfJLkdKo6lKS2kOLWTsr3PkSOed6A9o13vzmqpEZmStKtiEKwrpG+CM8cfSgtnvE2xJK71PQwwckkbrVn0zWctvZrTmaqulRQoUSoXeJEvkQd4Wo90CT3SwnAcOP0q/uplG76PPfjTgttbKilSDzmttx1bEc08uZEffSpLmG1vAY6h5ZHBx5HFEZMhq5xYV4UwO+fZwtY4XjbP2+VNdBrWB5TjfaJfkdGFXmjeXybMhWOAmLbY7baEjACABStcdRBxP5hShvkZ3+lA9dajRFjKeLhQpX6QTkgefH2qQ3PUM64XDoQXU+LBP+mBnfJ6c48hk1yd8bQhEGI59p1pfvr0W5WSSsXBPwujbpUP25+eKhmprddXNTJhX54ttxHkoU4CSFkAHpGPbfNWXTzjvSxmUtzqHUk4wc0uXTRGoLi9c50+Ktq2SZKnW3ifiZzsR6bbb0CMl8qMmMq2QLixsAQC1paC4swYknvJM5QVJ6HCAgJbylzB2JyQDjnfzFPJ64VqhW1pPwobQbBxur3JrwsMOPb2lJYaUtRAQp1w5UQPevC8sTkTA4JIDON054pvpaAnV94j1+sFx4a/rA141TNu7CZISlpJRlA6SrAzgYHqfWuW65wVpEdCIra0HxLS3n6nmpVf728meI9slrlR0KDgSpJBQcbJ+VYk3i4x0gux1pbTgKIVnHrQKjyYxMu0LUjMN5C5AaeQOF9G4+fntTxG7Q7XdLd+AektuR20hSEpUAf3I5/7/ABUK0nYLjqmJ+LgPnu8gYzjBFN0nsucg6Zfu7smOwiKnrkuyJJbSlH+RGAcn28+OahX4T2yWQMO6O1ruWmXLkhtcgBSz1pS+6EIVvtuAR7H7Vs7Qnrfem4km0ohKJCi4/GILa+MDbnBB3qI6CtT97uCJGlZT8xYz1RnnQ26ydvFnOCnfnY7cVYLhEkWuHHtq21KW2gZV1Ekk7n+SastfN1CXEnK59gdfY8we2lEr4AB1n//Z" alt="admin">
+                                    <img class="img-circle" src="/statics/images/test/test_22.jpg" alt="admin">
                                 </a>
                                 <div class="media-body">
                                 <h5 class="media-heading"><a href="/t/84?ip=1">极简论坛Simple Forum 介绍及帮助文档</a></h5>
@@ -141,7 +151,7 @@
 
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading"><a href="#">列表页如何实现显示文章内容概要和文章内图片作为缩略图</a></h5>
@@ -163,7 +173,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading"><a href="#">列表页如何实现显示文章内容概要和文章内图片作为缩略图</a></h5>
@@ -185,7 +195,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading"><a href="#">列表页如何实现显示文章内容概要和文章内图片作为缩略图</a></h5>
@@ -207,7 +217,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading"><a href="#">列表页如何实现显示文章内容概要和文章内图片作为缩略图</a></h5>
@@ -229,7 +239,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading"><a href="#">列表页如何实现显示文章内容概要和文章内图片作为缩略图</a></h5>
@@ -251,7 +261,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading"><a href="#">列表页如何实现显示文章内容概要和文章内图片作为缩略图</a></h5>
@@ -273,7 +283,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading"><a href="#">列表页如何实现显示文章内容概要和文章内图片作为缩略图</a></h5>
@@ -295,7 +305,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading"><a href="#">列表页如何实现显示文章内容概要和文章内图片作为缩略图</a></h5>
@@ -342,23 +352,23 @@
                             </h2>
                             <ul class="list-unstyled">
                                 <li class="text-muted">
-                                    <img class="avatar-32" src="https://wenda.tipask.com/image/avatar/1_middle.jpg">
+                                    <img class="avatar-32" src="/statics/images/test/test_23.jpg">
                                     <a href="https://wenda.tipask.com/people/1" class="ellipsis pull-right">安卓、后台、Web，这三个开发岗，觉得哪个更有前途？</a>
                                 </li>
                                 <li class="text-muted">
-                                    <img class="avatar-32" src="https://wenda.tipask.com/image/avatar/1_middle.jpg">
+                                    <img class="avatar-32" src="/statics/images/test/test_23.jpg">
                                     <a href="https://wenda.tipask.com/people/1" class="ellipsis pull-right">安卓、后台、Web，这三个开发岗，觉得哪个更有前途？</a>
                                 </li>
                                 <li class="text-muted">
-                                    <img class="avatar-32" src="https://wenda.tipask.com/image/avatar/1_middle.jpg">
+                                    <img class="avatar-32" src="/statics/images/test/test_23.jpg">
                                     <a href="https://wenda.tipask.com/people/1" class="ellipsis pull-right">安卓、后台、Web，这三个开发岗，觉得哪个更有前途？</a>
                                 </li>
                                 <li class="text-muted">
-                                    <img class="avatar-32" src="https://wenda.tipask.com/image/avatar/1_middle.jpg">
+                                    <img class="avatar-32" src="/statics/images/test/test_23.jpg">
                                     <a href="https://wenda.tipask.com/people/1" class="ellipsis pull-right">安卓、后台、Web，这三个开发岗，觉得哪个更有前途？</a>
                                 </li>
                                 <li class="text-muted">
-                                    <img class="avatar-32" src="https://wenda.tipask.com/image/avatar/1_middle.jpg">
+                                    <img class="avatar-32" src="/statics/images/test/test_23.jpg">
                                     <a href="https://wenda.tipask.com/people/1" class="ellipsis pull-right">安卓、后台、Web，这三个开发岗，觉得哪个更有前途？</a>
                                 </li>
                             </ul>
@@ -408,14 +418,21 @@
     <!--页面容器 end-->
 
     <!--页脚 end -->
-    <footer class="container hidden-xs" id="footer">
-        <div class="panel panel-default text-muted">
-            <div class="panel-body">
-            </div>
-            <div class="panel-footer clearfix">
-                © 2017 LKK, all rights reserved.
-                &nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn/" rel="nofollow">沪ICP备15005547号</a>
-                &nbsp;&nbsp;powered by Kserver
+    <footer class="container hidden-xs">
+        <div id="footer">
+            <div class="panel panel-default text-muted">
+                <div class="panel-body">
+                    友情链接：
+                    <a href="#">百度</a>
+                    <a href="#">谷歌</a>
+                    <a href="#">搜搜</a>
+                </div>
+                <div class="panel-footer clearfix">
+                    <span>© LKK, all rights reserved.</span>
+                    <span>powered by Kserver</span>
+                    <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15005547号</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
             </div>
         </div>
     </footer>

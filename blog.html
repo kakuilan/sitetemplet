@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta name="renderer" content="webkit">
-    <title>新闻资讯</title>
+    <title>博文</title>
     <meta name="keywords" content="基本模板">
     <meta name="description" content="静态页面模板">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -43,11 +43,11 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/index.html">首页</a></li>
-                    <li class="active"><a href="/news.html">新闻</a></li>
+                    <li><a href="/news.html">新闻</a></li>
                     <li><a href="/tweet.html">动弹</a></li>
                     <li><a href="/question.html">问答</a></li>
                     <li><a href="/bbs.html">论坛</a></li>
-                    <li><a href="/blog.html">博文</a></li>
+                    <li class="active"><a href="/blog.html">博文</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于<span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -96,25 +96,40 @@
                     </div>
 
                     <!--页面左侧 start-->
-                    <div class="col-xs-12 col-md-9 col-sm-12">
-                        <!--新闻分类tag-->
-                        <div class="widget-category clearfix mb-5">
-                            <div class="col-sm-12">
-                                <ul class="list">
-                                    <li class="active"><a href="#">灵山要闻</a></li>
-                                    <li><a href="#">综合资讯</a></li>
-                                    <li><a href="#">网友爆料</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-md-1 hidden-xs side cate-menu">
+                        <a class="all" href="#">全部</a>
+                        <ul>
+                            <h4>前沿技术</h4>
+                            <li><a href="#" class="active">人工技能</a></li>
+                            <li><a href="#">大数据</a></li>
+                            <li><a>云计算</a></li>
+                            <li><a>区块链</a></li>
+                        </ul>
+                        <ul>
+                            <h4>开发领域</h4>
+                            <li><a>移动开发</a></li>
+                            <li><a>前端开发</a></li>
+                            <li><a>游戏开发</a></li>
+                            <li><a>企业开发</a></li>
+                        </ul>
+                    </div>
+                    <!--页面左侧 end-->
 
-                        <!--新闻排序切换-->
+                    <!--页面中间 start-->
+                    <div class="col-xs-12 col-md-8 col-sm-12">
+                        <ol class="breadcrumb">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">博文</a></li>
+                            <li class="active">人工技能</li>
+                        </ol>
+
                         <ul class="nav nav-tabs mb-10">
-                            <li class="active"><a href="#">最新</a></li>
-                            <li><a href="#">热门</a></li>
+                            <li class="active"><a href="#">最新推荐</a></li>
+                            <li><a href="#">最新发表</a></li>
+                            <li><a href="#">精彩文章</a></li>
                         </ul>
 
-                        <!--bbs列表 start-->
+                        <!--文章列表 start -->
                         <ul class="list-group news-list">
                             <li class="list-group-item media">
                                 <div class="media-body news-item">
@@ -128,6 +143,9 @@
                                                 <img src="/statics/images/test/test_17.jpeg" class="avatar img-circle">
                                             </a>
                                             <span><a href="#">bboss</a> 发布于 2017-08-18</span>
+                                            <span><i class="fa fa-eye" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-comment-o" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-heart-o" aria-hidden="true"></i>255</span>
                                         </div>
                                     </div>
                                     <div class="media-right new-thumb hidden-xs">
@@ -146,6 +164,9 @@
                                                 <img src="/statics/images/test/test_17.jpeg" class="avatar img-circle">
                                             </a>
                                             <span><a href="#">bboss</a> 发布于 2017-08-18</span>
+                                            <span><i class="fa fa-eye" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-comment-o" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-heart-o" aria-hidden="true"></i>255</span>
                                         </div>
                                     </div>
                                     <div class="media-right new-thumb hidden-xs">
@@ -167,6 +188,9 @@
                                                 <img src="/statics/images/test/test_17.jpeg" class="avatar img-circle">
                                             </a>
                                             <span><a href="#">bboss</a> 发布于 2017-08-18</span>
+                                            <span><i class="fa fa-eye" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-comment-o" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-heart-o" aria-hidden="true"></i>255</span>
                                         </div>
                                     </div>
                                     <div class="media-right new-thumb hidden-xs">
@@ -188,6 +212,9 @@
                                                 <img src="/statics/images/test/test_17.jpeg" class="avatar img-circle">
                                             </a>
                                             <span><a href="#">bboss</a> 发布于 2017-08-18</span>
+                                            <span><i class="fa fa-eye" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-comment-o" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-heart-o" aria-hidden="true"></i>255</span>
                                         </div>
                                     </div>
                                     <div class="media-right new-thumb hidden-xs">
@@ -209,6 +236,9 @@
                                                 <img src="/statics/images/test/test_17.jpeg" class="avatar img-circle">
                                             </a>
                                             <span><a href="#">bboss</a> 发布于 2017-08-18</span>
+                                            <span><i class="fa fa-eye" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-comment-o" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-heart-o" aria-hidden="true"></i>255</span>
                                         </div>
                                     </div>
                                     <div class="media-right new-thumb hidden-xs">
@@ -230,6 +260,9 @@
                                                 <img src="/statics/images/test/test_17.jpeg" class="avatar img-circle">
                                             </a>
                                             <span><a href="#">bboss</a> 发布于 2017-08-18</span>
+                                            <span><i class="fa fa-eye" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-comment-o" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-heart-o" aria-hidden="true"></i>255</span>
                                         </div>
                                     </div>
                                     <div class="media-right new-thumb hidden-xs">
@@ -251,6 +284,9 @@
                                                 <img src="/statics/images/test/test_17.jpeg" class="avatar img-circle">
                                             </a>
                                             <span><a href="#">bboss</a> 发布于 2017-08-18</span>
+                                            <span><i class="fa fa-eye" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-comment-o" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-heart-o" aria-hidden="true"></i>255</span>
                                         </div>
                                     </div>
                                     <div class="media-right new-thumb hidden-xs">
@@ -272,6 +308,9 @@
                                                 <img src="/statics/images/test/test_17.jpeg" class="avatar img-circle">
                                             </a>
                                             <span><a href="#">bboss</a> 发布于 2017-08-18</span>
+                                            <span><i class="fa fa-eye" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-comment-o" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-heart-o" aria-hidden="true"></i>255</span>
                                         </div>
                                     </div>
                                     <div class="media-right new-thumb hidden-xs">
@@ -293,6 +332,9 @@
                                                 <img src="/statics/images/test/test_17.jpeg" class="avatar img-circle">
                                             </a>
                                             <span><a href="#">bboss</a> 发布于 2017-08-18</span>
+                                            <span><i class="fa fa-eye" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-comment-o" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-heart-o" aria-hidden="true"></i>255</span>
                                         </div>
                                     </div>
                                     <div class="media-right new-thumb hidden-xs">
@@ -314,6 +356,9 @@
                                                 <img src="/statics/images/test/test_17.jpeg" class="avatar img-circle">
                                             </a>
                                             <span><a href="#">bboss</a> 发布于 2017-08-18</span>
+                                            <span><i class="fa fa-eye" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-comment-o" aria-hidden="true"></i>255</span>
+                                            <span><i class="fa fa-heart-o" aria-hidden="true"></i>255</span>
                                         </div>
                                     </div>
                                     <div class="media-right new-thumb hidden-xs">
@@ -323,92 +368,101 @@
                                     </div>
                                 </div>
                             </li>
-
                         </ul>
-                        <!--bbs列表 end-->
-
-                        <!--列表分页 start-->
-                        <div class="text-center">
-                            <ul class="pagination"><li class="disabled"><span>«</span></li> <li class="active"><span>1</span></li><li><a href="https://wenda.tipask.com/questions/all?page=2">2</a></li><li><a href="https://wenda.tipask.com/questions/all?page=3">3</a></li><li><a href="https://wenda.tipask.com/questions/all?page=4">4</a></li><li><a href="https://wenda.tipask.com/questions/all?page=5">5</a></li><li><a href="https://wenda.tipask.com/questions/all?page=6">6</a></li><li><a href="https://wenda.tipask.com/questions/all?page=7">7</a></li><li><a href="https://wenda.tipask.com/questions/all?page=8">8</a></li><li class="disabled"><span>...</span></li><li><a href="https://wenda.tipask.com/questions/all?page=44">44</a></li><li><a href="https://wenda.tipask.com/questions/all?page=45">45</a></li> <li><a href="https://wenda.tipask.com/questions/all?page=2" rel="next">»</a></li></ul>
-                        </div>
-                        <!--列表分页 end-->
-
+                        <!--文章列表 end -->
                     </div>
-                    <!--页面左侧 end-->
+                    <!--页面中间 end-->
 
                     <!--页面右侧 start-->
                     <div class="col-md-3 hidden-xs side">
                         <div class="side-alert alert alert-warning">
-                            <p>今天，你遇到了什么新鲜事呢？</p>
-                            <a href="https://wenda.tipask.com/question/create" class="btn btn-primary btn-block mt-10">立即爆料</a>
+                            <p>今天，你有什么文章需要分享呢？</p>
+                            <a href="https://wenda.tipask.com/question/create" class="btn btn-primary btn-block mt-10">立即撰写</a>
                         </div>
 
-                        <div class="widget-box mt30 news-recomm-box">
+                        <div class="widget-box">
                             <h2 class="widget-box-title">
-                                热门资讯
+                                推荐作者
                                 <a href="https://wenda.tipask.com/users" title="更多">»</a>
                             </h2>
                             <ul class="list-unstyled">
-                                <li class="text-justify">
-                                    <a href="https://wenda.tipask.com/people/1">Xshell 多版本存在后门，或上传用户服务器账号密码</a>
-                                    <span class="text-muted clearfix">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        2017-08-14
-                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
-                                        64
-                                    </span>
+                                <li class="media  widget-user-item ">
+                                    <a href="#" class="user-card pull-left" target="_blank">
+                                        <img class="avatar-50" src="/statics/images/test/test_19.jpg" alt="sdf_sky">
+                                    </a>
+                                    <div class="media-object">
+                                        <strong><a href="#">sdf_sky</a></strong>
+                                        <p class="text-muted"> 34 篇文章，1907 次访问</p>
+                                    </div>
                                 </li>
-                                <li class="text-justify">
-                                    <a href="https://wenda.tipask.com/people/1">Go 语言如果按这样改进，能不能火过 Java？</a>
-                                    <span class="text-muted clearfix">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        2017-08-14
-                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
-                                        64
-                                    </span>
+                                <li class="media  widget-user-item ">
+                                    <a href="#" class="user-card pull-left" target="_blank">
+                                        <img class="avatar-50" src="/statics/images/test/test_20.jpg" alt="sdf_sky">
+                                    </a>
+                                    <div class="media-object">
+                                        <strong><a href="#">sdf_sky</a></strong>
+                                        <p class="text-muted"> 34 篇文章，1907 次访问</p>
+                                    </div>
                                 </li>
-                                <li class="text-justify">
-                                    <a href="https://wenda.tipask.com/people/1">Mybatis 通用 Mapper 3.4.3 发布</a>
-                                    <span class="text-muted clearfix">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        2017-08-14
-                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
-                                        64
-                                    </span>
+                                <li class="media  widget-user-item ">
+                                    <a href="#" class="user-card pull-left" target="_blank">
+                                        <img class="avatar-50" src="/statics/images/test/test_21.jpg" alt="sdf_sky">
+                                    </a>
+                                    <div class="media-object">
+                                        <strong><a href="#">sdf_sky</a></strong>
+                                        <p class="text-muted"> 34 篇文章，1907 次访问</p>
+                                    </div>
                                 </li>
-                                <li class="text-justify">
-                                    <a href="https://wenda.tipask.com/people/1">Xshell 多版本存在后门，或上传用户服务器账号密码</a>
-                                    <span class="text-muted clearfix">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        2017-08-14
-                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
-                                        64
-                                    </span>
+                                <li class="media  widget-user-item ">
+                                    <a href="#" class="user-card pull-left" target="_blank">
+                                        <img class="avatar-50" src="/statics/images/test/test_22.jpg" alt="sdf_sky">
+                                    </a>
+                                    <div class="media-object">
+                                        <strong><a href="#">sdf_sky</a></strong>
+                                        <p class="text-muted"> 34 篇文章，1907 次访问</p>
+                                    </div>
                                 </li>
-                                <li class="text-justify">
-                                    <a href="https://wenda.tipask.com/people/1">Xshell 多版本存在后门，或上传用户服务器账号密码</a>
-                                    <span class="text-muted clearfix">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        2017-08-14
-                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
-                                        64
-                                    </span>
+                                <li class="media  widget-user-item ">
+                                    <a href="#" class="user-card pull-left" target="_blank">
+                                        <img class="avatar-50" src="/statics/images/test/test_23.jpg" alt="sdf_sky">
+                                    </a>
+                                    <div class="media-object">
+                                        <strong><a href="#">sdf_sky</a></strong>
+                                        <p class="text-muted"> 34 篇文章，1907 次访问</p>
+                                    </div>
                                 </li>
-                                <li class="text-justify">
-                                    <a href="https://wenda.tipask.com/people/1">Xshell 多版本存在后门，或上传用户服务器账号密码</a>
-                                    <span class="text-muted clearfix">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        2017-08-14
-                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
-                                        64
-                                    </span>
+                                <li class="media  widget-user-item ">
+                                    <a href="#" class="user-card pull-left" target="_blank">
+                                        <img class="avatar-50" src="/statics/images/test/test_19.jpg" alt="sdf_sky">
+                                    </a>
+                                    <div class="media-object">
+                                        <strong><a href="#">sdf_sky</a></strong>
+                                        <p class="text-muted"> 34 篇文章，1907 次访问</p>
+                                    </div>
                                 </li>
-
+                                <li class="media  widget-user-item ">
+                                    <a href="#" class="user-card pull-left" target="_blank">
+                                        <img class="avatar-50" src="/statics/images/test/test_20.jpg" alt="sdf_sky">
+                                    </a>
+                                    <div class="media-object">
+                                        <strong><a href="#">sdf_sky</a></strong>
+                                        <p class="text-muted"> 34 篇文章，1907 次访问</p>
+                                    </div>
+                                </li>
+                                <li class="media  widget-user-item ">
+                                    <a href="#" class="user-card pull-left" target="_blank">
+                                        <img class="avatar-50" src="/statics/images/test/test_21.jpg" alt="sdf_sky">
+                                    </a>
+                                    <div class="media-object">
+                                        <strong><a href="#">sdf_sky</a></strong>
+                                        <p class="text-muted"> 34 篇文章，1907 次访问</p>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
 
                         <div class="widget-box">
-                            <h2 class="h4 widget-box-title">热议话题 <a href="https://wenda.tipask.com/topics" title="更多">»</a></h2>
+                            <h2 class="h4 widget-box-title">热门标签 <a href="https://wenda.tipask.com/topics" title="更多">»</a></h2>
                             <ul class="taglist-inline multi">
                                 <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/193">电影</a></li>
                                 <li class="tagPopup"><a class="tag" data-toggle="popover" href="https://wenda.tipask.com/topic/35">程序安装</a></li>
@@ -441,7 +495,6 @@
 
                     </div>
                     <!--页面右侧 end-->
-
 
                 </div>
             </div>

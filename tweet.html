@@ -38,35 +38,45 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand hidden-md hidden-lg" href="#">项目名称</a>
+                <a class="navbar-brand hidden-md hidden-lg" href="#">站点名称</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/index.html">首页</a></li>
                     <li><a href="/news.html">新闻</a></li>
-                    <li><a href="/bbs.html">论坛</a></li>
-                    <li><a href="/question.html">问答</a></li>
                     <li class="active"><a href="/tweet.html">动弹</a></li>
+                    <li><a href="/question.html">问答</a></li>
+                    <li><a href="/bbs.html">论坛</a></li>
                     <li><a href="/blog.html">博文</a></li>
-                    <li><a href="/about.html">关于</a></li>
-                    <li><a href="/contact.html">联系</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉多项<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            <li><a href="/about.html">关于我们</a></li>
+                            <li><a href="/contact.html">联系我们</a></li>
+
                             <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
+                            <li class="dropdown-header">使用指南</li>
                             <li><a href="#">Separated link</a></li>
                             <li><a href="#">One more separated link</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">默认</a></li>
-                    <li><a href="#">注册</a></li>
-                    <li><a href="#">登录</a></li>
+                    <li><a href="/register.html">注册</a></li>
+                    <li><a href="/login.html">登录</a></li>
+                    <li class="dropdown user-avatar">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="avatar-img">
+                                <img src="/statics/avatars/avatar.png" alt="用户中心">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/user.html"><i class="fa fa-user-circle fa-fw"></i>会员中心</a></li>
+                            <li><a href="#"><i class="fa fa-user-o fa-fw"></i>个人资料</a></li>
+                            <li><a href="#"><i class="fa fa-key fa-fw"></i>修改密码</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>退 出</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -96,7 +106,7 @@
                         <ul class="list-group tweets-list">
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -119,7 +129,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -149,7 +159,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -172,7 +182,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -202,7 +212,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -225,7 +235,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -255,7 +265,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -278,7 +288,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -308,7 +318,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -331,7 +341,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -382,7 +392,7 @@
                         <ul class="list-group tweets-list">
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -403,7 +413,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -431,7 +441,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -452,7 +462,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -480,7 +490,7 @@
                             </li>
                             <li class="list-group-item media">
                                 <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAwADADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAYBBQIDBAf/xAAuEAACAQMCBQMDAwUAAAAAAAABAgMABBEFEgYTITFBIlGBYXGRIyRDUmKCoeH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACERAAICAgIBBQAAAAAAAAAAAAABAhIDERMhMUFRgZGh/9oADAMBAAIRAxEAPwD1+iq7VtTOnxxpFGJLmYkRqTgADux+gyPkgVRR6trSRm+BW4tRIIzujVEc5xhCPUOvTJyM4+pBc0vJGGGU1tDdRS+kepXn6t3fSQA9RBbYUL/kRuJ/H2FbOTfW/rtb+RyP4rnDo3zjcPvk/Y11g8D9y8opZfUNWf8AcSubWDmcv0RrJHG3TAck7j3xkYGfybfTr57kywXCLHdQ43hT6WU5wy/Q4PTwQR9SFNPwCeGUFtlRxfA/LtbxWwse+Fz/AEiQDDZ8YKr+ftWV1q1rezxM2LeysYuZIsg2hHxjB8ekeR09VMUsUc0TxSorxuCrKwyGB7gilPUtEisHmC2sk2l3K4miTLmM9j06naQB27Y9uyyh3YvgyqtGRxFxXZcPabFdODcPOSIY0ON+O5z4AqOH+LLLXdJmvyptRATzlkbonTOd3kUn8Z6KNXi08cP8ieG0jaI28Ug3R9Qc4J/7XTwbpD6TYXVvxAsFtBcBgIZ5FBk3bc9M/wBv+6S0ra9Dfw4uG2+/36H2DUIbWcyBTPb3iEbUXdukA6D5GQSenpFaeGomeS6uyQU2x2ysOoflg5bPkZYj4rnsdIgvEt7eOCWLSbXJRGzGZGIIAA6HbgtnPfI7imWKKOCJIokWONAFVVGAB7AU8Id2MGfKlGiM6hiQpIUsfYeamiqmMWpRPp3Ey6sdPnuYZEIeNV3lWAAGMeMD4Ofetm+fU+Ik1JbCe3ghQYR12FnIYHv4APXHcke1MNFLUtzOuvghSSoJUqfY1NFFMQP/2Q==" alt="Roogle">
+                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="media-heading">
@@ -553,14 +563,21 @@
     <!--页面容器 end-->
 
     <!--页脚 end -->
-    <footer class="container hidden-xs" id="footer">
-        <div class="panel panel-default text-muted">
-            <div class="panel-body">
-            </div>
-            <div class="panel-footer clearfix">
-                © 2017 LKK, all rights reserved.
-                &nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn/" rel="nofollow">沪ICP备15005547号</a>
-                &nbsp;&nbsp;powered by Kserver
+    <footer class="container hidden-xs">
+        <div id="footer">
+            <div class="panel panel-default text-muted">
+                <div class="panel-body">
+                    友情链接：
+                    <a href="#">百度</a>
+                    <a href="#">谷歌</a>
+                    <a href="#">搜搜</a>
+                </div>
+                <div class="panel-footer clearfix">
+                    <span>© LKK, all rights reserved.</span>
+                    <span>powered by Kserver</span>
+                    <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15005547号</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
             </div>
         </div>
     </footer>

@@ -14,7 +14,7 @@ http://www.ghostchina.com/
 
 http://gum29.com/
 
-
+https://www.tipask.com/ (主要)
 -------------------
 ##bootstrap 工具
 
@@ -116,4 +116,13 @@ http://www.wangeditor.com/
 .meida-heading——设置h4元素为文本内容的标题；
 
 .media-list——用来设置包裹媒体对象的列表元素；
+
+
+TODO:
+- 新闻/文章详情页
+- 帖子详情页
+- 动弹详情页
+- 问题详情页
+- 
+
 
