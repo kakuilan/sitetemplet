@@ -461,6 +461,7 @@ ul{list-style: none;padding: 0;}
 .widget-user{border:1px solid #eee;padding: 15px;}
 .widget-user .media-heading{font-size: 16px;font-weight: 700;}
 .widget-user p{padding: 0;margin: 0;}
+.widget-user p span{padding-right: 2px;}
 
 .widget-user-item {border: none; margin-top: 0;}
 .widget-relation{padding:10px;border-top:1px solid #ddd;border-bottom:1px solid #eee; }
@@ -791,7 +792,7 @@ ul{list-style: none;padding: 0;}
 
 /* 全局广告类 */
 .kggs{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: block;
 }
 
@@ -1228,6 +1229,33 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .user-baseinfo .ui-content h4 {
     font-size: 15px;
 }
+
+/*内容(新闻、文章)详情*/
+.content-main {
+
+}
+.content-main .title {
+    margin: 0 0 10px;
+}
+.content-main .quote {
+    padding: 25px;
+    background: #f3f5f9;
+    line-height: 24px;
+    overflow: hidden;
+}
+.content-main .text-fmt {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+.content .author span {
+    margin-right: 10px;
+    color: #777;
+}
+
+
+
 
 
 

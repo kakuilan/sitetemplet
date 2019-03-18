@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="renderer" content="webkit">
+    <title>文章详情</title>
+    <meta name="keywords" content="基本模板">
+    <meta name="description" content="静态页面模板">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="/statics/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/statics/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="/statics/css/my-custom.css" />
+
+    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+    <!--[if lte IE 8]>
+    <script src="/statics/js/html5shiv.min.js"></script>
+    <script src="/statics/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<!--主容器 start-->
+<div class="main-wrap">
+
+    <!--固定导航栏 start-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-md hidden-lg" href="#">站点名称</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/index.html">首页</a></li>
+                    <li><a href="/news.html">新闻</a></li>
+                    <li><a href="/tweet.html">动弹</a></li>
+                    <li><a href="/question.html">问答</a></li>
+                    <li><a href="/bbs.html">论坛</a></li>
+                    <li><a href="/blog.html">博文</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/about.html">关于我们</a></li>
+                            <li><a href="/contact.html">联系我们</a></li>
+
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">使用指南</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/register.html">注册</a></li>
+                    <li><a href="/login.html">登录</a></li>
+                    <li class="dropdown user-avatar">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="avatar-img">
+                                <img src="/statics/avatars/avatar.png" alt="用户中心">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/user.html"><i class="fa fa-user-circle fa-fw"></i>会员中心</a></li>
+                            <li><a href="#"><i class="fa fa-user-o fa-fw"></i>个人资料</a></li>
+                            <li><a href="#"><i class="fa fa-hand-pointer-o fa-fw"></i>每日签到</a></li>
+                            <li><a href="#"><i class="fa fa-key fa-fw"></i>修改密码</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>退 出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!--固定导航栏 end-->
+
+    <!--页面容器 start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="row">
+
+                    <!--左侧 start-->
+                    <div class="col-xs-12 col-md-9">
+                        <ol class="breadcrumb">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">博文</a></li>
+                            <li class="active">乡愁</li>
+                        </ol>
+
+                        <div class="content-main">
+                            <!--标题-->
+                            <h3 class="title">Tipask3.3.1 发布 release 20180601</h3>
+
+                            <!--标签-->
+                            <ul class="taglist-inline">
+                                <li class="tagPopup"><a class="tag" href="#">程序发布</a></li>
+                                <li class="tagPopup"><a class="tag" href="#">话语</a></li>
+                            </ul>
+
+                            <div class="content mt-10">
+                                <div class="author mb-10">
+                                    <span>作者：阿萨法</span>
+                                    <span>编辑：阿萨法</span>
+                                </div>
+
+                                <!--摘要-->
+                                <div class="quote mb-20">
+                                    加入了签到功能、极验验证、图片水印等功能，修改了部分bug,快来升级吧！
+                                </div>
+
+                                <!--正文-->
+                                <div class="text-fmt">
+                                    Abc is a community of start-ups, designers, developers and creative people.
+                                    <br>
+                                    <br>Abc 是创意工作者们的社区。这里目前汇聚了超过 250,000 名主要来自互联网行业、游戏行业和媒体行业的创意工作者。Abc 希望能够成为创意工作者们的生活和事业的一部分。
+                                    <br>
+                                    <br>希望大家能够多多分享自己正在做的有趣事物、交流想法，在这里找到朋友甚至新的机会。并且，最重要的是，在这一切的过程中，保持对他人的友善。
+                                    <br>
+                                    <br>为了保持这里的良好氛围，Abc 有自己的明确规则：
+                                    <br>
+                                    <br>• 这里绝对不讨论任何有关盗版软件、音乐、电影如何获得的问题
+                                    <br>• 这里绝对不会全文转载任何文章，而只会以链接方式分享<sup>1</sup>
+                                    <br>• 这里绝对不会有任何教人如何钻空子的讨论
+                                    <br>• 这里感激和崇尚美的事物
+                                    <br>• 这里尊重原创
+                                    <br>• 这里反对中文互联网上的无信息量习惯如“顶”，“沙发”，“前排”，“留名”，“路过”，“不明觉厉”
+                                    <br>• 这里禁止发布人身攻击、仇恨、暴力、侮辱性的言辞、暴露他人隐私的“人肉贴”
+                                    <br>• 遵守中国的法律
+                                    <br>
+                                    <br>Abc is powered by Cloud Community Software - Project Babel 3
+                                    <br>
+                                    <br>为了获得访问 Abc 的最佳体验，我们推荐使用 <a href="http://chrome.google.com/" target="_blank">Google Chrome</a> 或 <a href="http://www.getfirefox.com/" target="_blank">Mozilla Firefox</a> 浏览器。
+                                    <div class="sep20"></div>
+                                    <span class="f12">1. Abc 不反对文章的原作者自己全文转载自己写的原创文章</span>
+                                </div>
+
+                                <!--底部信息-->
+                                <div class="post-opt mt-30">
+                                    <ul class="list-inline text-muted">
+                                        <li>
+                                            <i class="fa fa-clock-o"></i>
+                                            <a href="#" class="author">Abc</a> 发表于 2018-11-13 17:06
+                                        </li>
+                                        <li>阅读 ( <span>3</span> )</li>
+                                        <li>分类：<a href="http://ask.loc/articles/default" target="_blank">默认分类</a>
+                                        </li>
+                                        <li><a href="http://ask.loc/article/edit/3" class="edit" data-toggle="tooltip" data-placement="right" title="" data-original-title="进一步完善文章内容"><i class="fa fa-edit"></i> 编辑</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-10 mb-20">
+                                <button id="support-button" class="btn btn-success btn-lg mr-5" data-source_id="3" data-source_type="article" data-support_num="0">0 推荐</button>
+                                <button id="collect-button" class="btn btn-default btn-lg" data-loading-text="加载中..." data-source_type="article" data-source_id="3"> 收藏</button>
+                            </div>
+
+                            <!--评论-->
+                            <div class="mt-15">
+                                <h2 class="h4 post-title"><span>5</span>条评论</h2>
+                                <div class="widget-comments mb-20 collapse in" id="comments-article-13007" data-source_type="article" data-source_id="13007" aria-expanded="true" style="">
+                                    <div class="widget-comment-list">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="https://wenda.tipask.com/people/6715" target="_blank">
+                                                    <img class="media-object avatar-27" alt="智云联创" src="/statics/images/test/test_23.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="media-heading">
+                                                    <a href="https://wenda.tipask.com/people/6715" target="_blank">智云联创</a>
+                                                </div>
+                                                <div class="content"><p>21121211111</p></div>
+                                                <div class="media-footer">
+                                                    <ul class="list-inline text-muted">
+                                                        <li>
+                                                            2018-11-17 08:25
+                                                        </li>
+                                                        <li>
+                                                        </li>
+                                                        <li class="pull-right">
+                                                            <button class="btn btn-default btn-xs btn-support" data-source_id="2101" data-source_type="comment" data-support_num="4"><i class="fa fa-thumbs-o-up"></i> 4</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="https://wenda.tipask.com/people/6729" target="_blank">
+                                                    <img class="media-object avatar-27" alt="xiaoming007" src="/statics/images/test/test_23.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="media-heading">
+                                                    <a href="https://wenda.tipask.com/people/6729" target="_blank">xiaoming007</a>
+                                                </div>
+                                                <div class="content"><p>确实还不错哦</p></div>
+                                                <div class="media-footer">
+                                                    <ul class="list-inline text-muted">
+                                                        <li>
+                                                            2018-11-20 13:56
+                                                        </li>
+                                                        <li>
+                                                        </li>
+                                                        <li class="pull-right">
+                                                            <button class="btn btn-default btn-xs btn-support" data-source_id="2109" data-source_type="comment" data-support_num="1"><i class="fa fa-thumbs-o-up"></i> 1</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="https://wenda.tipask.com/people/6725" target="_blank">
+                                                    <img class="media-object avatar-27" alt="问答小智" src="/statics/images/test/test_23.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="media-heading">
+                                                    <a href="https://wenda.tipask.com/people/6725" target="_blank">问答小智</a>
+                                                </div>
+                                                <div class="content"><p>不错呦</p></div>
+                                                <div class="media-footer">
+                                                    <ul class="list-inline text-muted">
+                                                        <li>
+                                                            2018-11-30 09:31
+                                                        </li>
+                                                        <li>
+                                                        </li>
+                                                        <li class="pull-right">
+                                                            <button class="btn btn-default btn-xs btn-support" data-source_id="2119" data-source_type="comment" data-support_num="0"><i class="fa fa-thumbs-o-up"></i> 0</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="https://wenda.tipask.com/people/6725" target="_blank">
+                                                    <img class="media-object avatar-27" alt="问答小智" src="/statics/images/test/test_23.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="media-heading">
+                                                    <a href="https://wenda.tipask.com/people/6725" target="_blank">问答小智</a>
+                                                </div>
+                                                <div class="content"><p>很棒的分享</p></div>
+                                                <div class="media-footer">
+                                                    <ul class="list-inline text-muted">
+                                                        <li>
+                                                            2018-12-01 09:25
+                                                        </li>
+                                                        <li>
+                                                        </li>
+                                                        <li class="pull-right">
+                                                            <button class="btn btn-default btn-xs btn-support" data-source_id="2120" data-source_type="comment" data-support_num="0"><i class="fa fa-thumbs-o-up"></i> 0</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="https://wenda.tipask.com/people/6725" target="_blank">
+                                                    <img class="media-object avatar-27" alt="问答小智" src="/statics/images/test/test_23.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="media-heading">
+                                                    <a href="https://wenda.tipask.com/people/6725" target="_blank">问答小智</a>
+                                                </div>
+                                                <div class="content"><p>不错的分享</p></div>
+                                                <div class="media-footer">
+                                                    <ul class="list-inline text-muted">
+                                                        <li>
+                                                            2018-12-04 09:30
+                                                        </li>
+                                                        <li>
+                                                        </li>
+                                                        <li class="pull-right">
+                                                            <button class="btn btn-default btn-xs btn-support" data-source_id="2122" data-source_type="comment" data-support_num="0"><i class="fa fa-thumbs-o-up"></i> 0</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center mb-20 mt-20">
+                                            <button type="button" class="btn btn-default btn-sm btn-block load-more" data-loading-text="加载中..." data-source_type="article" data-source_id="3" data-next_page_url="http://ask.loc/article/3/comments?page=2">
+                                                <i class="fa fa-refresh" aria-hidden="true"></i>加载更多
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="widget-comment-form row">
+                                        <div class="col-md-12">
+                                            请先 <a href="https://wenda.tipask.com/login">登录</a> 后评论
+                                        </div>
+                                    </div>
+                                    <div class="widget-comment-form row">
+                                        <form class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea name="content" placeholder="写下你的评论" class="form-control" id="comment-article-content-3"></textarea>
+                                            </div>
+                                        </form>
+                                        <div class="col-md-12 text-right">
+                                            <button type="submit" class="btn btn-primary btn-sm ml-10 comment-btn" id="article-comment-3-btn" data-token="" data-source_id="3" data-source_type="article" data-to_user_id="0">提交评论</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--左侧 end-->
+
+                    <!--右侧 start-->
+                    <div class="col-md-3 hidden-xs">
+                        <div class="widget-user mb-10">
+                            <div class="media">
+                                <a class="pull-left" href="https://wenda.tipask.com/people/5823"><img class="media-object avatar-64" src="/statics/images/test/test_23.jpg" alt="十七年蝉"></a>
+                                <div class="media-body">
+                                    <a href="#" class="media-heading">十七年蝉</a>
+                                    <p class="text-muted"><span class="num-cont">2</span>篇文章</p>
+                                    <p class="text-muted"><span class="num-fans">2</span>个粉丝</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row kggs">
+                            <div class="col-md-12 col-sm-12">
+                                <a href="#" class="">
+                                    <img src="/statics/images/test/test_02.png" width="100%">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="widget-box mt30 news-recomm-box">
+                            <h2 class="widget-box-title">
+                                热门文章
+                                <a href="https://wenda.tipask.com/users" title="更多">»</a>
+                            </h2>
+                            <ul class="list-unstyled">
+                                <li class="text-justify">
+                                    <a href="https://wenda.tipask.com/people/1">Xshell 多版本存在后门，或上传用户服务器账号密码</a>
+                                    <span class="text-muted clearfix">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        2017-08-14
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        64
+                                    </span>
+                                </li>
+                                <li class="text-justify">
+                                    <a href="https://wenda.tipask.com/people/1">Go 语言如果按这样改进，能不能火过 Java？</a>
+                                    <span class="text-muted clearfix">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        2017-08-14
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        64
+                                    </span>
+                                </li>
+                                <li class="text-justify">
+                                    <a href="https://wenda.tipask.com/people/1">Mybatis 通用 Mapper 3.4.3 发布</a>
+                                    <span class="text-muted clearfix">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        2017-08-14
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        64
+                                    </span>
+                                </li>
+                                <li class="text-justify">
+                                    <a href="https://wenda.tipask.com/people/1">Xshell 多版本存在后门，或上传用户服务器账号密码</a>
+                                    <span class="text-muted clearfix">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        2017-08-14
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        64
+                                    </span>
+                                </li>
+                                <li class="text-justify">
+                                    <a href="https://wenda.tipask.com/people/1">Xshell 多版本存在后门，或上传用户服务器账号密码</a>
+                                    <span class="text-muted clearfix">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        2017-08-14
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        64
+                                    </span>
+                                </li>
+                                <li class="text-justify">
+                                    <a href="https://wenda.tipask.com/people/1">Xshell 多版本存在后门，或上传用户服务器账号密码</a>
+                                    <span class="text-muted clearfix">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        2017-08-14
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        64
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--右侧 end-->
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--页面容器 end-->
+
+    <!--页脚 end -->
+    <footer class="container hidden-xs">
+        <div id="footer">
+            <div class="panel panel-default text-muted">
+                <div class="panel-body">
+                    友情链接：
+                    <a href="#">百度</a>
+                    <a href="#">谷歌</a>
+                    <a href="#">搜搜</a>
+                </div>
+                <div class="panel-footer clearfix">
+                    <span>© LKK, all rights reserved.</span>
+                    <span>powered by Kserver</span>
+                    <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15005547号</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--页脚 start -->
+
+</div>
+<!--主容器 end-->
+
+<!-- basic scripts -->
+
+<!--[if !IE]> -->
+<script src="/statics/js/jquery-2.1.4.min.js"></script>
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script src="/statics/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    if('ontouchstart' in document.documentElement) document.write("<script src='/statics/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+</script>
+<script src="/statics/js/bootstrap.min.js"></script>
+
+</body>
+</html>
