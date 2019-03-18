@@ -88,46 +88,52 @@
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 <div class="user-section login-section">
-                    <div class="logon-tab clearfix"> <a href="/index/user/login.html">登 录</a> <a class="active">注 册</a> </div>
+                    <div class="logon-tab clearfix"> <a href="/login.html">登 录</a> <a class="active">注 册</a> </div>
                     <div class="login-main">
                         <form name="form1" id="register-form" class="form-vertical nice-validator n-default n-bootstrap" method="POST" action="" novalidate="novalidate">
                             <input type="hidden" name="invite_user_id" value="0">
                             <input type="hidden" name="url" value="">
-                            <input type="hidden" name="__token__" value="b6a1d7146d6dc12d534bacdca0017c48">                <div class="form-group has-error">
-                            <label class="control-label required">邮箱<span class="text-success"></span></label>
-                            <div class="controls">
-                                <input type="text" name="email" id="email" class="form-control input-lg" placeholder="邮箱" aria-invalid="true"><span class="msg-box n-right" for="email"><span role="alert" class="msg-wrap n-error"><span class="n-icon"></span><span class="n-msg">邮箱不能为空</span></span></span>
-                                <p class="help-block"></p>
-                            </div>
-                        </div>
-                            <div class="form-group has-error">
-                                <label class="control-label">用户名</label>
+                            <input type="hidden" name="__token__" value="">
+
+                            <div class="form-group">
+                                <label class="control-label required">邮箱<span class="text-success"></span></label>
                                 <div class="controls">
-                                    <input type="text" id="username" name="username" class="form-control input-lg" placeholder="用户名必须3-30个字符" aria-invalid="true"><span class="msg-box n-right" for="username"><span role="alert" class="msg-wrap n-error"><span class="n-icon"></span><span class="n-msg">用户名不能为空</span></span></span>
+                                    <input type="text" name="email" id="email" data-rule="required;email" class="form-control input-lg" placeholder="邮箱">
                                     <p class="help-block"></p>
                                 </div>
                             </div>
-                            <div class="form-group has-error">
+
+                            <div class="form-group">
+                                <label class="control-label required">用户名<span class="text-success"></span></label>
+                                <div class="controls">
+                                    <input type="text" id="username" name="username" data-rule="required;username" class="form-control input-lg" placeholder="用户名必须5-30个字符">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
                                 <label class="control-label">密码</label>
                                 <div class="controls">
-                                    <input type="password" id="password" name="password" class="form-control input-lg" placeholder="密码必须6-30个字符" aria-invalid="true"><span class="msg-box n-right" for="password"><span role="alert" class="msg-wrap n-error"><span class="n-icon"></span><span class="n-msg">密码不能为空</span></span></span>
+                                    <input type="password" id="password" name="password" data-rule="required;password" class="form-control input-lg" placeholder="密码必须5-30个字符">
                                     <p class="help-block"></p>
                                 </div>
                             </div>
-                            <div class="form-group has-error">
-                                <label class="control-label">手机号</label>
+
+                            <div class="form-group">
+                                <label class="control-label">确认密码</label>
                                 <div class="controls">
-                                    <input type="text" id="mobile" name="mobile" class="form-control input-lg" placeholder="手机号" aria-invalid="true"><span class="msg-box n-right" for="mobile"><span role="alert" class="msg-wrap n-error"><span class="n-icon"></span><span class="n-msg">手机号不能为空</span></span></span>
+                                    <input type="password" id="password2" name="password2" data-rule="required;password" class="form-control input-lg" placeholder="密码必须5-30个字符">
                                     <p class="help-block"></p>
                                 </div>
                             </div>
-                            <div class="form-group has-error">
+
+                            <div class="form-group">
                                 <label class="control-label">验证码</label>
                                 <div class="controls">
                                     <div class="input-group input-group-lg">
-                                        <input type="text" name="captcha" class="form-control" placeholder="验证码" aria-invalid="true">
-                                        <span class="input-group-addon" style="padding:0;border:none;">
-                                            <img src="/statics/images/test/test_24.jpg" width="140" height="42">
+                                        <input type="text" name="captcha" class="form-control" placeholder="验证码" data-rule="required;length(4)" />
+                                        <span class="input-group-addon" style="padding:0;border:none;background:none;height: 42px;">
+                                            <img src="/statics/images/test/test_24.jpg" width="140" height="42" id="verifyImg"/>
                                         </span>
                                     </div>
                                     <p class="help-block"></p>
