@@ -1173,6 +1173,22 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 }
 
 /*动弹列表页*/
+.tweet-form{
+    margin: 0 auto 30px;
+}
+.tweet-form-header .header{
+    font-size: 1.55rem;
+    border: none;
+    margin: calc(2rem - .14285714em) 0 1rem;
+    padding: 0 0;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: none;
+}
+.tweet-form-header .header:first-child {
+    margin-top: -.14285714em;
+}
+
 .tweets-list{
 
 }
