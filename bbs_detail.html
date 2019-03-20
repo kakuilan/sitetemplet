@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="renderer" content="webkit">
+    <title>帖子详情</title>
+    <meta name="keywords" content="基本模板">
+    <meta name="description" content="静态页面模板">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="/statics/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/statics/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="/statics/css/my-custom.css" />
+
+    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+    <!--[if lte IE 8]>
+    <script src="/statics/js/html5shiv.min.js"></script>
+    <script src="/statics/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<!--主容器 start-->
+<div class="main-wrap">
+
+    <!--固定导航栏 start-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-md hidden-lg" href="#">站点名称</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/index.html">首页</a></li>
+                    <li><a href="/news.html">新闻</a></li>
+                    <li><a href="/tweet.html">动弹</a></li>
+                    <li><a href="/question.html">问答</a></li>
+                    <li class="active"><a href="/bbs.html">论坛</a></li>
+                    <li><a href="/blog.html">博文</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/about.html">关于我们</a></li>
+                            <li><a href="/contact.html">联系我们</a></li>
+
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">使用指南</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/register.html">注册</a></li>
+                    <li><a href="/login.html">登录</a></li>
+                    <li class="dropdown user-avatar">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="avatar-img">
+                                <img src="/statics/avatars/avatar.png" alt="用户中心">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/user.html"><i class="fa fa-user-circle fa-fw"></i>会员中心</a></li>
+                            <li><a href="#"><i class="fa fa-user-o fa-fw"></i>个人资料</a></li>
+                            <li><a href="#"><i class="fa fa-hand-pointer-o fa-fw"></i>每日签到</a></li>
+                            <li><a href="#"><i class="fa fa-key fa-fw"></i>修改密码</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>退 出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!--固定导航栏 end-->
+
+    <!--页面容器 start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="row">
+
+                    <!--左侧 start-->
+                    <div class="col-xs-12 col-md-9">
+                        <ol class="breadcrumb">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">论坛</a></li>
+                            <li><a href="#">百姓话题</a></li>
+                            <li class="active">讨论详情</li>
+                        </ol>
+
+                        <!--帖子 start-->
+                        <div class="bbs-main">
+                            <!--标题-->
+                            <h3 class="title">Tipask3.3.1 发布 release 20180601</h3>
+
+                            <!--标签-->
+                            <ul class="taglist-inline">
+                                <li class="tagPopup"><a class="tag" href="#">程序发布</a></li>
+                                <li class="tagPopup"><a class="tag" href="#">话语</a></li>
+                            </ul>
+
+                            <!--楼主-->
+                            <div class="author">
+                                <img src="/statics/images/test/test_23.jpg" class="avatar-32"> <a href="/u/autorealm" target="_blank"><strong>autorealm</strong></a><span> ·  2018年09月17日</span>
+                            </div>
+
+                            <!--主贴 start-->
+                            <div class="content fmt">
+                                <p>寻求有相同兴趣和想法的人员合作。前端后台技术栈无所谓，只要有想法有行动力的就可以。不为结果，只求增加协作交流经验。<br>为什么想做这个：目前国内的动漫社区都太参差不齐，个人感觉体验都很差，直白点就是都很Low。倒是游戏类的社区比如：cowlevel.net 显得专业。<br>先说说本人：算是动漫爱好者，死宅的那种。PHP，Java，Python，前端 Vue  都懂点，也做过一些开源项目。个人项目成型的网站也有。只是之前的都是个人在做，局限性太大。所以想以此增加交流机会。<br>PS：本人也不是大牛，工作过的都是小公司，技术是自己的爱好，学技术也是想着解决问题，想更多提供技术价值就只有做做个人项目。<br>声明一下：想做这个也不是比较闲，这个想法是打算长期跟进的。所以本帖子长期有效！欢迎参与讨论～</p>
+                            </div>
+                            <!--主贴 end-->
+
+                            <!--帖子信息-->
+                            <div class="post-opt mt-10">
+                                <ul class="list-inline text-muted">
+                                    <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 点赞（<span>0</span>）</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 反对（<span>0</span>）</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-star-o" aria-hidden="true"></i> 收藏（<span>0</span>）</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-star" aria-hidden="true"></i> 已收藏（<span>0</span>）</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-eye" aria-hidden="true"></i> 浏览（<span>0</span>）</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-ban" aria-hidden="true"></i> 举报</a></li>
+                                </ul>
+                            </div>
+
+                            <!--回帖 start-->
+                            <div class="comment--group">
+                                <div class="comments--default" data-id="1560000016431253" data-user-id="1030000000154172" data-author-id="1030000005656705 " data-is-admin="false" id="goToReplyArea">
+                                    <div class="mb10 clearfix">
+                                        <strong class="comments-stat pull-left mr10"><span>17</span> 条评论</strong>
+                                        <div class="btn-group comments-sort">
+                                            <button type="button" class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                <span class="comments-sort-text">默认排序</span> <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="javascript:;" data-sort="default">默认排序</a></li>
+                                                <li><a href="javascript:;" data-sort="asc">时间排序</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-container">
+                                        <!--回复列表 start-->
+                                        <div class="comments-list">
+                                            <div class="comments-item">
+                                                <div class="pull-left">
+                                                    <a target="_blank" href="/u/hongzhipeng"><img class="avatar-32 " src="/statics/images/test/test_23.jpg" alt=""></a>
+                                                </div>
+
+                                                <div class="comments-content">
+                                                    <div class="comment-trigger">
+                                                        <strong><a class="user" target="_blank" href="/u/hongzhipeng">生生世世手</a></strong>
+                                                        <span class="comments-isAuthor hide"></span> <span>  ·  1月14日</span>
+                                                    </div>
+
+                                                    <div class="fmt">
+                                                        <p>大佬啊，其实我挺想参加的，也是游戏宅动漫宅。就是刚毕业工作技术水平可能真不怎么样。。。会java，主要是springboot+前端vue。springboot正在深入学习还未到springcloud，vue会用但不深入。包括一些中间件也是基础的会用，部署不太懂，在了解中。如果大佬还需要人的话，我很想加入</p>
+                                                    </div>
+
+                                                    <div class="post-opt">
+                                                        <ul class="list-inline text-muted">
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 点赞（<span>0</span>）</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 反对（<span>0</span>）</a></li>
+                                                            <li><a href="http://ask.loc/question/edit/2" class="edit" data-toggle="tooltip" data-placement="right" title="" data-original-title="补充细节，以得到更准确的答案"><i class="fa fa-edit"></i> 回复</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-ban" aria-hidden="true"></i> 举报</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="comments-item">
+                                                <div class="pull-left">
+                                                    <a target="_blank" href="/u/hongzhipeng"><img class="avatar-32 " src="/statics/images/test/test_23.jpg" alt=""></a>
+                                                </div>
+
+                                                <div class="comments-content">
+                                                    <div class="comment-trigger">
+                                                        <strong><a class="user" target="_blank" href="/u/hongzhipeng">生生世世手</a></strong>
+                                                        <span class="comments-isAuthor hide"></span> <span>  ·  1月14日</span>
+                                                    </div>
+
+                                                    <div class="fmt">
+                                                        <p>大佬啊，其实我挺想参加的，也是游戏宅动漫宅。就是刚毕业工作技术水平可能真不怎么样。。。会java，主要是springboot+前端vue。springboot正在深入学习还未到springcloud，vue会用但不深入。包括一些中间件也是基础的会用，部署不太懂，在了解中。如果大佬还需要人的话，我很想加入</p>
+                                                    </div>
+
+                                                    <div class="post-opt">
+                                                        <ul class="list-inline text-muted">
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 点赞（<span>0</span>）</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 反对（<span>0</span>）</a></li>
+                                                            <li><a href="http://ask.loc/question/edit/2" class="edit" data-toggle="tooltip" data-placement="right" title="" data-original-title="补充细节，以得到更准确的答案"><i class="fa fa-edit"></i> 回复</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-ban" aria-hidden="true"></i> 举报</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="comments-item">
+                                                <div class="pull-left">
+                                                    <a target="_blank" href="/u/hongzhipeng"><img class="avatar-32 " src="/statics/images/test/test_23.jpg" alt=""></a>
+                                                </div>
+
+                                                <div class="comments-content">
+                                                    <div class="comment-trigger">
+                                                        <strong><a class="user" target="_blank" href="/u/hongzhipeng">生生世世手</a></strong>
+                                                        <span class="comments-isAuthor hide"></span> <span>  ·  1月14日</span>
+                                                    </div>
+
+                                                    <div class="fmt">
+                                                        <p>大佬啊，其实我挺想参加的，也是游戏宅动漫宅。就是刚毕业工作技术水平可能真不怎么样。。。会java，主要是springboot+前端vue。springboot正在深入学习还未到springcloud，vue会用但不深入。包括一些中间件也是基础的会用，部署不太懂，在了解中。如果大佬还需要人的话，我很想加入</p>
+                                                    </div>
+
+                                                    <div class="post-opt">
+                                                        <ul class="list-inline text-muted">
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 点赞（<span>0</span>）</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 反对（<span>0</span>）</a></li>
+                                                            <li><a href="http://ask.loc/question/edit/2" class="edit" data-toggle="tooltip" data-placement="right" title="" data-original-title="补充细节，以得到更准确的答案"><i class="fa fa-edit"></i> 回复</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-ban" aria-hidden="true"></i> 举报</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="comments-item">
+                                                <div class="pull-left">
+                                                    <a target="_blank" href="/u/hongzhipeng"><img class="avatar-32 " src="/statics/images/test/test_23.jpg" alt=""></a>
+                                                </div>
+
+                                                <div class="comments-content">
+                                                    <div class="comment-trigger">
+                                                        <strong><a class="user" target="_blank" href="/u/hongzhipeng">生生世世手</a></strong>
+                                                        <span class="comments-isAuthor hide"></span> <span>  ·  1月14日</span>
+                                                    </div>
+
+                                                    <div class="fmt">
+                                                        <p>大佬啊，其实我挺想参加的，也是游戏宅动漫宅。就是刚毕业工作技术水平可能真不怎么样。。。会java，主要是springboot+前端vue。springboot正在深入学习还未到springcloud，vue会用但不深入。包括一些中间件也是基础的会用，部署不太懂，在了解中。如果大佬还需要人的话，我很想加入</p>
+                                                    </div>
+
+                                                    <div class="post-opt">
+                                                        <ul class="list-inline text-muted">
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 点赞（<span>0</span>）</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 反对（<span>0</span>）</a></li>
+                                                            <li><a href="http://ask.loc/question/edit/2" class="edit" data-toggle="tooltip" data-placement="right" title="" data-original-title="补充细节，以得到更准确的答案"><i class="fa fa-edit"></i> 回复</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-ban" aria-hidden="true"></i> 举报</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="comments-item">
+                                                <div class="pull-left">
+                                                    <a target="_blank" href="/u/hongzhipeng"><img class="avatar-32 " src="/statics/images/test/test_23.jpg" alt=""></a>
+                                                </div>
+
+                                                <div class="comments-content">
+                                                    <div class="comment-trigger">
+                                                        <strong><a class="user" target="_blank" href="/u/hongzhipeng">生生世世手</a></strong>
+                                                        <span class="comments-isAuthor hide"></span> <span>  ·  1月14日</span>
+                                                    </div>
+
+                                                    <div class="fmt">
+                                                        <p>大佬啊，其实我挺想参加的，也是游戏宅动漫宅。就是刚毕业工作技术水平可能真不怎么样。。。会java，主要是springboot+前端vue。springboot正在深入学习还未到springcloud，vue会用但不深入。包括一些中间件也是基础的会用，部署不太懂，在了解中。如果大佬还需要人的话，我很想加入</p>
+                                                    </div>
+
+                                                    <div class="post-opt">
+                                                        <ul class="list-inline text-muted">
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 点赞（<span>0</span>）</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 反对（<span>0</span>）</a></li>
+                                                            <li><a href="http://ask.loc/question/edit/2" class="edit" data-toggle="tooltip" data-placement="right" title="" data-original-title="补充细节，以得到更准确的答案"><i class="fa fa-edit"></i> 回复</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#inviteAnswer"><i class="fa fa-ban" aria-hidden="true"></i> 举报</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!--回复列表 end-->
+
+                                        <!--分页 start-->
+                                        <div class="text-center">
+                                            <ul class="pagination">
+                                                <li class="page-item disabled"><span class="page-link">‹</span></li>
+                                                <li class="page-item active"><span class="page-link">1</span></li>
+                                                <li class="page-item"><a class="page-link" href="https://wenda.tipask.com/question/4?page=2">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="https://wenda.tipask.com/question/4?page=2" rel="next">›</a></li>
+                                            </ul>
+                                        </div>
+                                        <!--分页 end-->
+
+                                        <div class="comments-loading">载入中...</div>
+
+                                        <div class="comments-more"><a href="javascript:;">显示更多评论</a></div>
+
+                                        <div class="comments-box">
+                                            <div class="answer_login_tips mb-20">
+                                                您需要登录后才可以回答问题，<a href="https://wenda.tipask.com/login" rel="nofollow">登录</a>&nbsp;或者&nbsp;<a rel="nofollow" href="https://wenda.tipask.com/register">注册</a>
+                                            </div>
+
+                                            <div class="comments-box-content">
+                                                <form action="/api/discussion/1560000016431253/comments/add">
+                                                    <div class="form-group mb0">
+                                                        <textarea name="text" rows="3" class="form-control" placeholder="文明社会，理性评论"></textarea>
+                                                        <div class="mt15 text-right">
+                                                            <button type="button" class="hide"></button>
+                                                            <button class=" btn btn-primary" type="button">发布评论</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--回帖 end-->
+
+
+
+                        </div>
+                        <!--帖子 end-->
+
+                    </div>
+
+                    <!--左侧 end-->
+
+
+                    <!--右侧 start-->
+                    <div class="col-md-3 hidden-xs">
+                        <!--广告-->
+                        <div class="row kggs">
+                            <div class="col-md-12 col-sm-12">
+                                <a href="#" class="">
+                                    <img src="/statics/images/test/test_02.png" width="100%">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="widget-box small-recomm">
+                            <h2 class="h4 widget-box__title">热门讨论</h2>
+                            <ul class="widget-links list-unstyled list-text">
+                                <li class="widget-links-item">
+                                    <a title="做了一个查询工具网站" href="https://wenda.tipask.com/question/4615">做了一个查询工具网站</a>
+                                    <small class="text-muted"><i class="fa fa-comment-o" aria-hidden="true"></i> 64</small>
+                                </li>
+                                <li class="widget-links-item">
+                                    <a title="请问这个网站有后台审核么" href="https://wenda.tipask.com/question/2054">请问这个网站有后台审核么</a>
+                                    <small class="text-muted"><i class="fa fa-comment-o" aria-hidden="true"></i> 64</small>
+                                </li>
+                                <li class="widget-links-item">
+                                    <a title="一个小说网站需要多大的服务器啊" href="https://wenda.tipask.com/question/1369">一个小说网站需要多大的服务器啊</a>
+                                    <small class="text-muted"><i class="fa fa-comment-o" aria-hidden="true"></i> 64</small>
+                                </li>
+                                <li class="widget-links-item">
+                                    <a title="有哪些使用tipask正在运营中的网站？" href="https://wenda.tipask.com/question/994">有哪些使用tipask正在运营中的网站？</a>
+                                    <small class="text-muted"><i class="fa fa-comment-o" aria-hidden="true"></i> 64</small>
+                                </li>
+                                <li class="widget-links-item">
+                                    <a title="站长是个什么职业？" href="https://wenda.tipask.com/question/5">站长是个什么职业？</a>
+                                    <small class="text-muted"><i class="fa fa-comment-o" aria-hidden="true"></i> 64</small>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--右侧 end-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--页面容器 end-->
+
+    <!--页脚 end -->
+    <footer class="container hidden-xs">
+        <div id="footer">
+            <div class="panel panel-default text-muted">
+                <div class="panel-body">
+                    友情链接：
+                    <a href="#">百度</a>
+                    <a href="#">谷歌</a>
+                    <a href="#">搜搜</a>
+                </div>
+                <div class="panel-footer clearfix">
+                    <span>© LKK, all rights reserved.</span>
+                    <span>powered by Kserver</span>
+                    <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15005547号</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--页脚 start -->
+
+</div>
+<!--主容器 end-->
+
+<!-- basic scripts -->
+
+<!--[if !IE]> -->
+<script src="/statics/js/jquery-2.1.4.min.js"></script>
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script src="/statics/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    if('ontouchstart' in document.documentElement) document.write("<script src='/statics/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+</script>
+<script src="/statics/js/bootstrap.min.js"></script>
+
+</body>
+</html>

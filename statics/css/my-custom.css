@@ -315,6 +315,145 @@ ul{list-style: none;padding: 0;}
 .text-fmt{overflow:hidden;font-size:14px;line-height:1.6;word-wrap:break-word}
 .inline-block {display: inline-block;}
 
+/*内容格式化*/
+.fmt {
+    line-height: 1.6;
+    word-wrap: break-word
+}
+.fmt h1 {
+    font-size: 2em;
+    line-height: 1.75em
+}
+.fmt h2 {
+    font-size: 1.75em;
+    line-height: 1.5em
+}
+.fmt h3 {
+    font-size: 1.5em;
+    line-height: 1.25em
+}
+.fmt h4 {
+    font-size: 1.25em;
+    line-height: 1em
+}
+.fmt h5 {
+    font-size: 1em;
+    line-height: 0.86em
+}
+.fmt h6 {
+    font-size: 0.86em;
+    line-height: 0.75em
+}
+.fmt h4,.fmt h5,.fmt p,.fmt ul,.fmt ol,.fmt pre,.fmt blockquote,.fmt table {
+    margin: 1.5em 0
+}
+.fmt h1,.fmt h2,.fmt h3 {
+    margin: 1.5em 0 0
+}
+.fmt h1+.widget-codetool+pre,.fmt h2+.widget-codetool+pre,.fmt h3+.widget-codetool+pre {
+    margin-top: 1.5em !important
+}
+.fmt h1,.fmt h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px
+}
+.fmt>h1:first-child,.fmt h2:first-child,.fmt h3:first-child,.fmt h4:first-child,.fmt p:first-child,.fmt ul:first-child,.fmt ol:first-child,.fmt pre:first-child,.fmt blockquote:first-child {
+    margin-top: 0
+}
+.fmt ul,.fmt ol {
+    margin-left: 3em;
+    padding-left: 0
+}
+.fmt ul li,.fmt ol li {
+    margin: .3em 0
+}
+.fmt ul ul,.fmt ul ol,.fmt ol ul,.fmt ol ol {
+    margin-top: 0;
+    margin-bottom: 0
+}
+.fmt ul p,.fmt ol p {
+    margin: 0
+}
+.fmt p:last-child {
+    margin-bottom: 0
+}
+.fmt p>p:empty,.fmt div>p:empty,.fmt p>div:empty,.fmt div>br:only-child,.fmt p+br {
+    display: none
+}
+.fmt img,.fmt video,.fmt audio {
+    position: static !important;
+    max-width: 100%
+}
+.fmt img {
+    padding: 3px;
+    border: 1px solid #ddd
+}
+.fmt img.emoji {
+    padding: 0;
+    border: none
+}
+.fmt blockquote {
+    border-left: 2px solid #009A61;
+    background: #F6F6F6;
+    color: #555;
+    font-size: 1em
+}
+.fmt pre,.fmt code {
+    font-size: 0.93em
+}
+.fmt pre {
+    padding: 1em;
+    border: none;
+    overflow: auto;
+    line-height: 1.45;
+    max-height: 35em;
+    position: relative;
+    background: url(../img/blueprint.png) #F6F6F6;
+    -moz-background-size: 30px,30px;
+    -o-background-size: 30px,30px;
+    -webkit-background-size: 30px,30px;
+    background-size: 30px,30px
+}
+.fmt pre code {
+    background: none;
+    font-size: 1em;
+    overflow-wrap: normal;
+    white-space: inherit
+}
+.fmt hr {
+    margin: 1.5em auto;
+    border-top: 2px dotted #eee
+}
+.fmt kbd {
+    margin: 0 4px;
+    padding: 3px 4px;
+    background: #eee;
+    color: #555
+}
+.fmt .x-scroll {
+    overflow-x: auto
+}
+.fmt table {
+    width: 100%
+}
+.fmt table th,.fmt table td {
+    border: 1px solid #E6E6E6;
+    padding: 5px 8px;
+    word-break: normal
+}
+.fmt table th {
+    background: #F3F3F3
+}
+.fmt a:not(.btn) {
+    border-bottom: 1px solid rgba(0,154,97,0.25);
+    padding-bottom: 1px
+}
+.fmt a:not(.btn):hover {
+    border-bottom: 1px solid #009a61;
+    text-decoration: none
+}
+
+
 /*网站logo*/
 .logo{float:left;margin:0;display:inline-block;width:125px;}
 .logo a{display:block;height:50px;width:120px; background-image:url("logo.png");background-size: 120px 50px;background-repeat: no-repeat;}
@@ -506,9 +645,28 @@ ul{list-style: none;padding: 0;}
 .widget-article .quote{padding: 25px;background: #f3f5f9;line-height: 24px;overflow: hidden;}
 
 .best-answer .options a{color:#666;}
-.post-opt a{color:#999}
 .post-title{padding-bottom:15px;border-bottom:1px solid #eee;}
-
+.post-offset {margin-left: 50px;}
+.post-offset .answer-time{float:right;}
+.post-opt {
+    font-size:13px;
+    line-height:1;
+    padding-top:9px;
+    padding-bottom:9px
+}
+.post-opt a, .post-opt i {
+    color:#999
+}
+.post-opt a:focus {
+    text-decoration:none
+}
+.post-opt a:hover {
+    color:#666;
+    text-decoration:none
+}
+.post-opt a:hover i {
+    color:#666
+}
 
 .widget-action{color:#999}
 .widget-action li{margin-top:10px}
@@ -523,8 +681,7 @@ ul{list-style: none;padding: 0;}
 .post-col .unlike-alert .close{right:auto}
 
 
-.post-offset {margin-left: 50px;}
-.post-offset .answer-time{float:right;}
+
 
 
 
@@ -1262,10 +1419,6 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .question-main .title {
     margin: 0 0 10px;
 }
-.question-main .fmt{
-    line-height: 1.6;
-    word-wrap: break-word;
-}
 .question-main .question {
     margin-bottom: 15px;
 }
@@ -1378,10 +1531,105 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     margin-top: 10px;
 }
 
+/*帖子详情页*/
+.bbs-main {
+    margin-bottom: 10px;
+}
+.bbs-main .title {
+    margin: 0 0 10px;
+}
+.bbs-main .author {
+    margin-top: 20px;
+}
+.bbs-main .author img {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.bbs-main .content {
+    margin-top: 20px;
+}
+.bbs-main .comment--group {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-top: 2px solid #CCCCCC;
+}
+.comments--default .comments-stat {
+    display: block;
+    font-size: 16px;
+}
+.comments--default .comments-container {
+    border: 0;
+    box-shadow: none;
+    border-top: 1px solid rgba(0,0,0,0.09);
+}
+.comments-sort .btn-link,.comment-trigger a.user {
+    color: #009a61;
+    cursor: pointer;
+    border-radius: 0;
+}
+.comments-sort .btn-link:hover,.comments-sort .btn-link:focus {
+    color: #004e31;
+    text-decoration: underline;
+    background-color: transparent
+}
+.comments--default .comments-item {
+    padding: 15px 20px;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.09);
+}
+.comments--default .comments-content {
+    padding-left: 47px;
+}
+.comments--default .comment-trigger {
+    margin-bottom: 10px;
+}
+.comments-content .post-opt{
+    padding-bottom: 0;
+}
+.comments--default .comments-loading {
+    color: #999;
+    text-align: center;
+    padding: 20px 0;
+}
+.comments--default .comments-more {
+    text-align: center;
+    padding: 20px 0;
+}
+.comments-more a {
+    color: #009a61;
+    text-decoration: none;
+}
+.comments--default .comments-box {
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.09);
+    border-radius: 2px 2px 0px 0px;
+    padding: 15px 20px;
+    border-top: 1px solid rgba(0,0,0,0.09);
+    margin-top: -1px;
+}
+.comments--default .comments-box-content textarea {
+    max-height: 132px;
+    min-height: 90px;
+}
 
+/*右侧小推荐*/
+.small-recomm {
 
-
-
+}
+.small-recomm .widget-links-item a {
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    display: inline-block;
+}
+.small-recomm .widget-links-item small {
+    float: right;
+}
 
 
 
