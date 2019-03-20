@@ -99,6 +99,9 @@ http://kindeditor.net/demo.php
 https://github.com/mindmup/bootstrap-wysiwyg/  
 http://www.wangeditor.com/  
 
+个人主页
+https://segmentfault.com/u/evilboy
+
 
 
 .media——指定该元素包裹媒体对象组件；

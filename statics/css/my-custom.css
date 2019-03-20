@@ -274,30 +274,30 @@ ul{list-style: none;padding: 0;}
 .wrap{padding-bottom:30px;position:relative}
 
 /*margin-bottom*/
-.mb-5 {margin-bottom: 5px;}
-.mb-10 {margin-bottom: 10px;}
-.mb-20{margin-bottom:20px;}
-.mb-30{margin-bottom:30px;}
-.mb-40{margin-bottom:40px;}
-.mb-50{margin-bottom:50px;}
+.mb5,.mb-5 {margin-bottom: 5px;}
+.mb10,.mb-10 {margin-bottom: 10px;}
+.mb20,.mb-20{margin-bottom:20px;}
+.mb30,.mb-30{margin-bottom:30px;}
+.mb40,.mb-40{margin-bottom:40px;}
+.mb50,.mb-50{margin-bottom:50px;}
 
-.mt-10 {margin-top: 10px;}
-.mt-15 {margin-top: 15px;}
-.mt-20 {margin-top: 20px;}
-.mt-30 {margin-top: 30px;}
-.mt-40 {margin-top: 40px;}
-.mt-50 {margin-top: 50px;}
-.mt-60 {margin-top: 60px;}
+.mt10,.mt-10 {margin-top: 10px;}
+.mt15, .mt-15 {margin-top: 15px;}
+.mt20,.mt-20 {margin-top: 20px;}
+.mt30,.mt-30 {margin-top: 30px;}
+.mt40,.mt-40 {margin-top: 40px;}
+.mt50,.mt-50 {margin-top: 50px;}
+.mt60,.mt-60 {margin-top: 60px;}
 
 .ml5,.ml-5{margin-left:5px;}
 .ml10,.ml-10{margin-left:10px;}
 .ml15,.ml-15{margin-left:15px;}
 
-.mr-5{margin-right:5px;}
-.mr-10,.mr10{margin-right:10px;}
-.mr-20,.mr20{margin-right:20px;}
-.mr-30,.mr30{margin-right:30px;}
-.pt-30{padding-top: 30px;}
+.mr5,.mr-5{margin-right:5px;}
+.mr10,.mr-10{margin-right:10px;}
+.mr20,.mr-20{margin-right:20px;}
+.mr30,.mr-30{margin-right:30px;}
+.pt30,.pt-30{padding-top: 30px;}
 
 /*边框border*/
 .border-top{border-top:1px solid #eee}
@@ -313,6 +313,7 @@ ul{list-style: none;padding: 0;}
 .hidden{display:none !important;visibility:hidden !important}
 /*文字format*/
 .text-fmt{overflow:hidden;font-size:14px;line-height:1.6;word-wrap:break-word}
+.inline-block {display: inline-block;}
 
 /*网站logo*/
 .logo{float:left;margin:0;display:inline-block;width:125px;}
@@ -1331,6 +1332,53 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .widget-answers {
 
 }
+.widget-answers__item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.widget-answers__item.accepted {
+    min-height:130px
+}
+.cancel-cursor-pointer {
+    cursor: default;
+}
+.accepted-check {
+    color: #009a61;
+    cursor: pointer;
+}
+.accepted-check-icon {
+    font-size: 24px;
+}
+.widget-answers__item .post-offset .answer {
+    margin-bottom: 15px;
+}
+.answer .post-opt {
+    font-size: 13px;
+    line-height: 1;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.widget-answers__item .answer__info--author {
+    display: flex;
+    line-height: 32px;
+}
+.widget-answers__item .answer__info--author-avatar {
+    padding-right: 0;
+    text-align: right;
+    line-height: 32px;
+}
+.widget-answers__item .answer__info--author-warp {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    text-align: left;
+}
+.widget-answers__item .widget-comments {
+    margin-top: 10px;
+}
+
+
 
 
 
