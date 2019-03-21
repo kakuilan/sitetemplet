@@ -958,7 +958,7 @@ ul{list-style: none;padding: 0;}
     margin-bottom: 5px;
 }
 
-/*动弹文本框*/
+/*首页动弹文本框*/
 .tweet-form .tweet-editor {
     font-size: 12px;
     padding: 7px 9px;
@@ -970,7 +970,7 @@ ul{list-style: none;padding: 0;}
     resize: none;
 }
 
-/*动弹按钮*/
+/*首页动弹按钮*/
 .tweet-form .bn-tweet {
     font-size: 14px;
     text-align: center;
@@ -1185,10 +1185,82 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     line-height: 1.5rem;
     text-transform: none;
 }
+.tweet-form .form {
+    position: relative;
+    max-width: 100%;
+}
+.tweet-form .form .field{
+    clear: both;
+    margin: 0 0 1em;
+}
+.tweet-form .form textarea {
+    margin: 0;
+    -webkit-appearance: none;
+    padding: .78571429em 1em;
+    background: #fff;
+    outline: 0;
+    color: rgba(0,0,0,.87);
+    -webkit-box-shadow: 0 0 0 0 transparent inset;
+    box-shadow: 0 0 0 0 transparent inset;
+    -webkit-transition: color .1s ease,border-color .1s ease;
+    transition: color .1s ease,border-color .1s ease;
+    font-size: 1em;
+    line-height: 1.2857;
+    resize: vertical;
+    width: 100%;
+    vertical-align: top;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+}
+.tweet-form .form textarea:focus {
+    color: rgba(0,0,0,.95);
+    border-color: #1cab43;
+    border-radius: 4px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 0 0 rgba(34,36,38,.35) inset;
+    box-shadow: 0 0 0 0 rgba(34,36,38,.35) inset;
+    -webkit-appearance: none
+}
+.tweet-form .form textarea:not([rows]) {
+    height: 12em;
+    min-height: 8em;
+    max-height: 24em
+}
 .tweet-form-header .header:first-child {
     margin-top: -.14285714em;
 }
-
+.tweet-form .foot-bar .count {
+    padding: 0 6px;
+    color: rgba(0,0,0,.4);
+}
+.tweet-form .foot-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.tweet-form .foot-bar .toolbox {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+}
+.tweet-form .foot-bar .toolbox a{
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(0,0,0,.4);
+    -webkit-transition: .1s color ease;
+    transition: .1s color ease
+}
+.tweet-form .foot-bar .toolbox a:hover{
+    color: rgba(0,0,0,.8);
+}
+.tweet-form .foot-bar .toolbox a:active{
+    color: rgba(0,0,0,.9);
+}
 .tweets-list{
 
 }
@@ -1214,6 +1286,48 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     width: 160px;
     height: 160px;
     overflow: hidden;
+}
+
+/*动弹详情页*/
+.tweet-header {
+
+}
+.tweet-header .tweet-author {
+    display: flex;
+    line-height: 32px;
+}
+.tweet-header .tweet-author .author-avatar {
+    padding-right: 0;
+    text-align: right;
+    line-height: 32px;
+}
+.tweet-header .tweet-author .author-warp {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    text-align: left;
+    color: rgba(0,0,0,.4);
+}
+.tweet-header .opts-group {
+    display: inline-block;
+    line-height: 20px;
+    color: #9e9e9e;
+    float: right;
+    top: -40px;
+}
+.tweet-txt {
+    margin-top: 10px;
+    width: 100%;
+}
+.thumbups-list {
+    margin-bottom: 20px;
+}
+.thumbups-list .list-inline>li {
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.thumbups-list ul li a img {
+
 }
 
 

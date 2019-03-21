@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta name="renderer" content="webkit">
-    <title>动弹</title>
+    <title>动弹详情</title>
     <meta name="keywords" content="基本模板">
     <meta name="description" content="静态页面模板">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -89,30 +89,88 @@
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 <div class="row">
-                    <!--顶部广告-->
-                    <div class="col-md-12 col-sm-12">
-                        <div class="kggs">
-                            <a href="#"><img src="/statics/images/test/test_01.jpg" class="img-responsive"></a>
-                        </div>
-                    </div>
-
                     <!--页面左侧 start-->
                     <div class="col-xs-12 col-md-8">
+                        <!--面包屑-->
+                        <ol class="breadcrumb">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">动弹广场</a></li>
+                            <li class="active">动弹详情</li>
+                        </ol>
+
+                        <!--作者信息-->
+                        <div class="tweet-header">
+                            <div class="tweet-author">
+                                <div class="author-avatar">
+                                    <a class="mr10 inline-block" href="/u/yihan123"><img class="avatar-40 " data-toggle="popover" data-slug="yihan123" data-id="1030000018111441" src="/statics/images/test/test_22.jpg" alt=""></a>
+                                </div>
+                                <div class="author-warp">
+                                    <div class="mb5">
+                                        <a class="answer__info--author-name mr5" title="易函123" href="/u/yihan123">易函123</a>
+                                    </div>
+                                    <div>
+                                        昨天 11:55  Android
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btn-group opts-group" role="group">
+                                <button type="button" class="btn btn-default">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i> 关注
+                                </button>
+                                <button type="button" class="btn btn-default">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i> 私信
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!--动弹内容-->
+                        <div class="tweet-txt text-fmt">
+                            致开源中国的一个建议：既然是技术开源网站，为啥热门动弹里总会推一些风马牛不相及的东东，好多人为了上热门也是费尽心血图文出力啊，建议优化算法，将技术相关的探讨话题置顶，营造浓厚技术氛围，对用户、对贵站应该都有好处吧！就酱[不知道@谁]
+                        </div>
+
+                        <div class="post-opt mt-10">
+                            <ul class="list-inline text-muted">
+                                <li><a href="#" ><i class="fa fa-heart-o" aria-hidden="true"></i> 点赞（<span>0</span>）</a></li>
+                                <li><a href="#" ><i class="fa fa-external-link" aria-hidden="true"></i> 转发（<span>0</span>）</a></li>
+                                <li><a href="#" ><i class="fa fa-comment-o" aria-hidden="true"></i> 评论（<span>0</span>）</a></li>
+                                <li><a href="#" ><i class="fa fa-times" aria-hidden="true"></i> 撤销</a></li>
+                                <li><a href="#" ><i class="fa fa-ban" aria-hidden="true"></i> 举报</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="thumbups-list">
+                            <ul class="list-inline">
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                                <li><a href="#"><img class="media-object avatar-24" alt="智云联创" src="/statics/images/test/test_23.jpg"></a></li>
+                            </ul>
+                        </div>
+
+                        <!--输入框-->
                         <div class="tweet-form">
                             <div class="tweet-form-header">
-                                <h3 class="header">今天你动弹了吗？</h3>
+                                <h3 class="header">评论</h3>
                             </div>
                             <div class="form">
                                 <div class="field">
-                                    <textarea rows="3" placeholder="写上一两句吧" maxlength="160" class="tweet-textarea disabled-resize"></textarea>
+                                    <textarea rows="3" placeholder="我有话要说" maxlength="160" class="tweet-textarea disabled-resize"></textarea>
                                 </div>
                                 <div class="foot-bar">
                                     <div class="toolbox left">
                                         <a>
                                             <i class="fa fa-smile-o mr5" aria-hidden="true"></i>插入表情
-                                        </a>
-                                        <a>
-                                            <i class="fa fa-file-image-o mr5" aria-hidden="true"></i>插入图片
                                         </a>
                                     </div>
                                     <div class="count right">0/160</div>
@@ -121,278 +179,153 @@
                             </div>
                         </div>
 
-                        <h2 class="h4 widget-box-title">大家都在动弹什么？</h2>
-
-                        <!--动弹列表 start-->
-                        <ul class="list-group tweets-list">
-                            <li class="list-group-item media">
-                                <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
-                                </a>
-                                <div class="media-body">
-                                    <h5 class="media-heading">
-                                        <a href="#">彬彬仔</a>
-                                        <span class="publish-time">8分钟前</span>
-                                        <span class="from-mob">Android</span>
-                                    </h5>
-
-                                    <div class="media-middle tweet-content">
-                                        苍茫的天涯是我的爱
+                        <!--动弹评论-->
+                        <div class="widget-comments mb-20 collapse in" aria-expanded="true">
+                            <div class="widget-comment-list">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="https://wenda.tipask.com/people/6715" target="_blank">
+                                            <img class="media-object avatar-27" alt="智云联创" src="/statics/images/test/test_23.jpg">
+                                        </a>
                                     </div>
+                                    <div class="media-body">
+                                        <div class="media-heading">
+                                            <a href="https://wenda.tipask.com/people/6715" target="_blank">智云联创</a>
+                                        </div>
+                                        <div class="content"><p>21121211111</p></div>
+                                        <div class="media-footer">
+                                            <ul class="list-inline text-muted">
+                                                <li>
+                                                    2018-11-17 08:25
+                                                </li>
+                                                <li>
+                                                </li>
+                                                <li class="pull-right">
+                                                    <button class="btn btn-default btn-xs btn-support"><i class="fa fa-thumbs-o-up"></i> 4</button>
+                                                    <button class="btn btn-default btn-xs btn-oppose"><i class="fa fa-thumbs-o-down"></i> 4</button>
+                                                    <button class="btn btn-default btn-xs btn-report"><i class="fa fa-ban" aria-hidden="true"></i> 举报</button>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                    <div class="media-bottom">
-                                        <span><i class="fa fa-heart-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-comment-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-external-link" aria-hidden="true"></i>0</span>
-                                        <span><a href="/tweet_detail.html">详情</a></span>
-                                        <span class="right"><a href="#"><i class="fa fa-ban" aria-hidden="true"></i>举报</a></span>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item media">
-                                <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
-                                </a>
-                                <div class="media-body">
-                                    <h5 class="media-heading">
-                                        <a href="#">燕子006</a>
-                                        <span class="publish-time">12分钟前</span>
-                                        <span class="from-mob">iPhone</span>
-                                    </h5>
 
-                                    <div class="media-middle tweet-content">
-                                        <div class="tweet-text">
-                                            如果再见不能红着眼，那就干脆撕破脸，眷恋那年匆促刻下永远一起，不如给我打点钱。
-                                        </div>
-                                        <div class="tweet-img">
-                                            <a href="#">
-                                                <img src="statics/images/test/test_06.jpg">
-                                            </a>
-                                        </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="https://wenda.tipask.com/people/6729" target="_blank">
+                                            <img class="media-object avatar-27" alt="xiaoming007" src="/statics/images/test/test_23.jpg">
+                                        </a>
                                     </div>
+                                    <div class="media-body">
+                                        <div class="media-heading">
+                                            <a href="https://wenda.tipask.com/people/6729" target="_blank">xiaoming007</a>
+                                        </div>
+                                        <div class="content"><p>确实还不错哦</p></div>
+                                        <div class="media-footer">
+                                            <ul class="list-inline text-muted">
+                                                <li>
+                                                    2018-11-20 13:56
+                                                </li>
+                                                <li>
+                                                </li>
+                                                <li class="pull-right">
+                                                    <button class="btn btn-default btn-xs btn-support" data-source_id="2109" data-source_type="comment" data-support_num="1"><i class="fa fa-thumbs-o-up"></i> 1</button>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                    <div class="media-bottom">
-                                        <span><i class="fa fa-heart-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-comment-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-external-link" aria-hidden="true"></i>0</span>
-                                        <span><a href="#">详情</a></span>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item media">
-                                <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
-                                </a>
-                                <div class="media-body">
-                                    <h5 class="media-heading">
-                                        <a href="#">彬彬仔</a>
-                                        <span class="publish-time">8分钟前</span>
-                                        <span class="from-mob">Android</span>
-                                    </h5>
 
-                                    <div class="media-middle tweet-content">
-                                        苍茫的天涯是我的爱
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="https://wenda.tipask.com/people/6725" target="_blank">
+                                            <img class="media-object avatar-27" alt="问答小智" src="/statics/images/test/test_23.jpg">
+                                        </a>
                                     </div>
+                                    <div class="media-body">
+                                        <div class="media-heading">
+                                            <a href="https://wenda.tipask.com/people/6725" target="_blank">问答小智</a>
+                                        </div>
+                                        <div class="content"><p>不错呦</p></div>
+                                        <div class="media-footer">
+                                            <ul class="list-inline text-muted">
+                                                <li>
+                                                    2018-11-30 09:31
+                                                </li>
+                                                <li>
+                                                </li>
+                                                <li class="pull-right">
+                                                    <button class="btn btn-default btn-xs btn-support" data-source_id="2119" data-source_type="comment" data-support_num="0"><i class="fa fa-thumbs-o-up"></i> 0</button>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                    <div class="media-bottom">
-                                        <span><i class="fa fa-heart-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-comment-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-external-link" aria-hidden="true"></i>0</span>
-                                        <span><a href="#">详情</a></span>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item media">
-                                <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
-                                </a>
-                                <div class="media-body">
-                                    <h5 class="media-heading">
-                                        <a href="#">燕子006</a>
-                                        <span class="publish-time">12分钟前</span>
-                                        <span class="from-mob">iPhone</span>
-                                    </h5>
 
-                                    <div class="media-middle tweet-content">
-                                        <div class="tweet-text">
-                                            如果再见不能红着眼，那就干脆撕破脸，眷恋那年匆促刻下永远一起，不如给我打点钱。
-                                        </div>
-                                        <div class="tweet-img">
-                                            <a href="#">
-                                                <img src="statics/images/test/test_06.jpg">
-                                            </a>
-                                        </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="https://wenda.tipask.com/people/6725" target="_blank">
+                                            <img class="media-object avatar-27" alt="问答小智" src="/statics/images/test/test_23.jpg">
+                                        </a>
                                     </div>
+                                    <div class="media-body">
+                                        <div class="media-heading">
+                                            <a href="https://wenda.tipask.com/people/6725" target="_blank">问答小智</a>
+                                        </div>
+                                        <div class="content"><p>很棒的分享</p></div>
+                                        <div class="media-footer">
+                                            <ul class="list-inline text-muted">
+                                                <li>
+                                                    2018-12-01 09:25
+                                                </li>
+                                                <li>
+                                                </li>
+                                                <li class="pull-right">
+                                                    <button class="btn btn-default btn-xs btn-support" data-source_id="2120" data-source_type="comment" data-support_num="0"><i class="fa fa-thumbs-o-up"></i> 0</button>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                    <div class="media-bottom">
-                                        <span><i class="fa fa-heart-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-comment-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-external-link" aria-hidden="true"></i>0</span>
-                                        <span><a href="#">详情</a></span>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item media">
-                                <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
-                                </a>
-                                <div class="media-body">
-                                    <h5 class="media-heading">
-                                        <a href="#">彬彬仔</a>
-                                        <span class="publish-time">8分钟前</span>
-                                        <span class="from-mob">Android</span>
-                                    </h5>
 
-                                    <div class="media-middle tweet-content">
-                                        苍茫的天涯是我的爱
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="https://wenda.tipask.com/people/6725" target="_blank">
+                                            <img class="media-object avatar-27" alt="问答小智" src="/statics/images/test/test_23.jpg">
+                                        </a>
                                     </div>
+                                    <div class="media-body">
+                                        <div class="media-heading">
+                                            <a href="https://wenda.tipask.com/people/6725" target="_blank">问答小智</a>
+                                        </div>
+                                        <div class="content"><p>不错的分享</p></div>
+                                        <div class="media-footer">
+                                            <ul class="list-inline text-muted">
+                                                <li>
+                                                    2018-12-04 09:30
+                                                </li>
+                                                <li>
+                                                </li>
+                                                <li class="pull-right">
+                                                    <button class="btn btn-default btn-xs btn-support" data-source_id="2122" data-source_type="comment" data-support_num="0"><i class="fa fa-thumbs-o-up"></i> 0</button>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                    <div class="media-bottom">
-                                        <span><i class="fa fa-heart-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-comment-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-external-link" aria-hidden="true"></i>0</span>
-                                        <span><a href="#">详情</a></span>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item media">
-                                <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
-                                </a>
-                                <div class="media-body">
-                                    <h5 class="media-heading">
-                                        <a href="#">燕子006</a>
-                                        <span class="publish-time">12分钟前</span>
-                                        <span class="from-mob">iPhone</span>
-                                    </h5>
 
-                                    <div class="media-middle tweet-content">
-                                        <div class="tweet-text">
-                                            如果再见不能红着眼，那就干脆撕破脸，眷恋那年匆促刻下永远一起，不如给我打点钱。
-                                        </div>
-                                        <div class="tweet-img">
-                                            <a href="#">
-                                                <img src="statics/images/test/test_06.jpg">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="media-bottom">
-                                        <span><i class="fa fa-heart-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-comment-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-external-link" aria-hidden="true"></i>0</span>
-                                        <span><a href="#">详情</a></span>
-                                    </div>
+                                <div class="text-center mb-20 mt-20">
+                                    <button type="button" class="btn btn-default btn-sm btn-block load-more" data-loading-text="加载中..." data-source_type="article" data-source_id="3" data-next_page_url="http://ask.loc/article/3/comments?page=2">
+                                        <i class="fa fa-refresh" aria-hidden="true"></i>加载更多
+                                    </button>
                                 </div>
-                            </li>
-                            <li class="list-group-item media">
-                                <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
-                                </a>
-                                <div class="media-body">
-                                    <h5 class="media-heading">
-                                        <a href="#">彬彬仔</a>
-                                        <span class="publish-time">8分钟前</span>
-                                        <span class="from-mob">Android</span>
-                                    </h5>
-
-                                    <div class="media-middle tweet-content">
-                                        苍茫的天涯是我的爱
-                                    </div>
-
-                                    <div class="media-bottom">
-                                        <span><i class="fa fa-heart-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-comment-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-external-link" aria-hidden="true"></i>0</span>
-                                        <span><a href="#">详情</a></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item media">
-                                <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
-                                </a>
-                                <div class="media-body">
-                                    <h5 class="media-heading">
-                                        <a href="#">燕子006</a>
-                                        <span class="publish-time">12分钟前</span>
-                                        <span class="from-mob">iPhone</span>
-                                    </h5>
-
-                                    <div class="media-middle tweet-content">
-                                        <div class="tweet-text">
-                                            如果再见不能红着眼，那就干脆撕破脸，眷恋那年匆促刻下永远一起，不如给我打点钱。
-                                        </div>
-                                        <div class="tweet-img">
-                                            <a href="#">
-                                                <img src="statics/images/test/test_06.jpg">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="media-bottom">
-                                        <span><i class="fa fa-heart-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-comment-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-external-link" aria-hidden="true"></i>0</span>
-                                        <span><a href="#">详情</a></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item media">
-                                <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
-                                </a>
-                                <div class="media-body">
-                                    <h5 class="media-heading">
-                                        <a href="#">彬彬仔</a>
-                                        <span class="publish-time">8分钟前</span>
-                                        <span class="from-mob">Android</span>
-                                    </h5>
-
-                                    <div class="media-middle tweet-content">
-                                        苍茫的天涯是我的爱
-                                    </div>
-
-                                    <div class="media-bottom">
-                                        <span><i class="fa fa-heart-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-comment-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-external-link" aria-hidden="true"></i>0</span>
-                                        <span><a href="#">详情</a></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item media">
-                                <a class="media-left item-avatar" href="#">
-                                    <img class="img-circle" src="/statics/images/test/test_21.jpg" alt="Roogle">
-                                </a>
-                                <div class="media-body">
-                                    <h5 class="media-heading">
-                                        <a href="#">燕子006</a>
-                                        <span class="publish-time">12分钟前</span>
-                                        <span class="from-mob">iPhone</span>
-                                    </h5>
-
-                                    <div class="media-middle tweet-content">
-                                        <div class="tweet-text">
-                                            如果再见不能红着眼，那就干脆撕破脸，眷恋那年匆促刻下永远一起，不如给我打点钱。
-                                        </div>
-                                        <div class="tweet-img">
-                                            <a href="#">
-                                                <img src="statics/images/test/test_06.jpg">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="media-bottom">
-                                        <span><i class="fa fa-heart-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-comment-o" aria-hidden="true"></i>34</span>
-                                        <span><i class="fa fa-external-link" aria-hidden="true"></i>0</span>
-                                        <span><a href="#">详情</a></span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <!--动弹列表 end-->
+                            </div>
+                        </div>
 
 
                     </div>
@@ -576,6 +509,7 @@
 
                     </div>
                     <!--页面右侧 end-->
+
 
                 </div>
             </div>
