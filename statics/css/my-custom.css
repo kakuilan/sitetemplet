@@ -1698,4 +1698,65 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     margin:0
 }
 
+/*TA的文章页*/
+.profile-mine__heading {
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.profile-mine__heading--filter span {
+    font-size: 14px;
+    color: #999999;
+    line-height: 20px;
+    font-weight: normal;
+}
+.profile-mine__heading--filter .btn-group {
+    margin-left: 10px;
+}
+.profile-mine__content {
+    list-style: none;
+    padding: 0;
+    border-top: none;
+    margin-top: 0;
+}
+.profile-mine__content li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    margin-top: 0;
+}
+.profile-mine__content .label-warning {
+    background-color: #FCF8E3;
+    color: #8A6D3B;
+}
+.profile-mine__content .label {
+    display: inline-block;
+    width: 55px;
+    line-height: 26px;
+    font-size: 13px;
+    padding: 0;
+    font-weight: 500;
+}
+.profile-mine__content--title-warp {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.profile-mine__content--title {
+    font-size: 14px;
+    color: #333333;
+    line-height: 26px;
+}
+.profile-mine__content--date {
+    font-size: 14px;
+    color: #999999;
+    line-height: 19px;
+}
+.profile-mine__content a.cate{
+    margin-left: 30px;
+    color: #009a61;
+    text-decoration: none;
+}
+
+
+
 
