@@ -1188,6 +1188,7 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 .login-section .login-main {
     padding: 40px 45px 20px 45px;
@@ -1652,7 +1653,7 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     float:right;
 }
 .credit-radar {
-    height: 400px;
+    height: 450px;
 }
 
 .profile__skill {
@@ -1697,6 +1698,44 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .profile__skill .authlist li:last-child {
     margin:0
 }
+.profile__heading--desc-heading {
+    height: 32px;
+    background-color: #E3E3E3;
+    padding: 0 12px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.profile__heading--desc-heading .profile__heading--desc-heading-dot-warp {
+    line-height: 32px;
+}
+.profile__heading-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-right: 8px;
+}
+.profile__heading-dot--red {
+    background-color: #FF5F57;
+}
+.profile__heading-dot--yellow {
+    background-color: #FFBD2E;
+}
+.profile__heading-dot--green {
+    background-color: #28CA42;
+}
+.profile__heading--desc-body {
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    color: #666666;
+    overflow: auto;
+    min-height: 80px;
+    padding: 20px;
+    font-family: "Source Code Pro", Consolas, Menlo, Monaco, "Courier New", monospace;
+}
+
 
 /*TA的文章页*/
 .profile-mine__heading {
@@ -1764,4 +1803,8 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     color: #999;
 }
 
-
+/*TA的声望记录页*/
+.log-chart {
+    min-width: 500px;
+    min-height: 350px;
+}
