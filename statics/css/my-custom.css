@@ -134,6 +134,8 @@ pre{white-space: pre-wrap;word-wrap: break-word;}
 .mr10,.mr-10{margin-right:10px;}
 .mr20,.mr-20{margin-right:20px;}
 .mr30,.mr-30{margin-right:30px;}
+.pt10,.pt-10{padding-top: 10px;}
+.pt20,.pt-20{padding-top: 30px;}
 .pt30,.pt-30{padding-top: 30px;}
 
 /*边框border*/
@@ -292,15 +294,15 @@ pre{white-space: pre-wrap;word-wrap: break-word;}
 
 
 /*用户头像*/
-.avatar-16{width:16px;height:16px;border-radius:50%;}
-.avatar-20{width:20px;height:20px;border-radius:50%;}
-.avatar-24{width:20px;height:20px;border-radius:50%;}
-.avatar-27{width:27px;height:27px;border-radius:50%;}
-.avatar-32{width:32px;height:32px;border-radius:50%;}
-.avatar-40{width:40px;height:40px;border-radius:50%;}
-.avatar-50{width:40px;height:40px;border-radius:50%;}
-.avatar-64{width:64px;height:64px;border-radius:50%;}
-.avatar-128{width:128px;height:128px;border-radius:50%;}
+.avatar-16{width:16px;height:16px;}
+.avatar-20{width:20px;height:20px;}
+.avatar-24{width:20px;height:20px;}
+.avatar-27{width:27px;height:27px;}
+.avatar-32{width:32px;height:32px;}
+.avatar-40{width:40px;height:40px;}
+.avatar-50{width:40px;height:40px;}
+.avatar-64{width:64px;height:64px;}
+.avatar-128{width:128px;height:128px;}
 .avatar-256{width:256px;height:256px;}
 
 .avatar-container{margin:0 auto;width:256px;}
@@ -1807,4 +1809,62 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .log-chart {
     min-width: 500px;
     min-height: 350px;
+}
+
+/*交友首页*/
+.member_recomm h4 {
+    color: #b0778c;
+}
+.member_recomm ul li.user {
+    margin-bottom: 10px;
+}
+.member_recomm ul li.user .img {
+    clear: both;
+}
+.member_recomm ul li.user .img img{
+    width: 100%;
+}
+.member_recomm ul li a:hover img,.member_new ul li a:hover img{
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+}
+.member_recomm ul li.user .info {
+    background: #f0edeb;
+    height: 24px;
+    padding: 2px 5px;
+}
+.member_recomm ul li.user .info:last-child {
+    margin-bottom: 10px;
+}
+.member_new {
+
+}
+.member_new h4 {
+    color: #b0778c;
+}
+.member_new ul {
+    margin-bottom: 20px;
+}
+.member_new ul li {
+    width: 100%;
+    padding-bottom: 10px;
+}
+.member_new ul li div.user {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+.member_new .user .desc {
+    line-height: 24px;
+}
+.member_new .user .desc div:first-child a {
+    color: #fc2256;
+}
+.member_new .user .desc div:nth-child(2) {
+    color: #987b15;
+}
+.member_new .user .desc div:last-child {
+    color: #bbb;
+    margin-top: 5px;
+    max-height: 40px;
 }
