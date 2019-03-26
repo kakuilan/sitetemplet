@@ -1740,20 +1740,20 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 
 
 /*TA的文章页*/
-.profile-mine__heading {
+.sort_title {
     margin: 0;
     padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
 }
-.profile-mine__heading--filter span {
+.sort_title .pull-right span {
     font-size: 14px;
     color: #999999;
     line-height: 20px;
     font-weight: normal;
 }
-.profile-mine__heading--filter .btn-group {
+.sort_title .pull-right .btn-group {
     margin-left: 10px;
 }
+
 .profile-mine__content {
     list-style: none;
     padding: 0;
@@ -1843,27 +1843,27 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .member_new h4 {
     color: #d83473;
 }
-.member_new ul {
+ul.member_list {
     margin-bottom: 20px;
 }
-.member_new ul li {
+ul.member_list li {
     width: 100%;
     padding-bottom: 10px;
 }
-.member_new ul li div.user {
+ul.member_list li div.user {
     border-top: 1px solid #ddd;
     padding-top: 10px;
 }
-.member_new .user .desc {
+ul.member_list li div.user .desc {
     line-height: 24px;
 }
-.member_new .user .desc div:first-child a {
+ul.member_list li div.user .desc div:first-child a {
     color: #fc2256;
 }
-.member_new .user .desc div:nth-child(2) {
+ul.member_list li div.user .desc div:nth-child(2) {
     color: #987b15;
 }
-.member_new .user .desc div:last-child {
+ul.member_list li div.user .desc div:last-child {
     color: #bbb;
     margin-top: 5px;
     max-height: 40px;
@@ -1882,3 +1882,12 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     margin-left: -10px;
     line-height: 24px;
 }
+
+/*交友搜索页*/
+.friend-form .control-label {
+    padding-right: 0;
+    text-align: left;
+    padding-left: 15px;
+    float: left;
+}
+

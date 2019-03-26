@@ -115,7 +115,7 @@
                                     <ul class="list-inline text-muted">
                                         <li class="col-md-2 col-sm-2 col-xs-6 user">
                                             <div class="img">
-                                                <a href="#">
+                                                <a href="/friend_detail.html">
                                                     <img src="/statics/images/test/test_34_1.png">
                                                 </a>
                                             </div>
@@ -398,11 +398,11 @@
                                     <h4 class="title left">新人报道</h4>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <h5 class="title right"><a href="#">更多»</a></h5>
+                                    <h5 class="title right"><a href="/friend_search.html">更多»</a></h5>
                                 </div>
                             </div>
 
-                            <ul class="list-inline text-muted">
+                            <ul class="list-inline text-muted member_list">
                                 <li>
                                     <div class="user">
                                         <div class="left mr-10">
@@ -529,7 +529,7 @@
                                 缘分搜索
                             </h2>
 
-                            <form class="form-horizontal" role="form">
+                            <form class="form-horizontal" role="form" action="/friend_search.html">
                                 <div class="form-group">
                                     <label for="sex" class="col-sm-2 control-label">性别</label>
                                     <div class="col-sm-10">
@@ -540,9 +540,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="sex" class="col-sm-2 control-label">年龄</label>
+                                    <label class="col-sm-2 control-label">年龄</label>
                                     <div class="col-sm-5">
-                                        <select class="form-control" id="firstname0">
+                                        <select class="form-control" id="age_start">
                                             <option value="">从</option>
                                             <option value="">18</option>
                                             <option value="">19</option>
@@ -552,7 +552,7 @@
                                         </select>
                                     </div>
                                     <div class="col-sm-5">
-                                        <select class="form-control" id="firstname1">
+                                        <select class="form-control" id="age_end">
                                             <option value="">到</option>
                                             <option value="">19</option>
                                             <option value="">19</option>
@@ -563,7 +563,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-12 text-right">
-                                        <button type="submit" class="btn btn-info">查找</button>
+                                        <button type="submit" class="btn btn-primary">查找</button>
                                     </div>
                                 </div>
                             </form>
@@ -575,7 +575,6 @@
                             <h2 class="widget-box-title">
                                 安全提醒
                             </h2>
-
                             <ol>
                                 <li>发布交友信息必须进行实名认证</li>
                                 <li>交友活动不收费，禁止以任何理由收取任何费用</li>
