@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta name="renderer" content="webkit">
-    <title>个人主页</title>
+    <title>交友-TA的相片</title>
     <meta name="keywords" content="基本模板">
     <meta name="description" content="静态页面模板">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/statics/css/font-awesome.min.css" />
 
     <link rel="stylesheet" href="/statics/css/my-custom.css" />
+    <link rel="stylesheet" href="/statics/css/baguetteBox.min.css" />
 
     <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
     <!--[if lte IE 8]>
@@ -94,12 +95,7 @@
                 </div>
                 <div class="col-md-7">
                     <div class="space-header-name h3">
-                        sdf_sky  <small> - 站长助理</small>
-                        <div class="space-header-authentication pull-right">
-                            <span class="space-header-item"><i class="fa fa-envelope-o fa-border text-blue" aria-hidden="true"></i> 邮箱认证</span>
-                            <span class="space-header-item"><i class="fa fa-user-o fa-border text-blue" aria-hidden="true"></i> 实名认证</span>
-                            <span class="space-header-item"><i class="fa fa-mobile fa-border" aria-hidden="true"></i> 手机认证</span>
-                        </div>
+                        sdf_sky  <small> - 赵先生</small>
                     </div>
                     <hr>
 
@@ -111,35 +107,31 @@
                         </span>
                         <span class="space-header-item"><i class="fa fa-map-marker"></i> 北京  - 北京市 </span>
                         <span class="space-header-item"><i class="fa fa-calendar"></i> 注册于 2016-02-16</span>
-                    </div>
-
-                    <!--签名-->
-                    <div class="space-header-desc mt-15">
-                        <p>有关Tipask的任何问题可以直接联系我。</p>
+                        <span class="space-header-item"><i class="fa fa-calendar"></i> 加入交友 2016-02-16</span>
                     </div>
 
                 </div>
                 <div class="col-md-3">
                     <div class="space-header-info row">
                         <div class="col-md-4">
-                            <span class="h3">1984</span><span>积分数</span>
+                            <span class="h3">23</span><span>年龄</span>
                         </div>
                         <div class="col-md-4">
-                            <span class="h3">17650</span><span>声望值</span>
+                            <span class="h3">175</span><span>身高/CM</span>
                         </div>
                         <div class="col-md-4">
-                            <span class="h3">132</span><span>信用值</span>
+                            <span class="h3">55</span><span>体重/KG</span>
                         </div>
                     </div>
                     <div class="space-header-info row mt-15">
                         <div class="col-md-4">
-                            <span class="h3">1984</span><span>金币数</span>
+                            <span class="h3">A</span><span>血型</span>
                         </div>
                         <div class="col-md-4">
-                            <span class="h3">17650</span><span>贡献值</span>
+                            <span class="h3">虎</span><span>生肖</span>
                         </div>
                         <div class="col-md-4">
-                            <span class="h3">132</span><span>访问数</span>
+                            <span class="h3">白羊</span><span>星座</span>
                         </div>
                     </div>
 
@@ -162,7 +154,7 @@
                     <div class="col-md-2">
                         <div class="mb-10">
                             <a class="btn mr10 btn-success  userfollow" >加关注</a>
-                            <a class="btn btn-default sendmsg" >发私信</a>
+                            <a class="btn btn-default jubao" ><i class="fa fa-ban" aria-hidden="true"></i> 举报</a>
                         </div>
                         <div class="profile__heading-info row">
                             <div class="col-md-6 col-xs-6" style="border-right: 1px solid #eee;">
@@ -177,82 +169,84 @@
                         <ul class="nav nav-pills nav-stacked profile__nav">
                             <li role="separator" class="divider"><a></a></li>
 
-                            <li class="active"><a href="/home.html"><span>TA的主页</span></a></li>
-                            <li><a href="/ta_prestige.html"><span>TA的积分记录</span></a></li>
-                            <li><a href="/ta_tweet.html"><span>TA的动弹</span><span class="count">78</span></a></li>
-                            <li><a href="/ta_blog.html"><span>TA的文章</span><span class="count">78</span></a></li>
-                            <li><a href="#"><span>TA的提问</span><span class="count">78</span></a></li>
-                            <li><a href="#"><span>TA的讨论</span><span class="count">78</span></a></li>
-                            <li><a href="#"><span>TA的组图</span><span class="count">78</span></a></li>
-
+                            <li><a href="/friend_detail.html"><span>TA的交友主页</span></a></li>
+                            <li class="active"><a href="/friend_gallery.html"><span>TA的相片</span></a></li>
+                            <li><a href="/friend_message.html"><span>给TA的留言</span><span class="count">78</span></a></li>
                         </ul>
                         <!--菜单 end-->
 
                     </div>
                     <!--左侧 end-->
 
-                    <!--中侧 start-->
-                    <div class="col-md-7">
-                        <!--简介 start -->
-                        <div class="profile__heading--desc mb-10">
-                            <div class="profile__heading--desc-heading">
-                                <span class="profile__heading--desc-heading-dot-warp">
-                                    <span class="profile__heading-dot profile__heading-dot--red"></span>
-                                    <span class="profile__heading-dot profile__heading-dot--yellow"></span>
-                                    <span class="profile__heading-dot profile__heading-dot--green"></span>
-                                </span>
-                                <span>个人简介</span>
-                            </div>
-
-                            <div class="profile__heading--desc-body">
-                                <div class="profile__desc">
-                                    <p>TA很懒，暂无简介！资深技术宅，爱好广泛，兴趣多变。博览群书，喜欢扯淡。十八种语言样样稀松。想要了解更多，请关注微信公众号：充实的脑洞。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--简介 end -->
-
-                        <div class="panel panel-default hidden-xs">
-                            <div class="panel-heading"><h3 class="panel-title">属性雷达</h3></div>
-                            <div class="panel-body">
-                                <div class="credit-radar" id="radar"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--中侧 end-->
-
                     <!--右侧 start-->
-                    <div class="col-md-3">
-                        <div class="profile__skill">
-                            <h4 class="profile__heading--tech-heading">信息认证</h4>
-                            <ul class="authlist">
-                                <li><i class="fa fa-envelope-o"></i> 未邮箱认证</li>
-                                <li><i class="fa fa-envelope-open"></i> 已邮箱认证</li>
-                                <li><i class="fa fa-user-o"></i> 未实名认证</li>
-                                <li><i class="fa fa-user"></i> 已实名认证</li>
-                                <li><i class="fa fa-mobile"></i> 未手机认证</li>
-                                <li><i class="fa fa-mobile"></i> 已手机认证</li>
-                            </ul>
+                    <div class="col-md-10">
+                        <a id="likeBtn" class="picture_like_btn">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true" title="点赞"></i>
+                        </a>
+                        <h4 class="sort_title mb-20">
+                            <span>TA的相片</span>
+                        </h4>
 
-                            <div class="btn-group opts-group mt-15" role="group">
-                                <button type="button" class="btn btn-default">
-                                    <i class="fa fa-hand-o-up" aria-hidden="true"></i> 举报TA
-                                </button>
-                                <button type="button" class="btn btn-default">
-                                    <i class="fa fa-ban" aria-hidden="true"></i> 屏蔽TA
-                                </button>
+                        <div class="ta-gallery">
+                            <div class="item">
+                                <span>
+                                    <i class="fa fa-heart-o" aria-hidden="true" title="点赞"></i>
+                                </span>
+                                <a class="lightbox" href="/statics/images/test/big_01.jpg" data-caption="Golden Gate Bridge" data-id="111">
+                                    <img src="/statics/images/test/big_01.jpg" alt="hello world" title="hello world" >
+                                </a>
                             </div>
-                        </div>
-
-                        <!--广告-->
-                        <div class="row kggs">
-                            <div class="col-md-12 col-sm-12">
-                                <a href="#" class="">
-                                    <img src="/statics/images/test/test_02.png" width="100%">
+                            <div class="item">
+                                <a class="lightbox" href="/statics/images/test/big_02.jpg">
+                                    <img src="/statics/images/test/big_02.jpg" alt="Bridge" >
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="lightbox" href="/statics/images/test/mid_01.jpg">
+                                    <img src="/statics/images/test/mid_01.jpg" alt="Bridge" >
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="lightbox" href="/statics/images/test/test_26.png">
+                                    <img src="/statics/images/test/test_26.png" alt="Bridge" >
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="lightbox" href="/statics/images/test/mid_02.jpg">
+                                    <img src="/statics/images/test/mid_02.jpg" alt="Bridge" >
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="lightbox" href="/statics/images/test/mid_05.jpg">
+                                    <img src="/statics/images/test/mid_05.jpg" alt="Bridge" >
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="lightbox" href="/statics/images/test/test_27.png">
+                                    <img src="/statics/images/test/test_27.png" alt="Bridge" >
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="lightbox" href="/statics/images/test/test_28.png">
+                                    <img src="/statics/images/test/test_28.png" alt="Bridge" >
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="lightbox" href="/statics/images/test/test_29.png">
+                                    <img src="/statics/images/test/test_29.png" alt="Bridge" >
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="lightbox" href="/statics/images/test/test_30.png">
+                                    <img src="/statics/images/test/test_30.png" alt="Bridge" >
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="lightbox" href="/statics/images/test/test_31.png">
+                                    <img src="/statics/images/test/test_31.png" alt="Bridge" >
                                 </a>
                             </div>
                         </div>
-
                     </div>
                     <!--右侧 end-->
 
@@ -301,44 +295,39 @@
     if('ontouchstart' in document.documentElement) document.write("<script src='/statics/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 </script>
 <script src="/statics/js/bootstrap.min.js"></script>
-<script src="/statics/js/echarts.min.js"></script>
+<script src="/statics/js/imagesloaded.pkgd.min.js"></script>
+<script src="/statics/js/masonry.pkgd.min.js"></script>
+<script src="/statics/js/baguetteBox.min.js"></script>
 
 <script>
     $(function($) {
-        var myChart = echarts.init(document.getElementById('radar'));
-        var option = {
-            tooltip: {},
-            color: ['#7bd9a5','#0098d9'],
-            legend: {
-                x: 'left',
-                data: ['社区平均', 'TA的数值']
-            },
-            radar: {
-                indicator: [
-                    { name: '活跃度', max: 6500},
-                    { name: '影响力', max: 16000},
-                    { name: '贡献值', max: 30000},
-                    { name: '信用值', max: 38000},
-                    { name: '财富值', max: 52000},
-                    { name: '魅力值', max: 25000}
-                ],
-            },
-            series: [{
-                type: 'radar',
-                areaStyle: {normal: {}},
-                data : [
-                    {
-                        value : [4300, 10000, 28000, 35000, 50000, 19000],
-                        name : '社区平均',
-                    },
-                    {
-                        value : [5000, 14000, 28000, 31000, 42000, 21000],
-                        name : 'TA的数值',
-                    }
-                ]
-            }]
-        };
-        myChart.setOption(option);
+        var $grid = $('.ta-gallery').imagesLoaded( function() {
+            var likeIds = []; //已点赞的相片ID数组
+            var $likeBtn = $('#likeBtn');
+            $likeBtn.hide('fast');
+
+            // 在所有图片加载完成后初始化Masonry
+            var $msnry = $grid.masonry({
+                itemSelector: '.item',
+                columnWidth: 200
+            });
+
+
+            baguetteBox.run('.ta-gallery', {
+                animation: 'fadeIn',
+                noScrollbars: true,
+                titleTag: true,
+                onChange:function(currentIndex, imagesCount) {
+                    console.log('test', currentIndex, imagesCount);
+                },
+                afterHide: function () {
+                    $likeBtn.hide('fast');
+                },
+                afterShow: function () {
+                    $likeBtn.show();
+                }
+            });
+        });
     });
 </script>
 </body>

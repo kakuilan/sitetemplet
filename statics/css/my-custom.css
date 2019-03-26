@@ -1891,3 +1891,36 @@ ul.member_list li div.user .desc div:last-child {
     float: left;
 }
 
+/*交友相片页*/
+.ta-gallery {
+    
+}
+.ta-gallery .item {
+    width: 200px;
+}
+.ta-gallery .item img {
+    max-width: 200px;
+}
+.ta-gallery .item span{
+    color: #f37f8c;
+    position: absolute;
+    right: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 9;
+}
+.picture_like_btn {
+    position: fixed;
+    cursor: pointer;
+    top: 80px;
+    right: calc(2% + 6px);
+    width: 30px;
+    height: 30px;
+    z-index: 1000001;
+    color: #f37f8c;
+}
+.picture_like_btn i {
+    margin-left: 5px;
+    font-size: 28px;
+}
