@@ -1813,7 +1813,7 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 
 /*交友首页*/
 .member_recomm h4 {
-    color: #b0778c;
+    color: #d83473;
 }
 .member_recomm ul li.user {
     margin-bottom: 10px;
@@ -1841,7 +1841,7 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 
 }
 .member_new h4 {
-    color: #b0778c;
+    color: #d83473;
 }
 .member_new ul {
     margin-bottom: 20px;
@@ -1867,4 +1867,18 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     color: #bbb;
     margin-top: 5px;
     max-height: 40px;
+}
+.search-frm h2 {
+    color: #d83473;
+}
+.search-frm .control-label {
+    padding-right: 0;
+}
+.secure-tips h2 {
+    color: red;
+}
+.secure-tips ol li {
+    color: #fd4b83;
+    margin-left: -10px;
+    line-height: 24px;
 }
