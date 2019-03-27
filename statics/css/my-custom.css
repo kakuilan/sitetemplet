@@ -146,7 +146,16 @@ pre{white-space: pre-wrap;word-wrap: break-word;}
 .black,.text-black{color:#333}
 .gold,.text-gold{color:#ff8a00;}
 .black:hover,.text-black:hover{color:#333}
+/*背景-灰色*/
 .bg-gray{background-color:#F3F3F3}
+/*背景-紫色*/
+.bg-violet {background-color: #eaebff;}
+/*背景-粉红*/
+.bg-pink {background-color: #fcf2f6;}
+/*背景-青色*/
+.bg-cyan {background-color: #63cdd6;}
+/*背景-黄色*/
+.bg-yellow {background-color: #e8b04d;}
 .span-line{margin-left:8px;margin-right:8px;color:#999}
 /*内容隐藏*/
 .hidden{display:none !important;visibility:hidden !important}
@@ -292,6 +301,38 @@ pre{white-space: pre-wrap;word-wrap: break-word;}
     text-decoration: none;
 }
 
+/*左边框*/
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout-danger {
+    border-left-color: #ce4844;
+}
+.bs-callout-danger h4 {
+    color: #ce4844;
+}
+.bs-callout-warning {
+    border-left-color: #aa6708;
+}
+.bs-callout-warning h4 {
+    color: #aa6708;
+}
+.bs-callout-info {
+    border-left-color: #1b809e;
+}
+.bs-callout-info h4 {
+    color: #1b809e;
+}
+.bs-callout-dear {
+    border-left-color: #ff777b;
+}
+.bs-callout-dear h4 {
+    color: #ff4a7a;
+}
 
 /*用户头像*/
 .avatar-16{width:16px;height:16px;}
@@ -1890,6 +1931,28 @@ ul.member_list li div.user .desc div:last-child {
     padding-left: 15px;
     float: left;
 }
+/*交友主页*/
+.info-item {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.extend-info {
+    list-style: circle inside;
+}
+.extend-info .title {
+    color: #ad894b;
+    margin-left: -5px;
+    width: 120px;
+    display: inline-block;
+}
+.extend-info li {
+    line-height: 26px;
+}
 
 /*交友相片页*/
 .ta-gallery {
@@ -1901,14 +1964,10 @@ ul.member_list li div.user .desc div:last-child {
 .ta-gallery .item img {
     max-width: 200px;
 }
-.ta-gallery .item span{
-    color: #f37f8c;
-    position: absolute;
-    right: 4px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 9;
+.ta-gallery .item a:hover img{
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
 }
 .picture_like_btn {
     position: fixed;
@@ -1924,3 +1983,5 @@ ul.member_list li div.user .desc div:last-child {
     margin-left: 5px;
     font-size: 28px;
 }
+
+
