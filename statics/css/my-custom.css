@@ -1333,6 +1333,9 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     width: 150px;
     border-radius: 150px;
 }
+.user-baseinfo .ui-content {
+    line-height: 24px;
+}
 .user-baseinfo .ui-content h4 {
     font-size: 15px;
 }
