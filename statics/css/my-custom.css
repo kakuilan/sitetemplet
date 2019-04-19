@@ -1,4 +1,4 @@
-/* 自定义样式 */
+/* mysite */
 
 /*--my bootstrap--*/
 /*a标签不要下划线*/
@@ -1339,7 +1339,12 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .user-baseinfo .ui-content h4 {
     font-size: 15px;
 }
-
+.user-baseinfo .ui-content .authinfo {
+    line-height: 28px;
+}
+.user-baseinfo .ui-content .authinfo .fa {
+    color: #ff8a00;
+}
 /*内容(新闻、文章)详情*/
 .content-main {
 
