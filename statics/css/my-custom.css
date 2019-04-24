@@ -1087,6 +1087,9 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     line-height: 24px;
     padding: 8px 5px;
 }
+.tweets-list li .tweet-content .tweet-text {
+    margin-bottom: 5px;
+}
 .tweets-list li span{
     color: #BBB;
     margin-right: 8px;
@@ -1097,16 +1100,23 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .tweets-list li span a{
     color: #BBB;
 }
-.tweets-list li .tweet-content{
-
+.tweets-list li .tweet-content .multimgs {
+    display: flex;
+    flex-wrap: wrap;
 }
-.tweets-list li .tweet-content .tweet-img {
-    width: 160px;
-    height: 160px;
+.tweets-list li .tweet-content .multimgs .tweet-img {
+    width: 100px;
+    height: 100px;
     overflow: hidden;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+}
+.tweets-list li .tweet-content .multimgs .tweet-img img {
+    width: 100px;
+    height: 100px;
 }
 
-/*动弹详情页*/
+    /*动弹详情页*/
 .tweet-header {
 
 }
