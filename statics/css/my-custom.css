@@ -767,9 +767,12 @@ pre{white-space: pre-wrap;word-wrap: break-word;}
 
 
 /* 全局广告类 */
-.kggs{
-    margin-bottom: 10px;
+.kggs {
     display: block;
+}
+.kggs img {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .margin-bottom{
