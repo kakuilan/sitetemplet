@@ -1212,7 +1212,7 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 }
 .login-section {
     margin: 50px auto;
-    width: 460px;
+    max-width: 460px;
     -webkit-border-radius: 0;
     -webkit-background-clip: padding-box;
     -moz-border-radius: 0;
@@ -1238,6 +1238,13 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+.login-section .logon-tab > a:hover {
+    background-color: #fafafa;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
 .login-section .logon-tab > a.active {
     background-color: #fff;
     -webkit-transition: all 0.3s ease;
@@ -1251,6 +1258,26 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 }
 .login-section .form-control {
     font-size: 15px;
+}
+.login-section .control-label {
+    font-size: 13px;
+}
+.login-section .n-bootstrap .form-group {
+    position: relative;
+}
+.login-section .n-bootstrap .input-group {
+    position: inherit;
+}
+.login-section .n-bootstrap .n-right {
+    margin-top: 0;
+    top: 0;
+    position: absolute;
+    left: 0;
+    text-align: right;
+    width: 100%;
+}
+.login-section .n-bootstrap .n-right .msg-wrap {
+    position: relative;
 }
 .input-group-lg > .form-control{
     height: 42px;
