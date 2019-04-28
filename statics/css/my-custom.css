@@ -110,7 +110,7 @@ blockquote{font-size: 13px;}
 pre{white-space: pre-wrap;word-wrap: break-word;}
 .wrap{padding-bottom:30px;position:relative}
 
-/*margin-bottom*/
+/*间距*/
 .mb5,.mb-5 {margin-bottom: 5px;}
 .mb10,.mb-10 {margin-bottom: 10px;}
 .mb20,.mb-20{margin-bottom:20px;}
@@ -118,25 +118,30 @@ pre{white-space: pre-wrap;word-wrap: break-word;}
 .mb40,.mb-40{margin-bottom:40px;}
 .mb50,.mb-50{margin-bottom:50px;}
 
+.mt5,.mt-5 {margin-top: 5px;}
 .mt10,.mt-10 {margin-top: 10px;}
-.mt15, .mt-15 {margin-top: 15px;}
+.mt15,.mt-15 {margin-top: 15px;}
 .mt20,.mt-20 {margin-top: 20px;}
 .mt30,.mt-30 {margin-top: 30px;}
 .mt40,.mt-40 {margin-top: 40px;}
 .mt50,.mt-50 {margin-top: 50px;}
-.mt60,.mt-60 {margin-top: 60px;}
 
 .ml5,.ml-5{margin-left:5px;}
 .ml10,.ml-10{margin-left:10px;}
 .ml15,.ml-15{margin-left:15px;}
+.ml30,.ml-30{margin-left:30px;}
 
 .mr5,.mr-5{margin-right:5px;}
 .mr10,.mr-10{margin-right:10px;}
-.mr20,.mr-20{margin-right:20px;}
+.mr15,.mr-15{margin-right:15px;}
 .mr30,.mr-30{margin-right:30px;}
+
 .pt10,.pt-10{padding-top: 10px;}
 .pt20,.pt-20{padding-top: 30px;}
 .pt30,.pt-30{padding-top: 30px;}
+.pb10,.pb-10{padding-bottom: 10px;}
+.pb20,.pb-20{padding-bottom: 30px;}
+.pb30,.pb-30{padding-bottom: 30px;}
 
 /*边框border*/
 .border-top{border-top:1px solid #eee}
@@ -1047,6 +1052,22 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     min-height: 8em;
     max-height: 24em
 }
+/*动弹图片预览*/
+
+.tweet-form .form ul {
+
+}
+.tweet-form .form ul li {
+    max-width: 110px;
+}
+.tweet-form .form ul li a.thumbnail{
+    padding: 2px;
+    margin-bottom: 10px;
+}
+.tweet-form .form ul li a.thumbnail img{
+    width: 100px;
+    height: 100px;
+}
 .tweet-form-header .header:first-child {
     margin-top: -.14285714em;
 }
@@ -1098,10 +1119,26 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .tweets-list li .tweet-content .tweet-text {
     margin-bottom: 5px;
 }
+.tweets-list li .tweet-content .tweet-text img.emojione{
+    font-size: inherit;
+    height: 2ex;
+    width: 2.1ex;
+    min-height: 20px;
+    min-width: 20px;
+    display: inline-block;
+    margin: -.2ex .15em .2ex;
+    line-height: normal;
+    vertical-align: middle;
+    max-width: 100%;
+    top: 0;
+}
 .tweets-list li span{
     color: #ccc;
     margin-left: 5px;
     margin-right: 5px;
+}
+.tweets-list li span.time,.tweets-list li span.device {
+    margin-left: 10px;
 }
 .tweets-list li span i{
     margin-right: 3px;
