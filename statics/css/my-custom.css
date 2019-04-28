@@ -892,7 +892,7 @@ pre{white-space: pre-wrap;word-wrap: break-word;}
 .list-group-item {
     position: relative;
     display: block;
-    padding: 10px 15px;
+    padding: 10px 10px;
     margin-bottom: -16px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -1082,8 +1082,13 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .tweet-form .foot-bar .toolbox a:active{
     color: rgba(0,0,0,.9);
 }
+/*动弹列表*/
 .tweets-list{
 
+}
+.tweets-list li .item-avatar img {
+    width: 45px;
+    height: 45px;
 }
 .tweets-list li .tweet-content {
     vertical-align: top;
@@ -1094,15 +1099,18 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     margin-bottom: 5px;
 }
 .tweets-list li span{
-    color: #BBB;
-    margin-left: 4px;
-    margin-right: 8px;
+    color: #ccc;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .tweets-list li span i{
     margin-right: 3px;
 }
 .tweets-list li span a{
-    color: #BBB;
+    color: #ccc;
+}
+.tweets-list li span.right a:hover{
+    text-decoration: none;
 }
 .tweets-list li .tweet-content .multimgs {
     display: flex;
