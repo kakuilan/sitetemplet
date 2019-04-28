@@ -1109,7 +1109,7 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .tweets-list li span a{
     color: #ccc;
 }
-.tweets-list li span.right a:hover{
+.tweets-list li span a:hover{
     text-decoration: none;
 }
 .tweets-list li .tweet-content .multimgs {
