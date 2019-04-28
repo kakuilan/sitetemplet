@@ -1095,6 +1095,7 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 }
 .tweets-list li span{
     color: #BBB;
+    margin-left: 4px;
     margin-right: 8px;
 }
 .tweets-list li span i{
