@@ -1147,6 +1147,11 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     color: #ccc;
 }
 .tweets-list li span a:hover{
+    color: rgba(0,0,0,.8);
+    text-decoration: none;
+}
+.tweets-list li span a:active{
+    color: rgba(0,0,0,.9);
     text-decoration: none;
 }
 .tweets-list li .tweet-content .multimgs {
