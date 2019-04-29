@@ -1135,7 +1135,7 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .tweets-list li span{
     color: #ccc;
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .tweets-list li span.time,.tweets-list li span.device {
     margin-left: 10px;
