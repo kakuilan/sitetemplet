@@ -1190,6 +1190,9 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     text-align: left;
     color: rgba(0,0,0,.4);
 }
+.tweet-header .tweet-author .author-warp .time span {
+    margin-right: 10px;
+}
 .tweet-header .opts-group {
     display: inline-block;
     line-height: 20px;
