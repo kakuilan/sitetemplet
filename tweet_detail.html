@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/statics/css/font-awesome.min.css" />
 
     <link rel="stylesheet" href="/statics/css/my-custom.css" />
+    <link rel="stylesheet" href="/statics/css/baguetteBox.min.css" />
 
     <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
     <!--[if lte IE 8]>
@@ -128,8 +129,32 @@
 
                         <!--动弹内容-->
                         <div class="tweet-txt text-fmt">
-                            致开源中国的一个建议：既然是技术开源网站，为啥热门动弹里总会推一些风马牛不相及的东东，好多人为了上热门也是费尽心血图文出力啊，建议优化算法，将技术相关的探讨话题置顶，营造浓厚技术氛围，对用户、对贵站应该都有好处吧！就酱[不知道@谁]
-                            <img class="emojione" alt="😊" title=":blush:" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f60a.png">
+                            <div class="tweet-content">
+                                致开源中国的一个建议：既然是技术开源网站，为啥热门动弹里总会推一些风马牛不相及的东东，好多人为了上热门也是费尽心血图文出力啊，建议优化算法，将技术相关的探讨话题置顶，营造浓厚技术氛围，对用户、对贵站应该都有好处吧！就酱[不知道@谁]
+                                <img class="emojione" alt="😊" title=":blush:" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f60a.png">
+                            </div>
+                            <div class="multimgs mt-20">
+                                <div class="tweet-img">
+                                    <a class="lightbox" href="statics/images/test/test_06.jpg" data-caption="Golden Gate Bridge" data-id="111">
+                                        <img src="statics/images/test/test_06.jpg">
+                                    </a>
+                                </div>
+                                <div class="tweet-img">
+                                    <a class="lightbox" href="statics/images/test/test_25.jpg" data-caption="Golden Gate Bridge" data-id="111">
+                                        <img src="statics/images/test/test_25.jpg">
+                                    </a>
+                                </div>
+                                <div class="tweet-img">
+                                    <a class="lightbox" href="statics/images/test/test_34_4.png" data-caption="Golden Gate Bridge" data-id="111">
+                                        <img src="statics/images/test/test_34_4.png">
+                                    </a>
+                                </div>
+                                <div class="tweet-img">
+                                    <a class="lightbox" href="statics/images/test/test_07.png" data-caption="Golden Gate Bridge" data-id="111">
+                                        <img src="statics/images/test/test_07.png">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="post-opt mt-10">
@@ -561,6 +586,26 @@
     if('ontouchstart' in document.documentElement) document.write("<script src='/statics/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 </script>
 <script src="/statics/js/bootstrap.min.js"></script>
+<script src="/statics/js/imagesloaded.pkgd.min.js"></script>
+<script src="/statics/js/baguetteBox.min.js"></script>
 
+<script>
+    $(function($) {
+        $('.multimgs').imagesLoaded( function() {
+
+            baguetteBox.run('.multimgs', {
+                animation: 'fadeIn',
+                noScrollbars: true,
+                titleTag: true,
+                onChange:function(currentIndex, imagesCount) {
+                },
+                afterHide: function () {
+                },
+                afterShow: function () {
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>

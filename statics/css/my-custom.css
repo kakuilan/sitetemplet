@@ -1158,13 +1158,14 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     display: flex;
     flex-wrap: wrap;
 }
-.tweets-list li .tweet-content .multimgs .tweet-img {
+.tweets-list li .tweet-content .multimgs .tweet-img, .tweet-txt .multimgs .tweet-img {
     width: 100px;
     height: 100px;
     overflow: hidden;
     display: inline-block;
     margin: 0 5px 5px 0;
 }
+
 .tweets-list li .tweet-content .multimgs .tweet-img img {
     width: 100px;
     height: 100px;
