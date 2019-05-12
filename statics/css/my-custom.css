@@ -1119,7 +1119,7 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .tweets-list li .tweet-content .tweet-text {
     margin-bottom: 5px;
 }
-.tweets-list li .tweet-content .tweet-text img.emojione{
+.tweets-list li .tweet-content .tweet-text img.emojione, .tweet-txt img.emojione{
     font-size: inherit;
     height: 2ex;
     width: 2.1ex;
