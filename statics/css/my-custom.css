@@ -168,6 +168,65 @@ pre{white-space: pre-wrap;word-wrap: break-word;}
 .text-fmt{overflow:hidden;font-size:14px;line-height:1.6;word-wrap:break-word}
 .inline-block {display: inline-block;}
 
+/*加载中*/
+.loading {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    margin: 6px;
+    border: 2px solid #009E5A;
+    border-bottom-color: transparent;
+    vertical-align: middle;
+    -webkit-animation: rotate 0.75s linear infinite;
+    animation: rotate 0.75s linear infinite;
+}
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loading2{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 3px solid #BEBEBE;
+    border-left: 3px solid #009E5A;
+    animation: load 1s linear infinite;
+    -moz-animation:load 1s linear infinite;
+    -webkit-animation: load 1s linear infinite;
+    -o-animation:load 1s linear infinite;
+}
+@-webkit-keyframes load {
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes load {
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-o-keyframes load {
+    from{-o-transform:rotate(0deg);}
+    to{-o-transform:rotate(360deg);}
+}
+
 /*内容格式化*/
 .fmt {
     line-height: 1.6;
@@ -1165,7 +1224,6 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
     display: inline-block;
     margin: 0 5px 5px 0;
 }
-
 .tweets-list li .tweet-content .multimgs .tweet-img img {
     width: 100px;
     height: 100px;
