@@ -1285,15 +1285,7 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 }
 .cate-menu>ul{
     margin-bottom: 8px;
-    list-style: circle;
-    list-style-position: inside
-}
-.cate-menu>ul>h4{
-    font-size: 1.07142857rem;
-    line-height: 1.28571429em;
-    font-weight: 700;
-    padding: 0;
-    margin: calc(2rem - .14285714em) 0 1rem;
+    list-style: none;
 }
 .cate-menu>ul>li{
     margin: .57142857em 0;
@@ -1303,7 +1295,11 @@ a.count-info:link, a.count-info:visited, a.count-info:active {
 .cate-menu>ul>li>a{
     font-weight: 400;
     color: rgba(0,0,0,.6);
-    margin-left: -8px;
+    margin-left: 0;
+}
+.cate-menu>ul>li>a.parent{
+    font-weight: bold;
+    font-size: 13px;
 }
 .cate-menu>ul>li>a.active{
     color: #32aa66;
@@ -2117,7 +2113,7 @@ ul.member_list li div.user .desc div:last-child {
 
 /*交友相片页*/
 .ta-gallery {
-    
+
 }
 .ta-gallery .item {
     width: 200px;
