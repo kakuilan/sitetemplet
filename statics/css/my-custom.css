@@ -961,10 +961,10 @@ pre{white-space: pre-wrap;word-wrap: break-word;}
     background-color: #fff;
     border: 1px solid #ddd;
 }
-a.count-info:link, a.count-info:visited, a.count-info:active {
+.count-info, a.count-info:link, a.count-info:visited, a.count-info:active {
     line-height: 12px;
     color: #fff;
-    background-color: #98ACDF;
+    background-color: #ccc;
 }
 .bbs-list{
     margin-bottom: 10px;
