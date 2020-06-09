@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="renderer" content="webkit">
+    <title>www.test.loc</title>
+    <meta name="keywords" content="静态页面模板-首页">
+    <meta name="description" content="静态页面模板">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="/statics/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/statics/css/font-awesome.min.css" />
+
+    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+    <!--[if lte IE 8]>
+    <script src="/statics/js/html5shiv.min.js"></script>
+    <script src="/statics/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<!--主容器 start-->
+<div class="main-wrap">
+    <!--页面容器 start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="row text-center">
+                    <h3>CentOS 7 使用MongoDB的问题解决指南</h3>
+                </div>
+
+                <div class="center-block">
+                    <div class="panel-heading">
+                        <span class="text-warning">
+                            <i class="fa fa-clock-o"></i>
+                        发表于 2020-06-06 17:28
+                        </span>
+                        <span class="text-muted">
+                            <a href="default.html">返回»</a>
+                        </span>
+                    </div>
+                    <div class="article-detail"><p>本文主要记录在CentOS7 系统中安装Mongodb 遇到的问题及最终解决办以供参考，同时简单介绍了如何使用mongodb 服务及相关配置。</p>
+                        <h2 id="常规安装方法">常规安装方法</h2>
+                        <p>首先是按常规方法进行安装。</p>
+                        <h3 id="配置系统yum源">配置系统yum源</h3>
+                        <h4 id="创建repo文件，生成mongodb源">创建.repo文件，生成mongodb源</h4>
+                        <pre><code><span class="hljs-attribute">vi</span> /etc/yum.repos.d/mongodb-org-<span class="hljs-number">4</span>.<span class="hljs-number">0</span>.repo</code></pre><p>其内容如下：</p>
+                        <pre><code><span class="hljs-section">[mongodb-org-4.0]</span>
+<span class="hljs-attr">name</span>=MongoDB Repository
+<span class="hljs-attr">baseurl</span>=https://repo.mongodb.org/yum/redhat/<span class="hljs-number">7</span>/mongodb-org/<span class="hljs-number">4.0</span>/x<span class="hljs-number">86_64</span>/
+<span class="hljs-attr">gpgcheck</span>=<span class="hljs-number">1</span>
+<span class="hljs-attr">enabled</span>=<span class="hljs-number">1</span>
+<span class="hljs-attr">gpgkey</span>=https://www.mongodb.org/static/pgp/server-<span class="hljs-number">4.0</span>.asc</code></pre><p>以上各配置项含义如下：</p>
+                        <ol>
+                            <li>name         # 名称</li>
+                            <li>baseurl      # 获得下载的路径</li>
+                            <li>gpkcheck=1   # 表示对从这个源下载的rpm包进行校验；</li>
+                            <li>enable=1     # 表示启用这个源。</li>
+                            <li>gpgkey       # gpg验证</li>
+                        </ol>
+                        <p>然后按<code>:wq</code>保存退出即可</p>
+                        <h3 id="yum安装mongodb">yum安装MongoDB</h3>
+                        <p>执行安装指令：</p>
+                        <pre><code><span class="hljs-attribute">sudo</span> yum install -y mongodb-org</code></pre><p>如果一切正常，则表示正常安装完成，可进行验证：</p>
+                        <pre><code><span class="hljs-attribute">rpm</span> -qa |grep mongodb</code></pre><p><img src="https://blog-resource.bj.bcebos.com/photos%2F2020%2Fcentos7-mongodb-check.png" alt=""></p>
+                        <h2 id="手动安装">手动安装</h2>
+                        <p>如果常规安装过程中遇到问题，如：</p>
+                        <pre><code><span class="hljs-selector-tag">Error</span>: <span class="hljs-selector-tag">Package</span>: <span class="hljs-selector-tag">mongodb-org-tools-4</span><span class="hljs-selector-class">.0</span><span class="hljs-selector-class">.14-1</span><span class="hljs-selector-class">.el8</span><span class="hljs-selector-class">.x86_64</span> (<span class="hljs-selector-tag">mongodb-org-4</span><span class="hljs-selector-class">.0</span>)
+           <span class="hljs-selector-tag">Requires</span>: <span class="hljs-selector-tag">libc</span><span class="hljs-selector-class">.so</span><span class="hljs-selector-class">.6</span> (<span class="hljs-selector-tag">GLIBC_2</span><span class="hljs-selector-class">.18</span>) (64<span class="hljs-selector-tag">bit</span>)
+<span class="hljs-selector-tag">Error</span>: <span class="hljs-selector-tag">Package</span>: <span class="hljs-selector-tag">mongodb-org-mongos-4</span><span class="hljs-selector-class">.0</span><span class="hljs-selector-class">.14-1</span><span class="hljs-selector-class">.el8</span><span class="hljs-selector-class">.x86_64</span> (<span class="hljs-selector-tag">mongodb-org-4</span><span class="hljs-selector-class">.0</span>)
+           <span class="hljs-selector-tag">Requires</span>: <span class="hljs-selector-tag">libc</span><span class="hljs-selector-class">.so</span><span class="hljs-selector-class">.6</span> (<span class="hljs-selector-tag">GLIBC_2</span><span class="hljs-selector-class">.18</span>) (64<span class="hljs-selector-tag">bit</span>)
+<span class="hljs-selector-tag">Error</span>: <span class="hljs-selector-tag">Package</span>: <span class="hljs-selector-tag">mongodb-org-server-4</span><span class="hljs-selector-class">.0</span><span class="hljs-selector-class">.14-1</span><span class="hljs-selector-class">.el8</span><span class="hljs-selector-class">.x86_64</span> (<span class="hljs-selector-tag">mongodb-org-4</span><span class="hljs-selector-class">.0</span>)
+           <span class="hljs-selector-tag">Requires</span>: <span class="hljs-selector-tag">libc</span><span class="hljs-selector-class">.so</span><span class="hljs-selector-class">.6</span> (<span class="hljs-selector-tag">GLIBC_2</span><span class="hljs-selector-class">.18</span>) (64<span class="hljs-selector-tag">bit</span>)
+<span class="hljs-selector-tag">Error</span>: <span class="hljs-selector-tag">Package</span>: <span class="hljs-selector-tag">mongodb-org-shell-4</span><span class="hljs-selector-class">.0</span><span class="hljs-selector-class">.14-1</span><span class="hljs-selector-class">.el8</span><span class="hljs-selector-class">.x86_64</span> (<span class="hljs-selector-tag">mongodb-org-4</span><span class="hljs-selector-class">.0</span>)
+           <span class="hljs-selector-tag">Requires</span>: <span class="hljs-selector-tag">libc</span><span class="hljs-selector-class">.so</span><span class="hljs-selector-class">.6</span> (<span class="hljs-selector-tag">GLIBC_2</span><span class="hljs-selector-class">.18</span>) (64<span class="hljs-selector-tag">bit</span>)
+</code></pre><p>表明系统版本较低，需要升级到CentOS8，但是系统升级影响太大，只能另找它法。</p>
+                        <h3 id="下载安装文件">下载安装文件</h3>
+                        <p>以4.0.6例，指定下载安装兼容当前系统版本的rmp文件(.el7）:</p>
+                        <pre><code>wget <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/repo.mongodb.org/yum</span><span class="hljs-regexp">/redhat/</span><span class="hljs-number">7</span>/mongodb-org/<span class="hljs-number">4.0</span>/x86_64/RPMS/mongodb-org-server-<span class="hljs-number">4.0</span>.<span class="hljs-number">6</span>-<span class="hljs-number">1</span>.el7.x86_64.rpm
+wget <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/repo.mongodb.org/yum</span><span class="hljs-regexp">/redhat/</span><span class="hljs-number">7</span>/mongodb-org/<span class="hljs-number">4.0</span>/x86_64/RPMS/mongodb-org-shell-<span class="hljs-number">4.0</span>.<span class="hljs-number">6</span>-<span class="hljs-number">1</span>.el7.x86_64.rpm
+wget <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/repo.mongodb.org/yum</span><span class="hljs-regexp">/redhat/</span><span class="hljs-number">7</span>/mongodb-org/<span class="hljs-number">4.0</span>/x86_64/RPMS/mongodb-org-tools-<span class="hljs-number">4.0</span>.<span class="hljs-number">6</span>-<span class="hljs-number">1</span>.el7.x86_64.rpm
+wget <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/repo.mongodb.org/yum</span><span class="hljs-regexp">/redhat/</span><span class="hljs-number">7</span>/mongodb-org/<span class="hljs-number">4.0</span>/x86_64/RPMS/mongodb-org-mongos-<span class="hljs-number">4.0</span>.<span class="hljs-number">6</span>-<span class="hljs-number">1</span>.el7.x86_64.rpm</code></pre><h3 id="安装">安装</h3>
+                        <p>然后依次进行安装</p>
+                        <pre><code><span class="hljs-selector-tag">rpm</span> <span class="hljs-selector-tag">-ivh</span> <span class="hljs-selector-tag">mongodb-org-server-4</span><span class="hljs-selector-class">.0</span><span class="hljs-selector-class">.6-1</span><span class="hljs-selector-class">.el7</span><span class="hljs-selector-class">.x86_64</span><span class="hljs-selector-class">.rpm</span>
+<span class="hljs-selector-tag">rpm</span> <span class="hljs-selector-tag">-ivh</span> <span class="hljs-selector-tag">mongodb-org-shell-4</span><span class="hljs-selector-class">.0</span><span class="hljs-selector-class">.5-1</span><span class="hljs-selector-class">.el7</span><span class="hljs-selector-class">.x86_64</span><span class="hljs-selector-class">.rpm</span>
+<span class="hljs-selector-tag">rpm</span> <span class="hljs-selector-tag">-ivh</span> <span class="hljs-selector-tag">mongodb-org-tools-4</span><span class="hljs-selector-class">.0</span><span class="hljs-selector-class">.5-1</span><span class="hljs-selector-class">.el7</span><span class="hljs-selector-class">.x86_64</span><span class="hljs-selector-class">.rpm</span>
+<span class="hljs-selector-tag">rpm</span> <span class="hljs-selector-tag">-ivh</span> <span class="hljs-selector-tag">mongodb-org-mongos-4</span><span class="hljs-selector-class">.0</span><span class="hljs-selector-class">.5-1</span><span class="hljs-selector-class">.el7</span><span class="hljs-selector-class">.x86_64</span><span class="hljs-selector-class">.rpm</span> </code></pre><h2 id="配置">配置</h2>
+                        <p>经过以上两种任一方式安装成功后，会生成一个 <code>/etc/mongod.conf</code> 的配置文件，配置了 mogoDB 默认的配置：</p>
+                        <pre><code><span class="hljs-comment"># mongod.conf</span>
+
+<span class="hljs-comment"># for documentation of all options, see:</span>
+<span class="hljs-comment">#   http://docs.mongodb.org/manual/reference/configuration-options/</span>
+
+<span class="hljs-comment"># where to write logging data.</span>
+<span class="hljs-attr">systemLog:</span>
+  <span class="hljs-attr">destination:</span> <span class="hljs-string">file</span>
+  <span class="hljs-attr">logAppend:</span> <span class="hljs-literal">true</span>
+  <span class="hljs-attr">path:</span> <span class="hljs-string">/var/log/mongodb/mongod.log</span>
+
+<span class="hljs-comment"># Where and how to store data.</span>
+<span class="hljs-attr">storage:</span>
+  <span class="hljs-attr">dbPath:</span> <span class="hljs-string">/var/lib/mongo</span>
+  <span class="hljs-attr">journal:</span>
+    <span class="hljs-attr">enabled:</span> <span class="hljs-literal">true</span>
+<span class="hljs-comment">#  engine:</span>
+<span class="hljs-comment">#  mmapv1:</span>
+<span class="hljs-comment">#  wiredTiger:</span>
+
+<span class="hljs-comment"># how the process runs</span>
+<span class="hljs-attr">processManagement:</span>
+  <span class="hljs-attr">fork:</span> <span class="hljs-literal">true</span>  <span class="hljs-comment"># fork and run in background</span>
+  <span class="hljs-attr">pidFilePath:</span> <span class="hljs-string">/var/run/mongodb/mongod.pid</span>  <span class="hljs-comment"># location of pidfile</span>
+  <span class="hljs-attr">timeZoneInfo:</span> <span class="hljs-string">/usr/share/zoneinfo</span>
+
+<span class="hljs-comment"># network interfaces</span>
+<span class="hljs-attr">net:</span>
+  <span class="hljs-attr">port:</span> <span class="hljs-number">27017</span>
+  <span class="hljs-attr">bindIp:</span> <span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>  <span class="hljs-comment"># Enter 0.0.0.0,:: to bind to all IPv4 and IPv6 addresses or, alternatively, use the net.bindIpAll setting.</span>
+
+<span class="hljs-comment">#security:</span>
+
+<span class="hljs-comment">#operationProfiling:</span>
+
+<span class="hljs-comment">#replication:</span>
+
+<span class="hljs-comment">#sharding:</span>
+
+<span class="hljs-comment">## Enterprise-Only Options</span>
+
+<span class="hljs-comment">#auditLog:</span>
+
+<span class="hljs-comment">#snmp:</span></code></pre><ol>
+                            <li>默认配置的网络服务绑定地址为 127.0.0.1 ，意味着默认情况下只能本机连接 mongoDB，如需远程连接访问，可以修改为<code>bindIp:0.0.0.0</code>；</li>
+                            <li>默认端口为27017，在某些情况下可能会遭到外部的攻击。可以修改为不常用端口。</li>
+                        </ol>
+                        <h3 id="开放端口">开放端口</h3>
+                        <p>默认情况下，大部分端口是不对外开放的，所以需要检查使用端口是否开放访问，有以下两种方式开启端口访问。</p>
+                        <h4 id="firewall-cmd">firewall-cmd</h4>
+                        <pre><code><span class="hljs-comment"># 查看防火墙状态</span>
+systemctl status firewalld
+<span class="hljs-comment"># 查看已开放端口</span>
+firewall-cmd <span class="hljs-comment">--list-ports  </span>
+
+<span class="hljs-comment"># 永久开放 mongodb默认端口号</span>
+firewall-cmd <span class="hljs-comment">--zone=public --add-port=27017/tcp --permanent</span>
+<span class="hljs-comment"># 重新加载防火墙</span>
+firewall-cmd <span class="hljs-comment">--reload </span>
+
+<span class="hljs-comment"># 查看端口号是否开放成功，输出yes开放成功，no则失败</span>
+firewall-cmd <span class="hljs-comment">--zone=public --query-port=27017/tcp </span></code></pre><h4 id="iptables">iptables</h4>
+                        <p>另外也可以使用iptables：</p>
+                        <pre><code>iptables -A INPUT -p tcp -<span class="hljs-keyword">m</span> <span class="hljs-keyword">state</span> --<span class="hljs-keyword">state</span> NEW -<span class="hljs-keyword">m</span> tcp --dport <span class="hljs-number">27017</span> -j ACCEPT</code></pre><h2 id="启动">启动</h2>
+                        <p>启动mongodb 服务很简单</p>
+                        <pre><code><span class="hljs-attribute">systemctl</span> start mongod</code></pre><p>设置服务开机自启动：</p>
+                        <pre><code>systemctl <span class="hljs-built_in">enable</span> mongod</code></pre><h3 id="无法启动">无法启动</h3>
+                        <p>如果遇到无法启动，问题提示如下：<br><img src="https://blog-resource.bj.bcebos.com/photos%2F2020%2Fmysql-storage-error-28.png" alt=""><br>问题是目前系统磁盘空间不足，导致SQL 查询任务失败，可以通过<code>df -l</code> 确认目前磁盘空间是否足够。</p>
+                        <h4 id="磁盘空分析及处理">磁盘空分析及处理</h4>
+                        <p>磁盘空间不足时，可以使用<code>du -sh *</code>进行文件大小占用分析，把无用的大文件删除，重点如<code>/var/lib/mysql/</code> 目前可能占用大量空间，该目录默认存储mysql bin 日志文件，可以把大文件/无用bin log文件删，如：</p>
+                        <pre><code><span class="hljs-selector-tag">rm</span> <span class="hljs-selector-tag">-rf</span> <span class="hljs-selector-tag">mysql-bin</span><span class="hljs-selector-class">.000310</span></code></pre><p>或者进入mysql 终端：</p>
+                        <pre><code><span class="hljs-attribute">mysql</span> -u root -p</code></pre><p>输入密码连接后，进行log删除：</p>
+                        <pre><code>URGE MASTERLOGS BEFORE 'date'
+<span class="hljs-keyword">PURGE</span> <span class="hljs-built_in">BINARY</span> <span class="hljs-keyword">LOGS</span> <span class="hljs-keyword">TO</span> <span class="hljs-string">'log_name'</span></code></pre><p>如：</p>
+                        <pre><code><span class="hljs-keyword">PURGE</span> <span class="hljs-keyword">MASTER</span> <span class="hljs-keyword">LOGS</span> <span class="hljs-keyword">TO</span> <span class="hljs-string">'MySQL-bin.000100'</span>;  // 清除MySQL-bin.000100之前的日志，不包括MySQL-bin.000100
+<span class="hljs-keyword">PURGE</span> <span class="hljs-keyword">MASTER</span> <span class="hljs-keyword">LOGS</span> <span class="hljs-keyword">BEFORE</span> <span class="hljs-string">'2020-05-10 01:00:00'</span>;   // 清除2020-05-10 01:00:00前的binlog日志
+<span class="hljs-keyword">PURGE</span> <span class="hljs-keyword">MASTER</span> <span class="hljs-keyword">LOGS</span> <span class="hljs-keyword">BEFORE</span> <span class="hljs-keyword">DATE_SUB</span>( <span class="hljs-keyword">NOW</span>( ), <span class="hljs-built_in">INTERVAL</span> <span class="hljs-number">10</span> <span class="hljs-keyword">DAY</span>);  //清除10天前binlog日志BEFORE，变量的date自变量可以为'YYYY-MM-DD </code></pre><h4 id="关于mysql-bin-log文件过多">关于mysql bin log文件过多</h4>
+                        <p>开启mysql数据库主从时，会产生大量如mysql-bin.00000* log的文件，这会大量耗费硬盘空间，一般有3种方式优化：</p>
+                        <ol>
+                            <li>关闭mysql主从，关闭binlog；</li>
+                            <li>开启mysql主从，设置expire_logs_days；</li>
+                            <li>手动清除binlog文件，即上文“磁盘空分析及处理”一节所述的处理方式;</li>
+                        </ol>
+                        <h5 id="关闭mysql-主从">关闭mysql 主从</h5>
+                        <p>打开mysql 配置文件 <code>vi /etc/my.conf</code>或 <code>vi /etc/mysql/my.conf</code>，注释掉文件内的<code>log-bin</code>和<code>binlog_format</code> 行：</p>
+                        <pre><code><span class="hljs-meta">#</span><span class="bash"> Replication Master Server (default)</span>
+<span class="hljs-meta">#</span><span class="bash"> binary logging is required <span class="hljs-keyword">for</span> replication</span>
+<span class="hljs-meta">#</span><span class="bash"> <span class="hljs-built_in">log</span>-bin=mysql-bin</span>
+<span class="hljs-meta">#</span><span class="bash"> binary logging format - mixed recommended</span>
+<span class="hljs-meta">#</span><span class="bash"> binlog_format=mixed</span></code></pre><p>然后重启mysql 服务：</p>
+                        <pre><code><span class="hljs-attr">systemctl</span> <span class="hljs-string">restart mysql</span>
+<span class="hljs-attr">or</span> <span class="hljs-string"></span>
+<span class="hljs-attr">systemctl</span> <span class="hljs-string">restart mariadb</span></code></pre><h5 id="设置expire_logs_days">设置expire_logs_days</h5>
+                        <p>第二种方式就是设置<code>expire_logs_days</code> 值，避免堆积过多bin log：</p>
+                        <ol>
+                            <li>修改<code>/etc/my.conf</code>文件内<code>expire_logs_days</code> 行：<pre><code><span class="hljs-attr">expire_logs_days</span> = x  // 二进制日志自动删除的天数。默认值为<span class="hljs-number">0</span>,表示“没有自动删除”</code></pre>然后重启mysq 服务：<code>systemctl restart mariadb</code>。</li>
+                            <li>也可以直接连接mysql，进行设置，这种方式不需要重启服务：<pre><code>mysql &gt; show variables like <span class="hljs-string">'%expire_logs_days%'</span>;
+mysql &gt; <span class="hljs-keyword">set</span> <span class="hljs-keyword">global</span> expire_logs_days = <span class="hljs-number">6</span>;</code></pre></li>
+                        </ol>
+                        <p>参考链接：<a href="https://systembash.com/mysql-binary-log-file-size-huge/">https://systembash.com/mysql-binary-log-file-size-huge/</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面容器 end-->
+
+    <!--页脚 end -->
+    <footer class="container hidden-xs">
+        <div class="page-header"></div>
+        <div id="footer">
+            <div class="panel panel-default text-muted">
+                <div class="panel-body">
+                    Copyright © 2018-2020 test.cn 版权所有 All Rights Reserved.
+                </div>
+                <div class="panel-footer clearfix">
+                    备案号:<a href="http://beian.miit.gov.cn/" target="_blank">粤ICP备1234567890号</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--页脚 start -->
+
+</div>
+<!--主容器 end-->
+
+<!-- basic scripts -->
+
+<!--[if !IE]> -->
+<script src="/statics/js/jquery-2.1.4.min.js"></script>
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script src="/statics/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    if('ontouchstart' in document.documentElement) document.write("<script src='/statics/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+</script>
+<script src="/statics/js/bootstrap.min.js"></script>
+
+</body>
+</html>
